@@ -1,0 +1,2903 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>001</key>
+<dict>
+<key>kind</key>
+<string>ホームステイ</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>アメリカ</string>
+<key>hotelName</key>
+<string>LAオレンジグローブ</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string>だいたい</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>鍵付き個室　""限定１部屋のみ""
+
+1名様目　$98/日
+2名様目　$39/日
+3名様目　$19/日
+※３連泊以上の料金</string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>無料</string>
+<key>equipment</key>
+<string>バス、トイレ、キッチン、洗濯機、乾燥機など</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string>アメリカ国内：（８８８）２３２ー１０８９
+
+                           海外より：（８０２）８７５ー２３４６</string>
+<key>email</key>
+<string>booking@losnioideyo.com or tom8hiro@yahoo.co.jp</string>
+<key>url</key>
+<string>http://www.losnioideyo.com</string>
+<key>comment</key>
+<string>鍵付き個室＋専用バス・トイレのパーソナルな空間を優先したホームステイ。
+治安がちょっと心配なロサンゼルスでも駅から徒歩１分の安全な駅前滞在。</string>
+<key>red</key>
+<string>248</string>
+<key>green</key>
+<string>49</string>
+<key>blue</key>
+<string>98</string>
+</dict>
+<key>002</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>アメリカ</string>
+<key>hotelName</key>
+<string>The One Hundred</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>100 Fort Greene Pl, Brooklyn, NY 11217-1419</string>
+<key>map</key>
+<string>40.686535, -73.976661</string>
+<key>latitude</key>
+<string>40.686535</string>
+<key>longitude</key>
+<string>-73.976661</string>
+<key>accommodation</key>
+<string>スタンダード・タイプ
+お一人様ご利用◆140ドル 
+お二人様ご利用◆180ドル
+
+スイート・タイプ 
+お一人様ご利用◆210ドル 
+お二人様ご利用◆250ドル
+</string>
+<key>rooms</key>
+<string>5</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>車両の手配を依頼可能</string>
+<key>equipment</key>
+<string>バス、トイレ、キッチン、ランドリー、無料電話など</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>
+http://www.theonehundred.com/request.htm</string>
+<key>tel</key>
+<string>日本コールセンター: 06-6850-1319
+ザ・ワンハンドレト：718-624-8313</string>
+<key>email</key>
+<string>info@theonehundred.com </string>
+<key>url</key>
+<string>http://www.theonehundred.com/index.htm</string>
+<key>comment</key>
+<string>
+ザ･ワンハンドレッドは、ホテルのようなクオリティーを保ちながら おしゃれな友人宅を訪れているような安心感と快適さのある滞在をしていただこうという考えではじめた ベッド・アンド・ブレックファーストです。 </string>
+<key>red</key>
+<string>246</string>
+<key>green</key>
+<string>49</string>
+<key>blue</key>
+<string>241</string>
+</dict>
+<key>003</key>
+<dict>
+<key>kind</key>
+<string>コテージ</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>アメリカ</string>
+<key>hotelName</key>
+<string>ハワイノースショアの宿</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string>だいたい
+21.648352, -158.061442</string>
+<key>latitude</key>
+<string>21.648352</string>
+<key>longitude</key>
+<string>-158.061442</string>
+<key>accommodation</key>
+<string>ステゥージオ（定員２名）
+1泊／1部屋：１３０ドル
+
+ワンベッドルーム（定員３名）
+1泊／1部屋：15５ドル
+
+※定員オーバーは追加料金。</string>
+<key>rooms</key>
+<string>2</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>有料＆無料あり</string>
+<key>equipment</key>
+<string>バス、トイレ、キッチン、洗濯サービス、プールなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>https://mailform.mface.jp/frms/emiko/ox7r8sa20t6v</string>
+<key>tel</key>
+<string>PHONE: 06-6850-1319</string>
+<key>email</key>
+<string>alohaemiko@gmail.com</string>
+<key>url</key>
+<string>https://ameblo.jp/sand-hawaii/</string>
+<key>comment</key>
+<string>ハワイ・オアフ島・ノースショア　で　日本人女性　が経営する　コンドミニアムと　サーフィン＆ボディーボードの体験レッスンを紹介しています！</string>
+<key>red</key>
+<string>42</string>
+<key>green</key>
+<string>37</string>
+<key>blue</key>
+<string>255</string>
+</dict>
+<key>101</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>カナダ</string>
+<key>hotelName</key>
+<string>Sweetheart B &amp; B 1号館</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>72 Henry St., Toronto, Ontario, Canada M5T 1X2</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>シングルルーム 55ドル
+
+スモールシングルルーム 40ドル
+
+ベースメントシングルルーム 45ドル
+
+ダブルベッドルーム 60ドル（1名様）/　70ドル（2名様）
+
+ツインルーム 60ドル（1名様）/　75ドル（2名様）
+
+ベースメントスイート 75ドル（1名様）　/　95ドル（2名様）120ドル（3名様）
+
+ドミトリールーム 35ドル（1名様）</string>
+<key>rooms</key>
+<string>6</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>有料</string>
+<key>equipment</key>
+<string>シャワー、トイレ、キッチン、ランドリー、無料電話、無料駐車場など</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>
+http://www.sweetheartbb.com/toronto/contact/index.html</string>
+<key>tel</key>
+<string>日本語：416-597-9897
+
+英語：416-910-0799</string>
+<key>email</key>
+<string>info_sweetheart@hotmail.com</string>
+<key>url</key>
+<string>https://ameblo.jp/sand-hawaii/</string>
+<key>comment</key>
+<string>フレンドリーな日本人オーナーと、スタッフが、心のこもったサービスを提供させていただきます。ペットとご一緒にご宿泊できるお部屋もございます。どうぞお問い合わせくださいませ。</string>
+<key>red</key>
+<string>39</string>
+<key>green</key>
+<string>162</string>
+<key>blue</key>
+<string>255</string>
+</dict>
+<key>102</key>
+<dict>
+<key>kind</key>
+<string>ホームステイ</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>カナダ</string>
+<key>hotelName</key>
+<string>B&amp;B AOGAKI</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>6991 Frederick Avenue Burnaby B.C. Canada</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>お一人様／一泊：C$75
+Lowシーズン (11月～4月)
+
+お一人様／一泊：C$85
+Highシーズン (5月～10月)</string>
+<key>rooms</key>
+<string>4</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>有料</string>
+<key>equipment</key>
+<string>シャワー、トイレ、キッチン、ランドリー、無料電話、無料駐車場など</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://www.bbaogaki.com/contact-us/</string>
+<key>tel</key>
+<string>1-604-433-7876
+</string>
+<key>email</key>
+<string>yadachi@telus.net</string>
+<key>url</key>
+<string>http://www.bbaogaki.com/</string>
+<key>comment</key>
+<string>バンクーバーで泊まる格安の宿・ホームステイ</string>
+<key>red</key>
+<string>255</string>
+<key>green</key>
+<string>193</string>
+<key>blue</key>
+<string>37</string>
+</dict>
+<key>103</key>
+<dict>
+<key>kind</key>
+<string>ホームステイ</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>カナダ</string>
+<key>hotelName</key>
+<string>メリーフィールドハウスB&amp;B</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>235 Government St., Victoria, B.C., Canada, V8V 2K8</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Room1
+C $105.00
+（10月〜5月）
+C $155.00
+
+Room2
+C $105.00〜
+（10月〜5月）
+C $155.00〜
+※Room2は、人数によって変更あり</string>
+<key>rooms</key>
+<string>3</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、キッチン、ランドリーなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://marifieldhouse.com/japanese.html</string>
+<key>tel</key>
+<string>フリーダイヤル：1-866-235-3820
+
+日本語専用：250-383-3820</string>
+<key>email</key>
+<string>toshiedavid@marifieldhouse.com </string>
+<key>url</key>
+<string>http://marifieldhouse.com/japanese.html</string>
+<key>comment</key>
+<string>カナダセレクト四つ星認定。ビクトリアダウンタウンへ徒歩5分。朝食はボリュームの手作り日替わりメニュー！</string>
+<key>red</key>
+<string>16</string>
+<key>green</key>
+<string>107</string>
+<key>blue</key>
+<string>20</string>
+</dict>
+<key>104</key>
+<dict>
+<key>kind</key>
+<string>ハウス</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>カナダ</string>
+<key>hotelName</key>
+<string>Manor Guest House</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>1909 West 4th Ave
+Vancouver, BC V6J 1M7</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>スイートルーム（最大２名）
+1泊　$ 85.00</string>
+<key>rooms</key>
+<string>2</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、キッチン、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://manorguesthouse.com/?lang=ja</string>
+<key>tel</key>
+<string>1- 604-876-8494</string>
+<key>email</key>
+<string> stay@manorguesthouse.com</string>
+<key>url</key>
+<string>http://manorguesthouse.com/?lang=ja</string>
+<key>comment</key>
+<string>築100年以上になるエドワーディア</string>
+<key>red</key>
+<string>28</string>
+<key>green</key>
+<string>190</string>
+<key>blue</key>
+<string>34</string>
+</dict>
+<key>105</key>
+<dict>
+<key>kind</key>
+<string>ホームステイ</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>カナダ</string>
+<key>hotelName</key>
+<string>ホリディホームステイ　B&amp;B</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>4018 Santa Anita Place, Kelowna, BC 
+V1W 2Z6 Canada </string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>2名で申込／お一人様あたり一泊75カナダドル
+1名で申込／一泊120カナダドル </string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、キッチン、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string>1-250-764-5082 </string>
+<key>email</key>
+<string>enjoy@holiday-homestay.com</string>
+<key>url</key>
+<string>http://www3.telus.net/holidayhomestaybb/index.html</string>
+<key>comment</key>
+<string>カナダ・ブリティッシュコロンビア州の中央オカナガン湖畔にあるリゾートタウン</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>106</key>
+<dict>
+<key>kind</key>
+<string>コテージ</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>カナダ</string>
+<key>hotelName</key>
+<string>堀江サンロッジイン</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>2232 Sunburst Drive
+Sun Peaks, B.C.
+V0E 5N0, Canada</string>
+<key>map</key>
+<string>50.884807, -119.891917</string>
+<key>latitude</key>
+<string>50.884807</string>
+<key>longitude</key>
+<string>-119.891917</string>
+<key>accommodation</key>
+<string>定員２名まで。
+12月1日〜12月21日 
+$ 169.00
+
+12月22日〜1月3日（最低4泊） 
+$ 210.00
+
+1月4日〜1月31日 
+$ 179.00
+
+2月1日〜2月28日 
+$ 189.00
+
+3月1日〜4月30日 
+$ 175.00
+
+5月1日〜11月31日 
+$ 165.00</string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>不明</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://sunlodge.com/?room=1-queen-bed</string>
+<key>tel</key>
+<string>1-250-578-0250 </string>
+<key>email</key>
+<string>horiesunlodge@telus.net </string>
+<key>url</key>
+<string>http://sunlodge.com/?page_id=41</string>
+<key>comment</key>
+<string>カナダで最高の雪質を誇るスノーリゾートにあるＢ＆Ｂ</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>107</key>
+<dict>
+<key>kind</key>
+<string>コテージ</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>カナダ</string>
+<key>hotelName</key>
+<string>バンフィー</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string> 
+213 Glen Crescent, Banff, Alberta, Canada T1L-1C1　</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>お二人様一泊の料金
+
+夏料金（4月15日～10月）:CDN$99 - $129
+ハイシーズン（7月～9月）:CDN$139から（フル朝食付き）
+冬料金（11月～4月14日）:割引あり</string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>不明</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、キッチン、ランドリーなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://www.banff-minshuku.com/indexj.htm#form</string>
+<key>tel</key>
+<string>1-403-762-4725</string>
+<key>email</key>
+<string>banffy@banff-minshuku.com</string>
+<key>url</key>
+<string>http://www.banff-minshuku.com/indexj.htm</string>
+<key>comment</key>
+<string>バンフ国立公園内唯一の日本人夫婦がオーナーの貸し切りのベッドアンドブレックファースト「バンフィー」。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>108</key>
+<dict>
+<key>kind</key>
+<string>ハウス</string>
+<key>continent</key>
+<string>北アメリカ</string>
+<key>country</key>
+<string>カナダ</string>
+<key>hotelName</key>
+<string>モナークB&amp;B</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>317 Canyon Close
+Canmore, Alberta Canada
+T1W1H4</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>クインーンルーム or ツインルーム
+$165.00　（シングル割引：$105.00）
+
+iフロア貸切（4名以上）
+$320.00（家族割引　大人4名／子供2名：$320.00〜）</string>
+<key>rooms</key>
+<string>2</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、キッチン、ランドリーなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://www.monarchbandb.com/jp/contact/index.html</string>
+<key>tel</key>
+<string>1-403-678-0500</string>
+<key>email</key>
+<string>ogawa66@shaw.ca</string>
+<key>url</key>
+<string>http://www.monarchbandb.com/jp/index.html</string>
+<key>comment</key>
+<string>個人旅行を個性的な旅にしたい方や、ご家族・グループ様へ、快適で安心感のある宿泊施設をご提供させて頂いております。皆さまのキャンモア、バンフ、レイクルイーズでの滞在をより良いものにするため、モナークにご協力をさせてください。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>201</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>中南米</string>
+<key>country</key>
+<string>ジャマイカ</string>
+<key>hotelName</key>
+<string>民宿ラブリシュ</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>10 Hillview Ave,Kingston 10,Jamaica W.I
+</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>個室１泊
+１人部屋 US$30
+２人利用の場合 US$40
+３人利用の場合 US$50
+
+デラックス個室１泊
+１人部屋 US$40 
+２人利用の場合 US$50
+３人利用の場合 US$60
+
+ドミトリー１泊（男6人、女4人部屋）
+１人部屋 US$40 
+２人利用の場合 US$50
+３人利用の場合 US$60</string>
+<key>rooms</key>
+<string>6</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>シャワー、トイレ、キッチン、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string>876-382-5150</string>
+<key>email</key>
+<string>sisterchin2001@hotmail.com、sisterchin@gmail.com</string>
+<key>url</key>
+<string>http://www.sisterchin.com/rastalabrish3.html</string>
+<key>comment</key>
+<string>民宿ラブリシュはキングストンの繁華街ハーフウェイトゥリーにあり
+換金所やスーパーマーケット、
+ファーストフード店やレストランなど全て徒歩５分以内にあり大変便利で
+来たその日からジャマイカに住んでいる感覚でステイしていただけます
+</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>202</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>中南米</string>
+<key>country</key>
+<string>ジャマイカ</string>
+<key>hotelName</key>
+<string>アイシャ★ハウス</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>8 Goodwood Terrace,Kingston10 Jamaica W.I.</string>
+<key>map</key>
+<string>18.028577, -76.798554</string>
+<key>latitude</key>
+<string>18.028577</string>
+<key>longitude</key>
+<string>-76.798554</string>
+<key>accommodation</key>
+<string>バスルーム・キッチン共同／1泊　US$30
+バスルーム・キッチン付／1泊 　US$40</string>
+<key>rooms</key>
+<string>11</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>シャワー、トイレ、キッチン、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>yumi@colis.com</string>
+<key>tel</key>
+<string>(876)844-8928　</string>
+<key>email</key>
+<string>aishahousejamaica@gmail.com
+
+aishahouse@hotmail.com</string>
+<key>url</key>
+<string>http://aishahouse.com.jm/aishahouse.htm</string>
+<key>comment</key>
+<string>キングストンの中心街、ハーフ・ウェイ・トゥリー繁華街まで１km。観光、ショッピング、スタジオまでのアクセスも便利。　たいていのところには歩いていけます。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>211</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>中南米</string>
+<key>country</key>
+<string>グアテマラ</string>
+<key>hotelName</key>
+<string>ホテル・エル・ソル</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>Salida a Santa Catarina,
+Barrio Jucanya, Panajachel
+Solola, Guatemala, C.A.</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string> 男女共用ドミトリー  Q  70.00,  約 $9.21
+ シングルルーム  Q 170.00, 約$22.36
+ ツイン・ダブルルーム  Q 220.00, 約$28.94
+ トリプルルーム  Q 270.00, 約 $35.52</string>
+<key>rooms</key>
+<string>5</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>シャワー、トイレなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>www.japanese.hostelworld.com/ 
+
+www.booking.com/</string>
+<key>tel</key>
+<string>502-7762-6090</string>
+<key>email</key>
+<string>hotel_el_sol_panajachel@yahoo.co.jp</string>
+<key>url</key>
+<string>http://www.hotelelsolpanajachel.com/</string>
+<key>comment</key>
+<string>グアテマラのアティトラン湖をご旅行される御家族やバックパッカーの方々へ 快適で安全なご宿泊 を提供いたしております。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>212</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>中南米</string>
+<key>country</key>
+<string>グアテマラ</string>
+<key>hotelName</key>
+<string>Taka House</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>15 Avenida, 1-22, zona 1, Quezaltenago, Guatemala</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>ドミトリー　　１泊 　Q40 （＄5）</string>
+<key>rooms</key>
+<string>3</string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>シャワー、トイレ、キッチンなど</string>
+<key>reservation</key>
+<string></string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string> (502)5073-3558</string>
+<key>email</key>
+<string>takayukinagoshi＠hotmail.com</string>
+<key>url</key>
+<string>http://www.geocities.jp/takasantiago/index.html#hidead</string>
+<key>comment</key>
+<string>中米グアテマラ、シェラ (ケツァルテナンゴ) のホステルとスペイン語学校 TAKA HOUSE</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>213</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string>中南米</string>
+<key>country</key>
+<string>グアテマラ</string>
+<key>hotelName</key>
+<string>ハポンテナンゴ</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string> 19 Avenida 16-36 Zona 10 
+Ciudad de Guatemala </string>
+<key>map</key>
+<string>https://www.google.com/maps/d/viewer?ll=14.593384999999984%2C-90.51275299999998&amp;spn=0.039787%2C0.055017&amp;hl=es&amp;msa=0&amp;z=14&amp;ie=UTF8&amp;mid=1Blir_FxmzME3fZJS0PP3Ai-8_z4</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>一人部屋 ……………………$25 
+二人部屋 ……………………$35 
+三人部屋 ……………………$45 </string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>有料あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string></string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string>502- 2363-2330</string>
+<key>email</key>
+<string>japont@cocktailtours.com</string>
+<key>url</key>
+<string>http://www.cocktailtours.com/japontenango/index.html</string>
+<key>comment</key>
+<string>空港からわずか十分たらずの緑豊かな閑静な住宅街にある日本人宿です。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>214</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string>中南米</string>
+<key>country</key>
+<string>グアテマラ</string>
+<key>hotelName</key>
+<string>EL PARAISO DE OMOA</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>Bo La Playa Atras de Pulp. Daniela,
+Omoa, Cortés Honduras C.A.</string>
+<key>map</key>
+<string>あり</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>個室 一室当り L.140.00
+ドミトリー 一人当り L. 70.00
+ハンモック 一人当り L. 60.00</string>
+<key>rooms</key>
+<string>5</string>
+<key>wifi</key>
+<string>あり（有料）</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://www.paraiso.go2.jp/</string>
+<key>tel</key>
+<string></string>
+<key>email</key>
+<string> elparaisodeomoa@gmail.com</string>
+<key>url</key>
+<string>http://www.paraiso.go2.jp/</string>
+<key>comment</key>
+<string>オモアにある船員学校のクラスを受ける学生も宿泊するので、金曜日、土曜日の宿泊以外は必ず宿泊予定の前の週に事前予約してください。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>221</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string>中南米</string>
+<key>country</key>
+<string>パラグアイ</string>
+<key>hotelName</key>
+<string>ホテル内山田</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>Constitucion 763, Asuncion, Paraguay</string>
+<key>map</key>
+<string>https://www.tripadvisor.jp/Hotel_Review-g294080-d1412218-Reviews-Hotel_Uchiyamada-Asuncion.html#MAPVIEW</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>スタンダード　900000-1300000Gs
+スーペリア　1700000-2200000Gs
+デラックス　2500000Gs</string>
+<key>rooms</key>
+<string>100</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、ランドリー、宅急便など</string>
+<key>reservation</key>
+<string>TEL、メール</string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string>２１－２２２－０３８
+２１－２０３－０３７</string>
+<key>email</key>
+<string>hoteluchiyamada@gmail.com</string>
+<key>url</key>
+<string>http://www.hoteluchiyamada.com.py/index.html.html</string>
+<key>comment</key>
+<string>パラグアイの首都アスンシオンにある、諸設備の整った近代的なホテルです。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>231</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>中南米</string>
+<key>country</key>
+<string>チリ</string>
+<key>hotelName</key>
+<string>Hare Kapone</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>Tuki Haka Hevari, Hanga Roa, Easter Island, Chile</string>
+<key>map</key>
+<string>-27.153286, -109.428169</string>
+<key>latitude</key>
+<string>-27.153286</string>
+<key>longitude</key>
+<string>-109.428169</string>
+<key>accommodation</key>
+<string>1泊～2泊まで（お一人様）13,000チリペソ／泊
+3泊～6泊まで（お一人様）10,000チリペソ／泊
+　　　7泊以上（お一人様）9,500チリペソ／泊</string>
+<key>rooms</key>
+<string>2</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリー、駐車場など</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>
+http://www.harekapone.cl/sfm_form_2.html</string>
+<key>tel</key>
+<string></string>
+<key>email</key>
+<string>kiyoaki@harekapone.cl</string>
+<key>url</key>
+<string>http://www.harekapone.cl/index.html</string>
+<key>comment</key>
+<string>Hare Kaponeは日本人専用の日本人宿で、お客様だけで一軒家をシェアするタイプのドミトリーです。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>301</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>フランス</string>
+<key>hotelName</key>
+<string>Maison Orange</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>31 Rue Guilleminot 75014 Paris France</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>1）エコノミープラン（返金不可）
+ドミトリーシェア料金　お一人様　30€/泊
+貸切料金 
+１号館　４名様まで　119€/泊
+２号館　６名様まで　179€/泊 
+貸切の場合は男性のご利用OKです。 
+
+2）スタンダードプラン
+ドミトリーシェア料金　お一人様　39€/泊
+貸切料金
+１号館　４名様まで　149€/泊
+２号館　６名様まで　219€/泊 </string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>タクシー手配</string>
+<key>equipment</key>
+<string>バス、トイレ、ランドリー、アイロン、オーディオ、電話、ドライヤーなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://maison-orange.com/free/reservation</string>
+<key>tel</key>
+<string>+33 6 17 80 23 11</string>
+<key>email</key>
+<string>parislife.information@gmail.com</string>
+<key>url</key>
+<string></string>
+<key>comment</key>
+<string>メゾン・オランジュはシェアタイプのゲストハウス。
+ご予約なしに当ゲストハウスに直接いらっしゃっても、スタッフは常駐しておりませんので、即座の対応は致しかねます。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>302</key>
+<dict>
+<key>kind</key>
+<string>ホームステイ</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>フランス</string>
+<key>hotelName</key>
+<string>VILLA MISTRAL</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>お１人様　朝夕食付き　３泊４日　２００ユーロ 
+お１人様　朝夕食付き　７泊８日　３８０ユーロ　
+ 
+お２人様　朝夕食付き　３泊４日　３６０ユーロ   お２人様　朝夕食付き　７泊８日　７５０ユーロ </string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string>無料WiFiあり</string>
+<key>pickup</key>
+<string>我が家の最寄り駅または最寄りバス停までは、私たちの時間が合う限り、無料で車にて送迎させていただいております。（最寄り駅はLA CRAU駅・ラ クロと読みます）
+</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリー、プールなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>https://mistral83.jimdo.com/</string>
+<key>tel</key>
+<string>ご予約時お知らせ。</string>
+<key>email</key>
+<string>malaurent.yuka@free.fr</string>
+<key>url</key>
+<string>http://www.geocities.co.jp/SweetHome-Green/8563/</string>
+<key>comment</key>
+<string>ご宿泊頂くのは南仏在住１７年、現地観光局勤務の日本人とフランス人、子供２人（高校生と中学生）の家庭です。毎日、仏語と日本語が飛び交います。高台の住宅地にあるプール付きの一軒家でのホームステイ。南仏イエール隣町です。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>303</key>
+<dict>
+<key>kind</key>
+<string>ホームステイ</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>フランス</string>
+<key>hotelName</key>
+<string>VILLA MISTRAL</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>お１人様　朝夕食付き　３泊４日　２００ユーロ 
+お１人様　朝夕食付き　７泊８日　３８０ユーロ　
+ 
+お２人様　朝夕食付き　３泊４日　３６０ユーロ   お２人様　朝夕食付き　７泊８日　７５０ユーロ </string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string>無料WiFiあり</string>
+<key>pickup</key>
+<string>我が家の最寄り駅または最寄りバス停までは、私たちの時間が合う限り、無料で車にて送迎させていただいております。（最寄り駅はLA CRAU駅・ラ クロと読みます）
+</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリー、プールなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>https://mistral83.jimdo.com/</string>
+<key>tel</key>
+<string>ご予約時お知らせ。</string>
+<key>email</key>
+<string>malaurent.yuka@free.fr</string>
+<key>url</key>
+<string>http://www.geocities.co.jp/SweetHome-Green/8563/</string>
+<key>comment</key>
+<string>ご宿泊頂くのは南仏在住１７年、現地観光局勤務の日本人とフランス人、子供２人（高校生と中学生）の家庭です。毎日、仏語と日本語が飛び交います。高台の住宅地にあるプール付きの一軒家でのホームステイ。南仏イエール隣町です。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>311</key>
+<dict>
+<key>kind</key>
+<string>シェアハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>アップルハウス</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Room2-Bunk bed- ￡33/泊~ 
+Room3-Double bed- ￡29/泊~
+Room4-Single bed- ￡28/泊~</string>
+<key>rooms</key>
+<string>3</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-324）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>ロンドンでも最も安全なエリアの一つといわれ、日本人駐在員ご家族が多く住むエリアにあります。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>312</key>
+<dict>
+<key>kind</key>
+<string>シェアハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>ウエストアクトンハウス</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Room1 -Single×2 + Double- ￡31/泊~ 
+Room2-Bunk bed- ￡29/泊~
+Room3-Bunk bed- ￡29/泊~
+Room4-Double bed- ￡29/泊~
+Room5-Single bed- ￡28/泊 ~</string>
+<key>rooms</key>
+<string>5</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-325）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>ロンドンでも最も安全なエリアの一つといわれる、日本人駐在員ご家族が多く住むエリアにあります。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>313</key>
+<dict>
+<key>kind</key>
+<string>シェアハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>アクトンタウンハウス</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Room1-Single×3-
+ソファーセットエリア有  ￡33/泊~
+Room2-Single×2 ￡31/泊 ~
+Room3-Double bed- ￡30/泊~
+Room4-Single bed- ￡29/泊~
+Room5-Single bed- ￡28/泊~</string>
+<key>rooms</key>
+<string>5</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-326）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>ヒースロー空港から中心地へ向かう途中のアクトンタウン駅前0分、日本人駐在員ご家族が多く住む、ロンドンでも最も安全な地域といわれる場所にあります。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>314</key>
+<dict>
+<key>kind</key>
+<string>シェアハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>カムデンハウス</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Room2-Bunk bed- ￡37/泊~</string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-327）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>若者の街といわれるカムデンエリアにあります。ただし最寄駅は、カムデンタウン駅から高級住宅地方面へ1駅行ったチョークファーム駅ですので、周辺はレストラン街で落ち着いています。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>315</key>
+<dict>
+<key>kind</key>
+<string>シェアハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>スイスコテージハウス</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Room1-Single×2-
+別室キッチンダイニング、専用トイレ ￡43/泊~ 
+Room2-Double bed- ￡37/泊~
+Room3-Single bed- ￡37/泊~</string>
+<key>rooms</key>
+<string>3</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-328）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>在英日本人にもとても人気のあるスイスコテージにあります。センターかも近く、周辺にはレストランやスーパーなども多くて、生活にとても便利な街です。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>316</key>
+<dict>
+<key>kind</key>
+<string>シェアハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>ハイドパークハウス</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Room1-Double bed- ￡47/泊~
+Room2-Double+Single- ￡49/泊~
+Room3-Double bed- ￡48/泊~
+Room4-Double×2- ￡49/泊~
+Room5-Single bed×3- ￡49/泊~</string>
+<key>rooms</key>
+<string>5</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-329）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>ハイドパークハウスは、Zone1の宿で、中心地にあります。あのハイドパークまで徒歩1分という優雅な環境、2つの地下鉄駅が徒歩0～2分の距離にあり、バスも充実、レストランの多い目の前の通りは夜遅くまでにぎわっています。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>317</key>
+<dict>
+<key>kind</key>
+<string>ワンルームマンション</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>ウエストアクトンSTUDIO</string>
+<key>image</key>
+<integer>1</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string>なし？</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Single bed×2-  2名（3名） 
+家賃:  ￡273/週 （￡39/泊） 
+光熱費等 :￡6/泊 </string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-330）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>ロンドンで日本人駐在員ご家族が最も多く住む、閑静な住宅街にある、専用キッチン、シャワー・トイレ室、冷蔵庫や乾燥機付き洗濯機の備わったワンルーム物件。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>318</key>
+<dict>
+<key>kind</key>
+<string>ワンルームマンション</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>ノースアクトンフィールズSTUDIOⅠ </string>
+<key>image</key>
+<integer>3</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string>なし？</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>King bed(Single bed×2)-  2名（3名）
+家賃 : ￡273/週 （￡39/泊） 
+光熱費等 : ￡6/泊 </string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-331）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>2016年春にオープンした、ロンドンでは希な全くの新築物件。専用キッチン、バスタブ付きのバス・トイレ室、冷蔵庫や乾燥機付き洗濯機の備わった、窓からは広いお庭の見える南向きの明るい静かなワンルーム。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>319</key>
+<dict>
+<key>kind</key>
+<string>ワンルームマンション</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>ノースアクトンフィールズSTUDIO Ⅱ</string>
+<key>image</key>
+<integer>3</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string>なし？</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>King bed(Single bed×2)-   2名（3名） 家賃 : ￡273/週（￡39/泊）
+光熱費等 :  ￡6/泊</string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-332）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>1つの建物内に、前述のSTUDIO Ⅰと、このSTUDIO Ⅱがあります。ミラータイプの造りとして、2室は間取りも設備も同様ですが、STUDIO ⅠはBlack brownを基調としたシックなアレンジ、STUDIO Ⅱは白を基調としたスッキリとしたアレンジです。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>320</key>
+<dict>
+<key>kind</key>
+<string>ワンルームマンション</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>カムデンSTUDIO</string>
+<key>image</key>
+<integer>3</integer>
+<key>address</key>
+<string>住所などは、ご予約時お知らせ。
+（※地図は参考程度にお使いください。）</string>
+<key>map</key>
+<string>なし？</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Double+Single-   2名（3名）
+家賃 : ￡336/週（￡48/泊）
+光熱費等 :  ￡8/泊 </string>
+<key>rooms</key>
+<string>1</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>シャワー、トイレ、ランドリーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://www.londonapplehouse.com/yoyakutoiawase.html</string>
+<key>tel</key>
+<string>お急ぎの場合は、+44(0)7900-457-222（もしくは+44(0)7501-039-333）</string>
+<key>email</key>
+<string>info@londonapplehouse.com</string>
+<key>url</key>
+<string>http://www.londonapplehouse.com/index.html</string>
+<key>comment</key>
+<string>ロンドナーに人気のエリアにある、新装したての広い物件。専用バスタブ付きバス・トイレ室、キッチンはお部屋とは別スペースになって</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>321</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>The Gendai Guest House</string>
+<key>image</key>
+<integer>5</integer>
+<key>address</key>
+<string>38 Albany Street LONDON NW1 4EA United Kingdom</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>シングルルーム 全3室
+58ポンド＋税 20%
+
+ツインルーム 全3室
+88ポンド＋税 20%
+
+ダブルルーム 全1室
+88ポンド＋税 20%
+
+ファミリールーム 全1室
+120ポンド（3名様）、130ポンド（4名様）＋税 20%</string>
+<key>rooms</key>
+<string>8</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>あり</string>
+<key>equipment</key>
+<string>バス、トイレ、ランドリー、電話、ドライヤーなど</string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>https://www.gendai-guesthouse.co.uk/book.html</string>
+<key>tel</key>
+<string>+44-(0)20 7387 9125　</string>
+<key>email</key>
+<string>ggh@gendai.co.uk </string>
+<key>url</key>
+<string>https://www.gendai-guesthouse.co.uk/</string>
+<key>comment</key>
+<string>快適 ロンドンの日本人宿</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>322</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>ハムステッドグリーン・ゲストハウス</string>
+<key>image</key>
+<integer>4</integer>
+<key>address</key>
+<string>122C Finchley Road, London, NW3 5HT
+</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>シングルルーム 
+Room1 £66＋VAT
+Room3 £77＋VAT
+Room6 £72＋VAT
+Room7 £77＋VAT
+
+ツインルーム 
+Room2 £110＋VAT
+Room4 £105＋VAT
+Room5 £115＋VAT
+Room8 £95＋VAT
+Room10 £95＋VAT
+Room11 £115＋VAT
+
+(1部屋1泊の料金)</string>
+<key>rooms</key>
+<string>11</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、ランドリー、電話、ドライヤー,など</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>https://www.london-tokyo.co.uk/guesthouse_contact.php</string>
+<key>tel</key>
+<string>0044(0)20-7431-4550 
+月〜金 9:00〜18:00（土日祝休）</string>
+<key>email</key>
+<string> hampstead@london-tokyo.co.uk</string>
+<key>url</key>
+<string>http://www.london-tokyo.co.uk/guesthouse.php</string>
+<key>comment</key>
+<string>ハムステッドグリーンは淡い色で統一され、清潔でゆったりした室内。広い駐車場も完備して、長期短期を問わず快適にご滞在いただけます。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>323</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>ハイドパークグリーン・ゲストハウス</string>
+<key>image</key>
+<integer>4</integer>
+<key>address</key>
+<string>53 Inverness Terrace, London W2 3JN</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>シングルルーム
+Room2 £77+VAT 
+Room3 £83+VAT 
+Room5 £77+VAT 
+Room6 £66+VAT 
+Room7 £66+VAT 
+Room8 £83+VAT 
+Room10 £77+VAT
+(1部屋1泊の料金)
+
+ツインルーム 
+Room9 £100+VAT 
+(1部屋1泊の料金)
+
+ファミリールーム Room1 
+£138+VAT
+(お二人様での料金) 
+
+スイートルーム Room4 
+£193+VAT
+(お二人様での料金)</string>
+<key>rooms</key>
+<string>10</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、ランドリー、電話、ドライヤー、駐車場など</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>https://www.london-tokyo.co.uk/guesthouse_contact.php</string>
+<key>tel</key>
+<string>0044(0)20-7243-1003
+月〜金 9:00〜18:00（土日祝休）</string>
+<key>email</key>
+<string>hydepark@london-tokyo.co.uk</string>
+<key>url</key>
+<string>http://www.london-tokyo.co.uk/guesthouse2.php</string>
+<key>comment</key>
+<string>ハイドパークグリーンはビクトリア様式の建物。この周辺は国際色豊かなレストランやデパート、ショップ、スーパーマーケット等が揃う人気のエリアです。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>324</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string>ヨーロッパ</string>
+<key>country</key>
+<string>イギリス</string>
+<key>hotelName</key>
+<string>ウィークリーフラット・ゴルダーズグリーン</string>
+<key>image</key>
+<integer>4</integer>
+<key>address</key>
+<string>8 North End Road, London NW11 7PH</string>
+<key>map</key>
+<string></string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>シングルルーム：週￡350+VAT 
+Flat 1 4階フロントサイド（キッチン共同）
+Flat 2 4階リアサイド（キッチン共同）
+Flat 4 3階リアサイド（キッチン共同）
+
+ダブルルーム：週￡390+VAT
+Flat 3 3階フロントサイド（キッチン共同）</string>
+<key>rooms</key>
+<string>4</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バス、トイレ、ランドリー、電話、ドライヤーなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>https://www.london-tokyo.co.uk/guesthouse_contact.php</string>
+<key>tel</key>
+<string>0044(0)20-8455-7544
+月〜金 9:00〜18:00</string>
+<key>email</key>
+<string>golders@london-tokyo.co.uk</string>
+<key>url</key>
+<string>http://www.london-tokyo.co.uk/weeklyflat.php</string>
+<key>comment</key>
+<string>地下鉄ノーザンラインのゴルダーズグリーン駅前、徒歩1分の便利な場所にあり、日本食レストラン、日本食料品店、銀行、生活に大変便利なエリアです。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>330</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>スペイン</string>
+<key>hotelName</key>
+<string>Puchi Chiquito</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Gran Via 576 ,
+3 Barcelona 
+08011 Spain</string>
+<key>map</key>
+<string>41.384329
+2.161936</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>扇風機完備：
+
+シングル：
+一泊42ユーロ（4連泊以上からは41ユーロ、8連泊以上からは40ユーロ）
+全室エアコン＆扇風機完備：
+シングル グランデ：
+一泊47ユーロ（4連泊以上からは46ユーロ、8連泊以上からは45ユーロ）
+ダブルルーム：
+一泊63ユーロ（4連泊以上からは62ユーロ、8連泊以上からは61ユーロ）
+ツインルーム：
+一泊66ユーロ（4連泊以上からは65ユーロ、8連泊以上からは64ユーロ）
+トリプルルーム：
+一泊93ユーロ（4連泊以上からは90ユーロ、8連泊以上からは87ユーロ）
+１ベット(三人シェアルーム／男女混合)：
+一泊31.50ユーロ（4連泊以上からは30.50ユーロ、8連泊以上からは29.50ユーロ）
+１ベット(女性専用シェアルーム)
+一泊31.50ユーロ（4連泊以上からは30.50ユーロ、8連泊以上からは29.50ユーロ）</string>
+<key>rooms</key>
+<string>12</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string>なし</string>
+<key>equipment</key>
+<string>サロン
+キッチン
+フリーコーヒー＆ティー
+ボディシャンプー
+ドライヤー完備
+バスタオル
+シャワー＆トイレ
+冷蔵庫
+エレベーター完備
+テラス
+暖房
+扇風機
+エアコンなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>https://puchichiquito.wordpress.com/contact/</string>
+<key>tel</key>
+<string>93 323 4706(スペイン国内) 
++34 93 323 4706(スペイン国外)</string>
+<key>email</key>
+<string></string>
+<key>url</key>
+<string>https://www.emailmeform.com/builder/form/28hbr0vsSueccX0909</string>
+<key>comment</key>
+<string>プチ チキート／Puchi Chiquitoは、
+バルセロナの中心に位置し、
+バルセロナ観光に最適で抜群なロケーションです。
+
+各部屋は日当たりが良好。
+アクティブに動く為のベースとして
+滞在をしたい方や現地に住んでいるような感覚で
+滞在をしたい人にはオススメです。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>331</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string>ワイファイで見れない</string>
+<key>country</key>
+<string>スペイン</string>
+<key>hotelName</key>
+<string>FINCA LAS ENCINAS</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Casa Rural Finca Las Encinas,, Calle Partido de Los Juncares, 31, Los Juncares, 14979 Iznajar, Córdoba</string>
+<key>map</key>
+<string>37.297537
+-4.277241</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>シングル：６０ユーロ
+ダブル　：８０ユーロ</string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string></string>
+<key>reservation</key>
+<string></string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string></string>
+<key>email</key>
+<string></string>
+<key>url</key>
+<string></string>
+<key>comment</key>
+<string>イギリス人と日本人の夫婦オーナーが経営するB&amp;B。言語の心配なく、きめ細やかで温かななサービスに一瞬故郷に戻ったかのようにリラックスできるはず。おいしい料理や料理教室も魅力的。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>332</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>スペイン</string>
+<key>hotelName</key>
+<string>Hotel La Luna Blanca</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Pje. del Cerrillo, 2, 29620 Torremolinos, Málaga</string>
+<key>map</key>
+<string>36.36410
+-4. 30768</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>ダブル：130ユーロ
+</string>
+<key>rooms</key>
+<string>9</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>エアコン
+ランドリー
+レストランなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>https://www.hotellalunablanca.com/eng/contact-malaga-hotel/</string>
+<key>tel</key>
+<string>34952053711</string>
+<key>email</key>
+<string></string>
+<key>url</key>
+<string>
+https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
+<key>comment</key>
+<string>ルナブランカでホットのんびりアンダルシア満喫！
+
+ヨーロッパ各都市からダイレクト便で約２時間半　昼には地中海を見ながらシーフード料理に舌づつみ
+
+ホテルは地中海に面したコスタデルソルの中心地トレモリーノスという町にあります。最寄りのマラガ国際空港はパリやロンドンヨーロッパ主要都市からダイレクト便でひとっ飛び。空港からは車で10分、電車で１５分、海岸やシーフードレストラン街も近く徒歩8分、又20分ほど歩くと優雅なヨットハーバーや町の中心に行くことができます。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>333</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>スペイン</string>
+<key>hotelName</key>
+<string>Patio granada</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Calle Ánimas, 1, 18009 Granada, スペイン</string>
+<key>map</key>
+<string>37.176372、
+-3.595459
+</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>個室　小:28ユーロ/日～
+個室　大:30ユーロ/日～
+二人部屋:42ユーロ/日～
+三人部屋:48ユーロ/日～
+ドミトリー（相部屋）:19ユーロ/日</string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string></string>
+<key>reservation</key>
+<string>HP,メール</string>
+<key>reservation_URL</key>
+<string>http://patiogranada.com/contact</string>
+<key>tel</key>
+<string>34627819891</string>
+<key>email</key>
+<string>granadarco@hotmail.com</string>
+<key>url</key>
+<string>http://patiogranada.com/</string>
+<key>comment</key>
+<string>ゲストハウス・パティオ・グラナダ（Guesthouse Patio Granada ）は、日本語で安心してお問合せいただける格安・快適な日本人宿です。ユネスコ世界遺産アルハンブラ宮殿のある美しい街グラナダのごく中心地にあるため主要観光スポット、バル、ショップ、アカデミア等ほぼ全てが徒歩圏。自炊もOK！長短期滞在可能な日本人経営の宿ですので、スペイン語に不慣れな方、学生、バックパッカー、女性一人旅の方でも安心です。フラメンコ鑑賞ツアーはじめ、ギター、語学など各種留学の手配もぜひお任せください</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>334</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>ポルトガル</string>
+<key>hotelName</key>
+<string>Castella　Do　Paulo</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Rua da Alfândega 120, 1100-016 Lisboa, ポルトガル</string>
+<key>map</key>
+<string>38.708797、
+-9.134466</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string></string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string></string>
+<key>reservation</key>
+<string></string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string>001-351-21-2214446</string>
+<key>email</key>
+<string>tomozinha@hotmail.com</string>
+<key>url</key>
+<string>http://www.sm.rim.or.jp/~tkono/index22.htm</string>
+<key>comment</key>
+<string></string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>335</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>ドイツ</string>
+<key>hotelName</key>
+<string>GAUTINGER HOF</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Pippinstraße 1, 82131 Gauting, ドイツ
+</string>
+<key>map</key>
+<string>48.072605、
+11.374032
+</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>シングル：79ユーロ〜
+ダブルルーム：110ユーロ～
+</string>
+<key>rooms</key>
+<string>22</string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>ケーブルテレビ
+直通電話
+エレベーター、地下駐車場
+冷蔵庫
+ヘアドライヤー
+インターネット接続　（無料無線 LAN）など</string>
+<key>reservation</key>
+<string>TEL、メール</string>
+<key>reservation_URL</key>
+<string>http://www.gautingerhof.de/index.php/resevierung-ja.html</string>
+<key>tel</key>
+<string>(+49) (0) 89/8 93 25 80</string>
+<key>email</key>
+<string>email@izumis.de</string>
+<key>url</key>
+<string>http://www.gautingerhof.de/index.php/hotel-ja.html</string>
+<key>comment</key>
+<string>大きな木々の茂ったビヤガーデンもある
+このホテルはガウティングの中心に
+位置しながらも大変静かな
+住宅街にあります。
+買い物にも便利なところです。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>336</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>ドイツ</string>
+<key>hotelName</key>
+<string>Ork Inn DusselDorf</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Friedrich-Ebert-Straße 30, 40210 Düsseldorf, ドイツ</string>
+<key>map</key>
+<string>51.221820、
+6.789428</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>二泊三日
+シングル：158～194ユーロ
+ダブル：230ﾕｰﾛ</string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>バスルーム・トイレ、キッチン、直通電話、インターネット設備
+テレビ（JSTV（日本語衛星放送）視聴可）や家具、キッチン設備、調理器具、電子レンジ、
+食器類など</string>
+<key>reservation</key>
+<string>TEL、メール</string>
+<key>reservation_URL</key>
+<string>http://www.oakinn.com/dus/index.html</string>
+<key>tel</key>
+<string>49(0)211 169797-0</string>
+<key>email</key>
+<string>dussel-office@akinn.com</string>
+<key>url</key>
+<string>http://www.oakinn.com/dus/index.html</string>
+<key>comment</key>
+<string>デュッセルドルフへのご出張、ご赴任、ご帰任の際に．．．オークインは皆様に快適なご滞在をサポート致します。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>337</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>スイス</string>
+<key>hotelName</key>
+<string>Hotel Bellary</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>CH.3818 Grindelwald,Berner Oberland</string>
+<key>map</key>
+<string>46.600058、
+8.053054
+</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Kinder 0-2 Jahre gratis
+Children 0-2 years free
+Zusatzbett für Kinder 3-8 Jahre 30
+Extra bed children 3-8 years 30
+Zusatzbett für Kinder 9-12 Jahre 40
+Extra bed children 9-12 years 40</string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string></string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://www.bellary.ch/indjp.php</string>
+<key>tel</key>
+<string>＋41 33 853 10 06</string>
+<key>email</key>
+<string>info@bellary.ch 　</string>
+<key>url</key>
+<string>http://www.bellary.ch/inden.php</string>
+<key>comment</key>
+<string>　 100 年以上のの歴史のあるホテル ・ べラリーは、1984 年に改装し全室バス又はシャワー、トイレ付きになりました。駅より徒歩 10 分、広い庭、静かな森の近く。アイガーを正面に見ながらの朝食、昼はお花畑の中をハイキング、夕食後のテラスでコーヒーを飲みながらの団欒。シャレー風ホテル ・ ベラリーは休養の場所として最適です。心から皆様のお出でをお待ちしてます。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>338</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>スイス</string>
+<key>hotelName</key>
+<string>Ryokan USAGIYAMA</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Hasenbergstr. 74
+8967 Widen
+Schweiz</string>
+<key>map</key>
+<string>47.378997、
+8.365018</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string></string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>-Japanisches Wohnzimmer (Tokonoma)
+-Japanisches Nebenzimmer (Ninoma)
+-Teezeremonie od. Studiozimmer
+-Grosse Terrase mit Jacuzzi Whirlpool gefüllt mit Badener Thermalwasser
+-Eigene Sauna
+-Klimaanlagen
+-Futon u.a.-Doppelbett 
+-Terrase 
+-Klimaanlagen
+-Sateliten TV inkl. JSTV
+-Badewanne+Duscheなど</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://www.hotel-hasenberg.ch/index.php?id=35&amp;L=3</string>
+<key>tel</key>
+<string>41 56 648 40 00</string>
+<key>email</key>
+<string>reservation@hotel-hasenberg.ch
+Opens window for sending email
+
+</string>
+<key>url</key>
+<string>http://www.hotel-
+hasenberg.ch/
+start_jp.html</string>
+<key>comment</key>
+<string></string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>339</key>
+<dict>
+<key>kind</key>
+<string></string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>スイス</string>
+<key>hotelName</key>
+<string>Villa Pipeline</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Niesenstrasse 9, 3600 Thun, Switzerland</string>
+<key>map</key>
+<string>46.751812、
+7.630329</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string></string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string></string>
+<key>reservation</key>
+<string></string>
+<key>reservation_URL</key>
+<string></string>
+<key>tel</key>
+<string>033-223-3141</string>
+<key>email</key>
+<string></string>
+<key>url</key>
+<string></string>
+<key>comment</key>
+<string>トゥーンＴｈｕｎへ　ようこそ
+
+　１７７９年　ゲーテが訪れました。メンデルスゾーン、ブラームス、リルケが滞在しました。創作の意欲を高めるためにでしょうか、創作に疲れた魂を休めるためだったのでしょうか。　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　そして若かりし頃のナポレオン三世も滞在した街です。
+
+　このアルプスと湖の街で　心身のリフレッシュはいかがですか。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>340</key>
+<dict>
+<key>kind</key>
+<string>ペンション</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>ポーランド</string>
+<key>hotelName</key>
+<string>Villa AKIKO</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>os. Ariake 1, 34-434 Debno Harklowa, ポーランド
+</string>
+<key>map</key>
+<string>49.472167、
+20.186572</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string></string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string>有：
+汽車、バス、タクシー、普通自動車、
+ジープ</string>
+<key>equipment</key>
+<string></string>
+<key>reservation</key>
+<string>TEL、メール</string>
+<key>reservation_URL</key>
+<string>http://www.akiko.pl/?lang=ja</string>
+<key>tel</key>
+<string>(48)601 454 765</string>
+<key>email</key>
+<string>akiko@akiko.pl</string>
+<key>url</key>
+<string>http://www.akiko.pl/?lang=ja</string>
+<key>comment</key>
+<string>ヴィラAKIKO‐山の上から見る世界はよりきれいです。
+
+ここには良いエネルギーとエコロジーが満ち溢れています。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>341</key>
+<dict>
+<key>kind</key>
+<string>ゲストハウス</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>ハンガリー</string>
+<key>hotelName</key>
+<string>さくらんぼ</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>H-1068 Budapest Benczúr u. 7</string>
+<key>map</key>
+<string>47.509485、
+19.072105
+</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>ドミトリー：20ユーロ
+トリプル：90ユーロ
+ツイン・ダブル（２人用）：70ユーロ
+シングル：40ユーロ
+</string>
+<key>rooms</key>
+<string>4</string>
+<key>wifi</key>
+<string></string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string></string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://sakuranbo-bp.com/reserve.html</string>
+<key>tel</key>
+<string>-5203</string>
+<key>email</key>
+<string>postmaster@sakuranbo.t-online.hu</string>
+<key>url</key>
+<string>http://sakuranbo-bp.com/index.html</string>
+<key>comment</key>
+<string>『さくらんぼ』は、1991年に
+日本人とハンガリー人が共同で
+設立した、ハンガリー・ブダペスト
+にある小さな民宿です。
+主に日本人のお客様を対象にしております。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>342</key>
+<dict>
+<key>kind</key>
+<string></string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>ハンガリー</string>
+<key>hotelName</key>
+<string>Andante hostel Budapest</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Budapest, Kertész u. 35, 1073 ハンガリー
+</string>
+<key>map</key>
+<string>47.501802、
+19.065788
+</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>ハイシーズン：
+ドミトリールーム　1３ユーロ
+オフシーズン：
+ドミトリールーム　1３ユーロ</string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>日本人スタッフの対応、冷蔵庫、炊飯器、キッチン使用可、ＤＶＤ、インターネット(無料）、無線LAN完備、男女別ホットシャワー、洗濯機、1500冊以上の漫画など</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://wp.andantehostel.com/</string>
+<key>tel</key>
+<string>0036-1-785-6191</string>
+<key>email</key>
+<string>info@andantehostel.com
+</string>
+<key>url</key>
+<string>http://wp.andantehostel.com/</string>
+<key>comment</key>
+<string></string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>343</key>
+<dict>
+<key>kind</key>
+<string>ペンション</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>ハンガリー</string>
+<key>hotelName</key>
+<string>ペンションセンテンドレ</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Vadrozsa u. 9, Szentendre, Hungary</string>
+<key>map</key>
+<string>47.691055、
+19.068510</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>１名様　１部屋　４０００円
+２名様　１部屋　７０００円
+３名様　１部屋　９０００円</string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string></string>
+<key>reservation</key>
+<string>メール</string>
+<key>reservation_URL</key>
+<string>http://pensionszentendre.blogspot.com/</string>
+<key>tel</key>
+<string></string>
+<key>email</key>
+<string>pensionszentendre@gmail.com</string>
+<key>url</key>
+<string>http://pensionszentendre.blogspot.com/</string>
+<key>comment</key>
+<string>ハンガリ－の首都ブダペストからちょっと離れた芸術の街センテンドレ。日本人とハンガリ－人夫婦が営んでいるアットホ－ムなペンションです。ヨ－ロッパの街でのんびりしたい方にお勧めです。</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+<key>344</key>
+<dict>
+<key>kind</key>
+<string>ホテル</string>
+<key>continent</key>
+<string></string>
+<key>country</key>
+<string>オランダ</string>
+<key>hotelName</key>
+<string>HOTEL MY HOME</string>
+<key>image</key>
+<integer>0</integer>
+<key>address</key>
+<string>Haarlemmerstraat 82
+1013 EV AMSTERDAM
+The Netherlands</string>
+<key>map</key>
+<string>52.380531、
+4.891552</string>
+<key>latitude</key>
+<string></string>
+<key>longitude</key>
+<string></string>
+<key>accommodation</key>
+<string>Double room (one bed) 75.00 
+95.00(Weekend)
+Twin room (two beds) 75.00 
+95.00(Weekend)
+Triple room (three single beds) 30.00 
+45.00 p.p.(Weekend)
+Four person room (4 single beds) 30.00 
+45.00 p.p.(Weekend)
+Private five person room (five single beds) 30.00 
+45.00 p.p.(Weekend)
+Five person dorm (five single beds) 30.00 
+45.00 p.p.(Weekend)</string>
+<key>rooms</key>
+<string></string>
+<key>wifi</key>
+<string>あり</string>
+<key>pickup</key>
+<string></string>
+<key>equipment</key>
+<string>supermarkets
+laundrette
+cafes
+pharmacy
+coffee shops
+restaurants など</string>
+<key>reservation</key>
+<string>HP</string>
+<key>reservation_URL</key>
+<string>http://www.amsterdambudgethotel.com/make-reservation/</string>
+<key>tel</key>
+<string>＋31 20 624 23 20</string>
+<key>email</key>
+<string>reservations@
+amsterdam
+budgethotel.com</string>
+<key>url</key>
+<string>http://www.amsterdambudgethotel.com/automatische-concepten/</string>
+<key>comment</key>
+<string>Amsterdam budget hotel My Home has been catering to guests from all over the world since 1948. Our budget hotel/ hostel is ideal for those on a small budget. It is centrally located in one of the most diverse shopping streets on the edge of the colorful Jordan. The budget hotel/hostel is within walking distance (5 to 7 minutes) of Central Station, as well as many other sights not to be missed during a trip to Amsterdam. Our street is home to many alternative clothes stores and every other amenity you could need.</string>
+<key>red</key>
+<string></string>
+<key>green</key>
+<string></string>
+<key>blue</key>
+<string></string>
+</dict>
+</dict>
+</plist>

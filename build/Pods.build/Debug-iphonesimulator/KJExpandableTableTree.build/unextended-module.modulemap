@@ -1,0 +1,10 @@
+framework module KJExpandableTableTree {
+  umbrella header "KJExpandableTableTree-umbrella.h"
+
+  export *
+  module * { export * }
+}
+
+module KJExpandableTableTree.__Swift {
+    exclude header "KJExpandableTableTree-Swift.h"
+}

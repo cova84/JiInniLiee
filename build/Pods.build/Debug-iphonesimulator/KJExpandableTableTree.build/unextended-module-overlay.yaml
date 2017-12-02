@@ -1,0 +1,13 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [{
+    'type': 'directory',
+    'name': '/Users/user/OneDrive/NexSeedプログラミング/Japanese Inn List App/Japanese Inn List/build/Debug-iphonesimulator/KJExpandableTableTree/KJExpandableTableTree.framework/Modules'
+    'contents': [{
+      'type': 'file',
+      'name': 'module.modulemap',
+      'external-contents': '/Users/user/OneDrive/NexSeedプログラミング/Japanese Inn List App/Japanese Inn List/build/Pods.build/Debug-iphonesimulator/KJExpandableTableTree.build/unextended-module.modulemap',
+    }]
+  }]
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Helvetica.ttc">
+            <string>Helvetica-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="50" id="KGk-i7-Jjw" customClass="ParentsTableViewCell" customModule="Japanese_Inn_List" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="48.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z71-ej-qtX">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <color key="backgroundColor" red="0.85098039215686272" green="0.49803921568627452" blue="0.14509803921568626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="49" id="EAV-XQ-GE9"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4tQ-Th-xTC">
+                        <rect key="frame" x="292" y="13" width="12" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="FlN-xj-Alu"/>
+                        </constraints>
+                        <state key="normal" image="plus.png"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Parent Custom Cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvO-eh-qtg">
+                        <rect key="frame" x="16" y="8" width="268" height="33"/>
+                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YvO-eh-qtg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="3" id="89W-rB-CD9"/>
+                    <constraint firstAttribute="trailing" secondItem="Z71-ej-qtX" secondAttribute="trailing" id="JHN-jy-6WD"/>
+                    <constraint firstItem="4tQ-Th-xTC" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="MPs-zY-RJI"/>
+                    <constraint firstItem="YvO-eh-qtg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="QM6-m4-JAy"/>
+                    <constraint firstItem="Z71-ej-qtX" firstAttribute="centerY" secondItem="4tQ-Th-xTC" secondAttribute="centerY" id="T19-nq-12o"/>
+                    <constraint firstItem="4tQ-Th-xTC" firstAttribute="leading" secondItem="YvO-eh-qtg" secondAttribute="trailing" constant="8" symbolic="YES" id="Uxs-is-ZGQ"/>
+                    <constraint firstItem="4tQ-Th-xTC" firstAttribute="baseline" secondItem="YvO-eh-qtg" secondAttribute="firstBaseline" id="e6t-fA-OhK"/>
+                    <constraint firstItem="YvO-eh-qtg" firstAttribute="centerY" secondItem="4tQ-Th-xTC" secondAttribute="centerY" id="oCP-96-uNM"/>
+                    <constraint firstItem="Z71-ej-qtX" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="pVx-t9-KK7"/>
+                    <constraint firstItem="Z71-ej-qtX" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="tPE-og-rUy"/>
+                    <constraint firstItem="Z71-ej-qtX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="w7H-Rw-RMh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="buttonState" destination="4tQ-Th-xTC" id="MWr-ch-UyZ"/>
+                <outlet property="imageviewBackground" destination="Z71-ej-qtX" id="xqq-Aq-AsN"/>
+                <outlet property="labelParentCell" destination="YvO-eh-qtg" id="iyE-oK-zG5"/>
+            </connections>
+            <point key="canvasLocation" x="-355" y="-140.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="plus.png" width="12" height="12"/>
+    </resources>
+</document>

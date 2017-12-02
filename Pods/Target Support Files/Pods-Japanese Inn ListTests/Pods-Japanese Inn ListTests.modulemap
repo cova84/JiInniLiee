@@ -1,0 +1,6 @@
+framework module Pods_Japanese_Inn_ListTests {
+  umbrella header "Pods-Japanese Inn ListTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

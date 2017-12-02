@@ -1,0 +1,886 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0EF8C4ECF1CEDA9A2E743C596B47B7A7 /* Pods-Japanese Inn ListTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F373793774005FF0C208252453ECD8E /* Pods-Japanese Inn ListTests-dummy.m */; };
+		30E9435EF2FD931A14837175FA3BA3B7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		3728520760F65FF135533B42A62DA222 /* Pods-Japanese Inn ListUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 881BAF68C6BDB45148AE0B09F8EFEA7C /* Pods-Japanese Inn ListUITests-dummy.m */; };
+		3CC784087274EBD70133D9A8CC14E710 /* KJExpandableTableTree-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 195A9CEC384B53EC27A76289298A6849 /* KJExpandableTableTree-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		525BB18048832FFCCA7341F3EC94B789 /* Pods-Japanese Inn List-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F69C670816CB06F3E614BB179DEB210 /* Pods-Japanese Inn List-dummy.m */; };
+		59833CCE8E15D9A1FFFB9A7FD8B976D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		5AFF6E7A973D99F9DB12B90EC828E1A6 /* KJTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E39FA3C11A18BCF078F28067587843B /* KJTree.swift */; };
+		828D2D8365A7CEFFA40F456E418C0A2A /* Pods-Japanese Inn ListTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B3D891E55DE2D28BA8E08AC31387B64 /* Pods-Japanese Inn ListTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC00E0042905DB5DF13B14F2D79B299E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B39F5C37971749DD48B9B3615DC669CD /* Pods-Japanese Inn ListUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E133868614B8E447CA124916C46639F /* Pods-Japanese Inn ListUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DDA32383E330989F712B2E54CCE83B7E /* Pods-Japanese Inn List-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F9F75285E2987A645EA0AF215E56E46 /* Pods-Japanese Inn List-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE10DD4210E95B7D404A7D3692AFA31F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E2184E124659D6943B9A72F48A4C7450 /* KJExpandableTableTree-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1445C4FF09DB2947C0A695F17309B59B /* KJExpandableTableTree-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F5E6F2F722790BEA07D905683F88322 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 51FA3A01B3912ADB57A1D2493C2EA409;
+			remoteInfo = KJExpandableTableTree;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D1FE76241FC7D5B0000786C3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00557A7694C2D1CD9E1D87EBF67EF9D1 /* Pods-Japanese Inn ListUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Japanese Inn ListUITests-resources.sh"; sourceTree = "<group>"; };
+		0076A76CFE45E306DBE010667778DD4B /* KJExpandableTableTree.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KJExpandableTableTree.xcconfig; sourceTree = "<group>"; };
+		04E1FBB5CD823E27A92B669D9A0125AE /* Pods-Japanese Inn ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese Inn ListTests.release.xcconfig"; sourceTree = "<group>"; };
+		0551E01CDCB8A82B9C52B2E6BD52C595 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1445C4FF09DB2947C0A695F17309B59B /* KJExpandableTableTree-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KJExpandableTableTree-dummy.m"; sourceTree = "<group>"; };
+		195A9CEC384B53EC27A76289298A6849 /* KJExpandableTableTree-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KJExpandableTableTree-umbrella.h"; sourceTree = "<group>"; };
+		1C1B0D9DC56C6F8D74C3CB50A078D8D1 /* Pods-Japanese Inn List-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese Inn List-acknowledgements.plist"; sourceTree = "<group>"; };
+		1E39FA3C11A18BCF078F28067587843B /* KJTree.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KJTree.swift; path = KJExpandableTableTree/Classes/KJTree.swift; sourceTree = "<group>"; };
+		24E9D1FDD48F2E89858CFB6050BEA984 /* KJExpandableTableTree.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = KJExpandableTableTree.modulemap; sourceTree = "<group>"; };
+		2BD422F21F09D0A23019420AE26965AA /* Pods-Japanese Inn ListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese Inn ListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2F9F75285E2987A645EA0AF215E56E46 /* Pods-Japanese Inn List-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese Inn List-umbrella.h"; sourceTree = "<group>"; };
+		38E840BC3A58EF43B7D8909C2C49BB83 /* Pods_Japanese_Inn_ListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_ListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EC90C3BD9CBCFC50359C1DC1B109461 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41BD2610733CFC4AB72BF8F6CAD7DA65 /* Pods-Japanese Inn ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese Inn ListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		44B73AB7BEBC0CC64ED60BCFFFF2FC7C /* Pods_Japanese_Inn_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46DEB7580A52F59C8587A5F165E59FC4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D546079A22166FCCB316513CAAC20B3 /* Pods-Japanese Inn List-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Japanese Inn List-resources.sh"; sourceTree = "<group>"; };
+		5E133868614B8E447CA124916C46639F /* Pods-Japanese Inn ListUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese Inn ListUITests-umbrella.h"; sourceTree = "<group>"; };
+		620C4433C618395CA91C642041AAAD87 /* Pods-Japanese Inn List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese Inn List.debug.xcconfig"; sourceTree = "<group>"; };
+		6258C63908748E34312D884F17847A8F /* KJExpandableTableTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KJExpandableTableTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6601EA808B78E4C7B714638C47E5B07D /* Pods-Japanese Inn ListUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Japanese Inn ListUITests-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6F69C670816CB06F3E614BB179DEB210 /* Pods-Japanese Inn List-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese Inn List-dummy.m"; sourceTree = "<group>"; };
+		7E89B1097EF30F938E39607D5EE2EC72 /* Pods-Japanese Inn ListUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese Inn ListUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7F90D6DCA5C41770260A54E23272F64B /* Pods-Japanese Inn List.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Japanese Inn List.modulemap"; sourceTree = "<group>"; };
+		81F64A67D2902E4829E6EE7282D4BA50 /* Pods-Japanese Inn List-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Japanese Inn List-frameworks.sh"; sourceTree = "<group>"; };
+		82C84953D53CCAAAEDEA167982767CDC /* Pods-Japanese Inn ListTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Japanese Inn ListTests.modulemap"; sourceTree = "<group>"; };
+		881BAF68C6BDB45148AE0B09F8EFEA7C /* Pods-Japanese Inn ListUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese Inn ListUITests-dummy.m"; sourceTree = "<group>"; };
+		8FF401400D8129F03E010E0A41DBD7C9 /* Pods-Japanese Inn List-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese Inn List-acknowledgements.markdown"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9AF8A007E66686DC058160751E8A10C0 /* Pods-Japanese Inn ListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese Inn ListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9B3D891E55DE2D28BA8E08AC31387B64 /* Pods-Japanese Inn ListTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Japanese Inn ListTests-umbrella.h"; sourceTree = "<group>"; };
+		9F373793774005FF0C208252453ECD8E /* Pods-Japanese Inn ListTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Japanese Inn ListTests-dummy.m"; sourceTree = "<group>"; };
+		9F4DAE81A0D74FAB8551D61ADBFFE330 /* KJExpandableTableTree-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KJExpandableTableTree-prefix.pch"; sourceTree = "<group>"; };
+		A4492141F043C79FCDF4735CDD49C6C9 /* Pods-Japanese Inn ListTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Japanese Inn ListTests-resources.sh"; sourceTree = "<group>"; };
+		AB3EC4B3F06819DDFE4817733558F56D /* Pods-Japanese Inn ListUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese Inn ListUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AE6FD389DE21BE6A987B4F8E268345DE /* Pods-Japanese Inn ListTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Japanese Inn ListTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C7EF195D724745BBFF820AE3D4932195 /* Pods-Japanese Inn ListTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Japanese Inn ListTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		D00B196BF1DA533341FEE3F1F7A94337 /* Pods-Japanese Inn ListUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-Japanese Inn ListUITests.modulemap"; sourceTree = "<group>"; };
+		D1FE761F1FC7D420000786C3 /* KJExpandableTableTree */ = {isa = PBXFileReference; lastKnownFileType = folder; path = KJExpandableTableTree; sourceTree = "<group>"; };
+		E8310CAB4566D3259C9E882325555608 /* Pods-Japanese Inn ListTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Japanese Inn ListTests-frameworks.sh"; sourceTree = "<group>"; };
+		ED0B731BA8CC3733A29F14AD9D08EF34 /* Pods_Japanese_Inn_ListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_ListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4C267A7DFEAF0F9707CBE5FDC5F7670 /* Pods-Japanese Inn List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Japanese Inn List.release.xcconfig"; sourceTree = "<group>"; };
+		F598BCF04CBC644A3D7E70575BB443DA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06FF44A99604D81923B995AE8AE95A57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC00E0042905DB5DF13B14F2D79B299E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BA3C66CD91D113C26214504FFF6211F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59833CCE8E15D9A1FFFB9A7FD8B976D8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54AC55553248C495CAAB10E991F76C1F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30E9435EF2FD931A14837175FA3BA3B7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E666D9FEDF99BF7C74E19AC73399E6EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE10DD4210E95B7D404A7D3692AFA31F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09FB5E09BDBF35B6177BA24D9FE6A01D /* Pods-Japanese Inn ListTests */ = {
+			isa = PBXGroup;
+			children = (
+				0551E01CDCB8A82B9C52B2E6BD52C595 /* Info.plist */,
+				82C84953D53CCAAAEDEA167982767CDC /* Pods-Japanese Inn ListTests.modulemap */,
+				AE6FD389DE21BE6A987B4F8E268345DE /* Pods-Japanese Inn ListTests-acknowledgements.markdown */,
+				C7EF195D724745BBFF820AE3D4932195 /* Pods-Japanese Inn ListTests-acknowledgements.plist */,
+				9F373793774005FF0C208252453ECD8E /* Pods-Japanese Inn ListTests-dummy.m */,
+				E8310CAB4566D3259C9E882325555608 /* Pods-Japanese Inn ListTests-frameworks.sh */,
+				A4492141F043C79FCDF4735CDD49C6C9 /* Pods-Japanese Inn ListTests-resources.sh */,
+				9B3D891E55DE2D28BA8E08AC31387B64 /* Pods-Japanese Inn ListTests-umbrella.h */,
+				41BD2610733CFC4AB72BF8F6CAD7DA65 /* Pods-Japanese Inn ListTests.debug.xcconfig */,
+				04E1FBB5CD823E27A92B669D9A0125AE /* Pods-Japanese Inn ListTests.release.xcconfig */,
+			);
+			name = "Pods-Japanese Inn ListTests";
+			path = "Target Support Files/Pods-Japanese Inn ListTests";
+			sourceTree = "<group>";
+		};
+		1CF3D724FF0795E95FE6C7D6F905044B /* Pods-Japanese Inn ListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F598BCF04CBC644A3D7E70575BB443DA /* Info.plist */,
+				D00B196BF1DA533341FEE3F1F7A94337 /* Pods-Japanese Inn ListUITests.modulemap */,
+				AB3EC4B3F06819DDFE4817733558F56D /* Pods-Japanese Inn ListUITests-acknowledgements.markdown */,
+				7E89B1097EF30F938E39607D5EE2EC72 /* Pods-Japanese Inn ListUITests-acknowledgements.plist */,
+				881BAF68C6BDB45148AE0B09F8EFEA7C /* Pods-Japanese Inn ListUITests-dummy.m */,
+				6601EA808B78E4C7B714638C47E5B07D /* Pods-Japanese Inn ListUITests-frameworks.sh */,
+				00557A7694C2D1CD9E1D87EBF67EF9D1 /* Pods-Japanese Inn ListUITests-resources.sh */,
+				5E133868614B8E447CA124916C46639F /* Pods-Japanese Inn ListUITests-umbrella.h */,
+				9AF8A007E66686DC058160751E8A10C0 /* Pods-Japanese Inn ListUITests.debug.xcconfig */,
+				2BD422F21F09D0A23019420AE26965AA /* Pods-Japanese Inn ListUITests.release.xcconfig */,
+			);
+			name = "Pods-Japanese Inn ListUITests";
+			path = "Target Support Files/Pods-Japanese Inn ListUITests";
+			sourceTree = "<group>";
+		};
+		2030F84E9A804AE3D52C5DAEE222C43A /* Pods-Japanese Inn List */ = {
+			isa = PBXGroup;
+			children = (
+				3EC90C3BD9CBCFC50359C1DC1B109461 /* Info.plist */,
+				7F90D6DCA5C41770260A54E23272F64B /* Pods-Japanese Inn List.modulemap */,
+				8FF401400D8129F03E010E0A41DBD7C9 /* Pods-Japanese Inn List-acknowledgements.markdown */,
+				1C1B0D9DC56C6F8D74C3CB50A078D8D1 /* Pods-Japanese Inn List-acknowledgements.plist */,
+				6F69C670816CB06F3E614BB179DEB210 /* Pods-Japanese Inn List-dummy.m */,
+				81F64A67D2902E4829E6EE7282D4BA50 /* Pods-Japanese Inn List-frameworks.sh */,
+				4D546079A22166FCCB316513CAAC20B3 /* Pods-Japanese Inn List-resources.sh */,
+				2F9F75285E2987A645EA0AF215E56E46 /* Pods-Japanese Inn List-umbrella.h */,
+				620C4433C618395CA91C642041AAAD87 /* Pods-Japanese Inn List.debug.xcconfig */,
+				F4C267A7DFEAF0F9707CBE5FDC5F7670 /* Pods-Japanese Inn List.release.xcconfig */,
+			);
+			name = "Pods-Japanese Inn List";
+			path = "Target Support Files/Pods-Japanese Inn List";
+			sourceTree = "<group>";
+		};
+		23C1A04398C2E515D473FBB1E348995B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B71171A8C499A2B0BBE71EEEB73B2CB3 /* KJExpandableTableTree */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7315332E6E0B1BF37006A7620A5715D4 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2030F84E9A804AE3D52C5DAEE222C43A /* Pods-Japanese Inn List */,
+				09FB5E09BDBF35B6177BA24D9FE6A01D /* Pods-Japanese Inn ListTests */,
+				1CF3D724FF0795E95FE6C7D6F905044B /* Pods-Japanese Inn ListUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				23C1A04398C2E515D473FBB1E348995B /* Pods */,
+				B89487E59D0A6DE1D571E3CEFFAACE30 /* Products */,
+				7315332E6E0B1BF37006A7620A5715D4 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B71171A8C499A2B0BBE71EEEB73B2CB3 /* KJExpandableTableTree */ = {
+			isa = PBXGroup;
+			children = (
+				1E39FA3C11A18BCF078F28067587843B /* KJTree.swift */,
+				C5FF49DDFFB69FF76CD708DFFC500A11 /* Support Files */,
+			);
+			path = KJExpandableTableTree;
+			sourceTree = "<group>";
+		};
+		B89487E59D0A6DE1D571E3CEFFAACE30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6258C63908748E34312D884F17847A8F /* KJExpandableTableTree.framework */,
+				44B73AB7BEBC0CC64ED60BCFFFF2FC7C /* Pods_Japanese_Inn_List.framework */,
+				38E840BC3A58EF43B7D8909C2C49BB83 /* Pods_Japanese_Inn_ListTests.framework */,
+				ED0B731BA8CC3733A29F14AD9D08EF34 /* Pods_Japanese_Inn_ListUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1FE761F1FC7D420000786C3 /* KJExpandableTableTree */,
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5FF49DDFFB69FF76CD708DFFC500A11 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46DEB7580A52F59C8587A5F165E59FC4 /* Info.plist */,
+				24E9D1FDD48F2E89858CFB6050BEA984 /* KJExpandableTableTree.modulemap */,
+				0076A76CFE45E306DBE010667778DD4B /* KJExpandableTableTree.xcconfig */,
+				1445C4FF09DB2947C0A695F17309B59B /* KJExpandableTableTree-dummy.m */,
+				9F4DAE81A0D74FAB8551D61ADBFFE330 /* KJExpandableTableTree-prefix.pch */,
+				195A9CEC384B53EC27A76289298A6849 /* KJExpandableTableTree-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/KJExpandableTableTree";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		56A63640CCCBE913A89A4B975FBACBB7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				828D2D8365A7CEFFA40F456E418C0A2A /* Pods-Japanese Inn ListTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F42A239D74B5C22DFC1E1977D209C0B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDA32383E330989F712B2E54CCE83B7E /* Pods-Japanese Inn List-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63BC40385D6365750AD55DF6BCFE6165 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B39F5C37971749DD48B9B3615DC669CD /* Pods-Japanese Inn ListUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8CC46DE7F084AE51D5DCAAB8DD10B132 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CC784087274EBD70133D9A8CC14E710 /* KJExpandableTableTree-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0FBC61A3E83EC209285BF6761CB88057 /* Pods-Japanese Inn ListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA635384FEFA86493EED88A39D0DACEC /* Build configuration list for PBXNativeTarget "Pods-Japanese Inn ListTests" */;
+			buildPhases = (
+				B93D82AB3B4B7291EAEF2D059ACAABFB /* Sources */,
+				1BA3C66CD91D113C26214504FFF6211F /* Frameworks */,
+				56A63640CCCBE913A89A4B975FBACBB7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Japanese Inn ListTests";
+			productName = "Pods-Japanese Inn ListTests";
+			productReference = 38E840BC3A58EF43B7D8909C2C49BB83 /* Pods_Japanese_Inn_ListTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4284659CA7CA9E57F9823CA22441E23B /* Pods-Japanese Inn ListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF46CC58957884FC9F08DE5A3F902661 /* Build configuration list for PBXNativeTarget "Pods-Japanese Inn ListUITests" */;
+			buildPhases = (
+				0ADD817A298E7817A93AA59E0FD1EFB1 /* Sources */,
+				54AC55553248C495CAAB10E991F76C1F /* Frameworks */,
+				63BC40385D6365750AD55DF6BCFE6165 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Japanese Inn ListUITests";
+			productName = "Pods-Japanese Inn ListUITests";
+			productReference = ED0B731BA8CC3733A29F14AD9D08EF34 /* Pods_Japanese_Inn_ListUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4A93FE5988EF0A6BCBB71DC70DC92006 /* Pods-Japanese Inn List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6BEB9B5B212EAA810C3E7F6A224A2719 /* Build configuration list for PBXNativeTarget "Pods-Japanese Inn List" */;
+			buildPhases = (
+				8AC78F0C79D774AD014F72F66188E07A /* Sources */,
+				E666D9FEDF99BF7C74E19AC73399E6EE /* Frameworks */,
+				5F42A239D74B5C22DFC1E1977D209C0B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7142CFDDA407EFD8F6E6C6AAA8128620 /* PBXTargetDependency */,
+			);
+			name = "Pods-Japanese Inn List";
+			productName = "Pods-Japanese Inn List";
+			productReference = 44B73AB7BEBC0CC64ED60BCFFFF2FC7C /* Pods_Japanese_Inn_List.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		51FA3A01B3912ADB57A1D2493C2EA409 /* KJExpandableTableTree */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FB9CFA1CBA4D62D16C544D7363C888B /* Build configuration list for PBXNativeTarget "KJExpandableTableTree" */;
+			buildPhases = (
+				38E23F9B123C92005125FEAA6BC5A719 /* Sources */,
+				06FF44A99604D81923B995AE8AE95A57 /* Frameworks */,
+				8CC46DE7F084AE51D5DCAAB8DD10B132 /* Headers */,
+				D1FE76241FC7D5B0000786C3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KJExpandableTableTree;
+			productName = KJExpandableTableTree;
+			productReference = 6258C63908748E34312D884F17847A8F /* KJExpandableTableTree.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+				TargetAttributes = {
+					51FA3A01B3912ADB57A1D2493C2EA409 = {
+						DevelopmentTeam = TM5B8GL954;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = B89487E59D0A6DE1D571E3CEFFAACE30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				51FA3A01B3912ADB57A1D2493C2EA409 /* KJExpandableTableTree */,
+				4A93FE5988EF0A6BCBB71DC70DC92006 /* Pods-Japanese Inn List */,
+				0FBC61A3E83EC209285BF6761CB88057 /* Pods-Japanese Inn ListTests */,
+				4284659CA7CA9E57F9823CA22441E23B /* Pods-Japanese Inn ListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ADD817A298E7817A93AA59E0FD1EFB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3728520760F65FF135533B42A62DA222 /* Pods-Japanese Inn ListUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		38E23F9B123C92005125FEAA6BC5A719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2184E124659D6943B9A72F48A4C7450 /* KJExpandableTableTree-dummy.m in Sources */,
+				5AFF6E7A973D99F9DB12B90EC828E1A6 /* KJTree.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AC78F0C79D774AD014F72F66188E07A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				525BB18048832FFCCA7341F3EC94B789 /* Pods-Japanese Inn List-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B93D82AB3B4B7291EAEF2D059ACAABFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0EF8C4ECF1CEDA9A2E743C596B47B7A7 /* Pods-Japanese Inn ListTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7142CFDDA407EFD8F6E6C6AAA8128620 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = KJExpandableTableTree;
+			target = 51FA3A01B3912ADB57A1D2493C2EA409 /* KJExpandableTableTree */;
+			targetProxy = 5F5E6F2F722790BEA07D905683F88322 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		136688E99DF4C0F60BCC53930787042C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0076A76CFE45E306DBE010667778DD4B /* KJExpandableTableTree.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TM5B8GL954;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KJExpandableTableTree/KJExpandableTableTree-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KJExpandableTableTree/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KJExpandableTableTree/KJExpandableTableTree.modulemap";
+				PRODUCT_NAME = KJExpandableTableTree;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1D23278938ADF334174C5BF2A4B6B1B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		1F7898A0E9605A4C7DA1E4123516A8D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0076A76CFE45E306DBE010667778DD4B /* KJExpandableTableTree.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = TM5B8GL954;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/KJExpandableTableTree/KJExpandableTableTree-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/KJExpandableTableTree/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/KJExpandableTableTree/KJExpandableTableTree.modulemap";
+				PRODUCT_NAME = KJExpandableTableTree;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		582CFCCCB9087C15CC3044244C3C5EAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04E1FBB5CD823E27A92B669D9A0125AE /* Pods-Japanese Inn ListTests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese Inn ListTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Japanese_Inn_ListTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		995C3A53DEAA96B47E756185345E180D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		BE26CBA107B0EA33602915224901408A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AF8A007E66686DC058160751E8A10C0 /* Pods-Japanese Inn ListUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese Inn ListUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Japanese_Inn_ListUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		D03D4C800FC5A185AA137A7B67418135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 620C4433C618395CA91C642041AAAD87 /* Pods-Japanese Inn List.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese Inn List/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Japanese_Inn_List;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EBE2CDDFBA510C2F288599A41A94B5C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41BD2610733CFC4AB72BF8F6CAD7DA65 /* Pods-Japanese Inn ListTests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese Inn ListTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Japanese_Inn_ListTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EE5D154791175ABD9B1A81A48AB7AB22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2BD422F21F09D0A23019420AE26965AA /* Pods-Japanese Inn ListUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese Inn ListUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Japanese_Inn_ListUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F5FF2ADDEBB2DEB970F2D12D885FD8D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4C267A7DFEAF0F9707CBE5FDC5F7670 /* Pods-Japanese Inn List.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Japanese Inn List/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_Japanese_Inn_List;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FB9CFA1CBA4D62D16C544D7363C888B /* Build configuration list for PBXNativeTarget "KJExpandableTableTree" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				136688E99DF4C0F60BCC53930787042C /* Debug */,
+				1F7898A0E9605A4C7DA1E4123516A8D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				995C3A53DEAA96B47E756185345E180D /* Debug */,
+				1D23278938ADF334174C5BF2A4B6B1B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6BEB9B5B212EAA810C3E7F6A224A2719 /* Build configuration list for PBXNativeTarget "Pods-Japanese Inn List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D03D4C800FC5A185AA137A7B67418135 /* Debug */,
+				F5FF2ADDEBB2DEB970F2D12D885FD8D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF46CC58957884FC9F08DE5A3F902661 /* Build configuration list for PBXNativeTarget "Pods-Japanese Inn ListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE26CBA107B0EA33602915224901408A /* Debug */,
+				EE5D154791175ABD9B1A81A48AB7AB22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA635384FEFA86493EED88A39D0DACEC /* Build configuration list for PBXNativeTarget "Pods-Japanese Inn ListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE2CDDFBA510C2F288599A41A94B5C0 /* Debug */,
+				582CFCCCB9087C15CC3044244C3C5EAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

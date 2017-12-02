@@ -1,0 +1,5 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "3ffbf87b6866d4097d95a3695585d9da"
+build_time: [1510975667, 675829000]
+inputs:
+  "/Users/user/OneDrive/NexSeed\u30D5\u309A\u30ED\u30AF\u3099\u30E9\u30DF\u30F3\u30AF\u3099/Japanese Inn List App/Japanese Inn List/Pods/KJExpandableTableTree/KJExpandableTableTree/Classes/KJTree.swift": [1510756022, 0]

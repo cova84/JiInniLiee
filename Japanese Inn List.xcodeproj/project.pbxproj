@@ -1,0 +1,937 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		650A5E5C4D3B0156D22BAF34 /* Pods_Japanese_Inn_ListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF8B10278A521C6C90959D0 /* Pods_Japanese_Inn_ListTests.framework */; };
+		D11709101FBE997500F4B3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D117090E1FBE997500F4B3E4 /* Main.storyboard */; };
+		D11BC1E01FD2327A001799EA /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BC1DE1FD23279001799EA /* Favorite+CoreDataProperties.swift */; };
+		D11BC1E11FD2327A001799EA /* Favorite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BC1DF1FD2327A001799EA /* Favorite+CoreDataClass.swift */; };
+		D126E3811FC2823400FF0DE1 /* ParentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D126E37B1FC2823400FF0DE1 /* ParentsTableViewCell.swift */; };
+		D126E3821FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D126E37C1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift */; };
+		D126E3831FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D126E37D1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib */; };
+		D126E3841FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D126E37E1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift */; };
+		D126E3851FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D126E37F1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib */; };
+		D126E3861FC2823400FF0DE1 /* ParentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D126E3801FC2823400FF0DE1 /* ParentsTableViewCell.xib */; };
+		D130F2621FCEF4A2008D0513 /* customCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D130F2611FCEF4A2008D0513 /* customCellTableViewCell.swift */; };
+		D14467631FCE578900814D1C /* MapKeyStorageMKPA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14467621FCE578900814D1C /* MapKeyStorageMKPA.swift */; };
+		D14467651FCE60E900814D1C /* MapKeyStorageMKAV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14467641FCE60E900814D1C /* MapKeyStorageMKAV.swift */; };
+		D184AF491FD2E6690089DB39 /* infoLink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D184AF451FD2E6690089DB39 /* infoLink.jpg */; };
+		D184AF4A1FD2E6690089DB39 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = D184AF461FD2E6690089DB39 /* minus.png */; };
+		D184AF4B1FD2E6690089DB39 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D184AF471FD2E6690089DB39 /* plus.png */; };
+		D184AF4C1FD2E6690089DB39 /* sampleHotelImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D184AF481FD2E6690089DB39 /* sampleHotelImage.jpg */; };
+		D18D90CC1FD28E37005AF348 /* DetailedCell_W.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18D90CB1FD28E37005AF348 /* DetailedCell_W.xib */; };
+		D18F48551FC4722200535881 /* favoriteCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D18F48531FC4722200535881 /* favoriteCoreData.xcdatamodeld */; };
+		D19AEF881FC731840080ACC0 /* hotel_list_Detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = D19AEF871FC731840080ACC0 /* hotel_list_Detail.plist */; };
+		D1D23C2C1FBCB426009D3895 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D23C2B1FBCB426009D3895 /* AppDelegate.swift */; };
+		D1D23C2E1FBCB426009D3895 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D23C2D1FBCB426009D3895 /* FirstViewController.swift */; };
+		D1D23C301FBCB426009D3895 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D23C2F1FBCB426009D3895 /* SecondViewController.swift */; };
+		D1D23C351FBCB426009D3895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1D23C341FBCB426009D3895 /* Assets.xcassets */; };
+		D1D23C431FBCB426009D3895 /* Japanese_Inn_ListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D23C421FBCB426009D3895 /* Japanese_Inn_ListTests.swift */; };
+		D1D23C4E1FBCB426009D3895 /* Japanese_Inn_ListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D23C4D1FBCB426009D3895 /* Japanese_Inn_ListUITests.swift */; };
+		D1D23C5C1FBCB867009D3895 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D23C5B1FBCB867009D3895 /* ThirdViewController.swift */; };
+		D1D23C5E1FBCB882009D3895 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D23C5D1FBCB882009D3895 /* FourthViewController.swift */; };
+		D1D23C641FBCBD13009D3895 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D23C631FBCBD13009D3895 /* DetailView.swift */; };
+		D1D7343C1FD247800092F001 /* ReservationCell_W.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D7343B1FD247800092F001 /* ReservationCell_W.swift */; };
+		D1D7343E1FD2479C0092F001 /* ReservationCell_G.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D7343D1FD2479C0092F001 /* ReservationCell_G.swift */; };
+		D1D734401FD247AD0092F001 /* DetailedCell_G.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D7343F1FD247AD0092F001 /* DetailedCell_G.swift */; };
+		D1D734421FD247C30092F001 /* DetailedCell_W.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1D734411FD247C30092F001 /* DetailedCell_W.swift */; };
+		D1FE761C1FC7C471000786C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FE761B1FC7C471000786C3 /* LaunchScreen.storyboard */; };
+		D1FEAD321FCA978600E25738 /* hotel_list_Top.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1FEAD311FCA978600E25738 /* hotel_list_Top.plist */; };
+		D1FEAD341FCAADCD00E25738 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = D1FEAD331FCAADCD00E25738 /* minus.png */; };
+		E07F0054C71539E0DDBF47E3 /* Pods_Japanese_Inn_ListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D372ECE9E429B036752DAE /* Pods_Japanese_Inn_ListUITests.framework */; };
+		EC859E77DECC32464D4DEA55 /* Pods_Japanese_Inn_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD72F3D9F8DC70C24A3A6A2 /* Pods_Japanese_Inn_List.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D1D23C3F1FBCB426009D3895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1D23C201FBCB426009D3895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1D23C271FBCB426009D3895;
+			remoteInfo = "Japanese Inn List";
+		};
+		D1D23C4A1FBCB426009D3895 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1D23C201FBCB426009D3895 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D1D23C271FBCB426009D3895;
+			remoteInfo = "Japanese Inn List";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D18DF5CA1FC809730094C260 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		231F72BE844036EE7825730F /* Pods-Japanese Inn List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List.debug.xcconfig"; sourceTree = "<group>"; };
+		6632F9CC127594A2FF3F903C /* Pods-Japanese Inn ListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn ListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		6817DAAAD79BE22A8567594C /* Pods-Japanese Inn ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn ListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests.release.xcconfig"; sourceTree = "<group>"; };
+		90D372ECE9E429B036752DAE /* Pods_Japanese_Inn_ListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_ListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		973357B2BE6170B29DC6D6DC /* Pods-Japanese Inn ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn ListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AAD72F3D9F8DC70C24A3A6A2 /* Pods_Japanese_Inn_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D117090F1FBE997500F4B3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D11BC1DE1FD23279001799EA /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D11BC1DF1FD2327A001799EA /* Favorite+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D126E37B1FC2823400FF0DE1 /* ParentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsTableViewCell.swift; sourceTree = "<group>"; };
+		D126E37C1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Childs2ndStageTableViewCell.swift; sourceTree = "<group>"; };
+		D126E37D1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Childs3rdStageTableViewCell.xib; sourceTree = "<group>"; };
+		D126E37E1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Childs3rdStageTableViewCell.swift; sourceTree = "<group>"; };
+		D126E37F1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Childs2ndStageTableViewCell.xib; sourceTree = "<group>"; };
+		D126E3801FC2823400FF0DE1 /* ParentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentsTableViewCell.xib; sourceTree = "<group>"; };
+		D130F2611FCEF4A2008D0513 /* customCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCellTableViewCell.swift; sourceTree = "<group>"; };
+		D14467621FCE578900814D1C /* MapKeyStorageMKPA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKeyStorageMKPA.swift; sourceTree = "<group>"; };
+		D14467641FCE60E900814D1C /* MapKeyStorageMKAV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKeyStorageMKAV.swift; sourceTree = "<group>"; };
+		D184AF451FD2E6690089DB39 /* infoLink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = infoLink.jpg; sourceTree = SOURCE_ROOT; };
+		D184AF461FD2E6690089DB39 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		D184AF471FD2E6690089DB39 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = SOURCE_ROOT; };
+		D184AF481FD2E6690089DB39 /* sampleHotelImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleHotelImage.jpg; sourceTree = SOURCE_ROOT; };
+		D18D90CB1FD28E37005AF348 /* DetailedCell_W.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedCell_W.xib; sourceTree = "<group>"; };
+		D18F48541FC4722200535881 /* favoriteCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = favoriteCoreData.xcdatamodel; sourceTree = "<group>"; };
+		D19AEF871FC731840080ACC0 /* hotel_list_Detail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hotel_list_Detail.plist; sourceTree = SOURCE_ROOT; };
+		D1D23C281FBCB426009D3895 /* Japanese Inn List.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Japanese Inn List.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D23C2B1FBCB426009D3895 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1D23C2D1FBCB426009D3895 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D1D23C2F1FBCB426009D3895 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D1D23C341FBCB426009D3895 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1D23C391FBCB426009D3895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D23C3E1FBCB426009D3895 /* Japanese Inn ListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Japanese Inn ListTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D23C421FBCB426009D3895 /* Japanese_Inn_ListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Japanese_Inn_ListTests.swift; sourceTree = "<group>"; };
+		D1D23C441FBCB426009D3895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D23C491FBCB426009D3895 /* Japanese Inn ListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Japanese Inn ListUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1D23C4D1FBCB426009D3895 /* Japanese_Inn_ListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Japanese_Inn_ListUITests.swift; sourceTree = "<group>"; };
+		D1D23C4F1FBCB426009D3895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1D23C5B1FBCB867009D3895 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D1D23C5D1FBCB882009D3895 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		D1D23C631FBCBD13009D3895 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D1D7343B1FD247800092F001 /* ReservationCell_W.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationCell_W.swift; sourceTree = "<group>"; };
+		D1D7343D1FD2479C0092F001 /* ReservationCell_G.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationCell_G.swift; sourceTree = "<group>"; };
+		D1D7343F1FD247AD0092F001 /* DetailedCell_G.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCell_G.swift; sourceTree = "<group>"; };
+		D1D734411FD247C30092F001 /* DetailedCell_W.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCell_W.swift; sourceTree = "<group>"; };
+		D1FE761B1FC7C471000786C3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1FE762B1FC7D6B0000786C3 /* KJExpandableTableTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KJExpandableTableTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1FEAD311FCA978600E25738 /* hotel_list_Top.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hotel_list_Top.plist; sourceTree = SOURCE_ROOT; };
+		D1FEAD331FCAADCD00E25738 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = SOURCE_ROOT; };
+		D25FEFD6B6AA635A2EC3D943 /* Pods-Japanese Inn ListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn ListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DDF8B10278A521C6C90959D0 /* Pods_Japanese_Inn_ListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_ListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E720447742A72020819B7602 /* Pods-Japanese Inn List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn List.release.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1D23C251FBCB426009D3895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC859E77DECC32464D4DEA55 /* Pods_Japanese_Inn_List.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D23C3B1FBCB426009D3895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				650A5E5C4D3B0156D22BAF34 /* Pods_Japanese_Inn_ListTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D23C461FBCB426009D3895 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E07F0054C71539E0DDBF47E3 /* Pods_Japanese_Inn_ListUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B502C06EAC2212A83BC67322 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1FE762B1FC7D6B0000786C3 /* KJExpandableTableTree.framework */,
+				AAD72F3D9F8DC70C24A3A6A2 /* Pods_Japanese_Inn_List.framework */,
+				DDF8B10278A521C6C90959D0 /* Pods_Japanese_Inn_ListTests.framework */,
+				90D372ECE9E429B036752DAE /* Pods_Japanese_Inn_ListUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B5449BB28D5D93F138B106F2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				231F72BE844036EE7825730F /* Pods-Japanese Inn List.debug.xcconfig */,
+				E720447742A72020819B7602 /* Pods-Japanese Inn List.release.xcconfig */,
+				973357B2BE6170B29DC6D6DC /* Pods-Japanese Inn ListTests.debug.xcconfig */,
+				6817DAAAD79BE22A8567594C /* Pods-Japanese Inn ListTests.release.xcconfig */,
+				6632F9CC127594A2FF3F903C /* Pods-Japanese Inn ListUITests.debug.xcconfig */,
+				D25FEFD6B6AA635A2EC3D943 /* Pods-Japanese Inn ListUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D126E3871FC2823A00FF0DE1 /* TableviewCells */ = {
+			isa = PBXGroup;
+			children = (
+				D126E37B1FC2823400FF0DE1 /* ParentsTableViewCell.swift */,
+				D126E3801FC2823400FF0DE1 /* ParentsTableViewCell.xib */,
+				D126E37C1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift */,
+				D126E37F1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib */,
+				D126E37E1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift */,
+				D126E37D1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib */,
+			);
+			path = TableviewCells;
+			sourceTree = "<group>";
+		};
+		D184AF3B1FD2E5F60089DB39 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				D184AF451FD2E6690089DB39 /* infoLink.jpg */,
+				D184AF461FD2E6690089DB39 /* minus.png */,
+				D184AF471FD2E6690089DB39 /* plus.png */,
+				D184AF481FD2E6690089DB39 /* sampleHotelImage.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		D1D23C1F1FBCB426009D3895 = {
+			isa = PBXGroup;
+			children = (
+				D1D23C2A1FBCB426009D3895 /* Japanese Inn List */,
+				D1D23C411FBCB426009D3895 /* Japanese Inn ListTests */,
+				D1D23C4C1FBCB426009D3895 /* Japanese Inn ListUITests */,
+				D1D23C291FBCB426009D3895 /* Products */,
+				B5449BB28D5D93F138B106F2 /* Pods */,
+				B502C06EAC2212A83BC67322 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1D23C291FBCB426009D3895 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1D23C281FBCB426009D3895 /* Japanese Inn List.app */,
+				D1D23C3E1FBCB426009D3895 /* Japanese Inn ListTests.xctest */,
+				D1D23C491FBCB426009D3895 /* Japanese Inn ListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1D23C2A1FBCB426009D3895 /* Japanese Inn List */ = {
+			isa = PBXGroup;
+			children = (
+				D126E3871FC2823A00FF0DE1 /* TableviewCells */,
+				D1E9ACE81FCEA2D0005853C5 /* MyClass */,
+				D1D734381FD246B90092F001 /* CustomCellTableViewCell */,
+				D1D23C2B1FBCB426009D3895 /* AppDelegate.swift */,
+				D1D23C2D1FBCB426009D3895 /* FirstViewController.swift */,
+				D1D23C2F1FBCB426009D3895 /* SecondViewController.swift */,
+				D1D23C5B1FBCB867009D3895 /* ThirdViewController.swift */,
+				D1D23C5D1FBCB882009D3895 /* FourthViewController.swift */,
+				D1D23C631FBCBD13009D3895 /* DetailView.swift */,
+				D1D23C341FBCB426009D3895 /* Assets.xcassets */,
+				D117090E1FBE997500F4B3E4 /* Main.storyboard */,
+				D1FE761B1FC7C471000786C3 /* LaunchScreen.storyboard */,
+				D1FEAD331FCAADCD00E25738 /* minus.png */,
+				D184AF3B1FD2E5F60089DB39 /* image */,
+				D1FEAD311FCA978600E25738 /* hotel_list_Top.plist */,
+				D19AEF871FC731840080ACC0 /* hotel_list_Detail.plist */,
+				D1D23C391FBCB426009D3895 /* Info.plist */,
+				D18F48531FC4722200535881 /* favoriteCoreData.xcdatamodeld */,
+			);
+			path = "Japanese Inn List";
+			sourceTree = "<group>";
+		};
+		D1D23C411FBCB426009D3895 /* Japanese Inn ListTests */ = {
+			isa = PBXGroup;
+			children = (
+				D1D23C421FBCB426009D3895 /* Japanese_Inn_ListTests.swift */,
+				D1D23C441FBCB426009D3895 /* Info.plist */,
+			);
+			path = "Japanese Inn ListTests";
+			sourceTree = "<group>";
+		};
+		D1D23C4C1FBCB426009D3895 /* Japanese Inn ListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D1D23C4D1FBCB426009D3895 /* Japanese_Inn_ListUITests.swift */,
+				D1D23C4F1FBCB426009D3895 /* Info.plist */,
+			);
+			path = "Japanese Inn ListUITests";
+			sourceTree = "<group>";
+		};
+		D1D734381FD246B90092F001 /* CustomCellTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D130F2611FCEF4A2008D0513 /* customCellTableViewCell.swift */,
+				D1D7343F1FD247AD0092F001 /* DetailedCell_G.swift */,
+				D1D734411FD247C30092F001 /* DetailedCell_W.swift */,
+				D18D90CB1FD28E37005AF348 /* DetailedCell_W.xib */,
+				D1D7343B1FD247800092F001 /* ReservationCell_W.swift */,
+				D1D7343D1FD2479C0092F001 /* ReservationCell_G.swift */,
+			);
+			path = CustomCellTableViewCell;
+			sourceTree = "<group>";
+		};
+		D1E9ACE81FCEA2D0005853C5 /* MyClass */ = {
+			isa = PBXGroup;
+			children = (
+				D11BC1DF1FD2327A001799EA /* Favorite+CoreDataClass.swift */,
+				D11BC1DE1FD23279001799EA /* Favorite+CoreDataProperties.swift */,
+				D14467621FCE578900814D1C /* MapKeyStorageMKPA.swift */,
+				D14467641FCE60E900814D1C /* MapKeyStorageMKAV.swift */,
+			);
+			path = MyClass;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1D23C271FBCB426009D3895 /* Japanese Inn List */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1D23C521FBCB426009D3895 /* Build configuration list for PBXNativeTarget "Japanese Inn List" */;
+			buildPhases = (
+				CC6296CB0C6F8105023DDC2A /* [CP] Check Pods Manifest.lock */,
+				D1D23C241FBCB426009D3895 /* Sources */,
+				D1D23C251FBCB426009D3895 /* Frameworks */,
+				D1D23C261FBCB426009D3895 /* Resources */,
+				A012575D5A761D0DAA653204 /* [CP] Embed Pods Frameworks */,
+				F6332101ADCCDA6D7B64CF54 /* [CP] Copy Pods Resources */,
+				D18DF5CA1FC809730094C260 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Japanese Inn List";
+			productName = "Japanese Inn List";
+			productReference = D1D23C281FBCB426009D3895 /* Japanese Inn List.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D1D23C3D1FBCB426009D3895 /* Japanese Inn ListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1D23C551FBCB426009D3895 /* Build configuration list for PBXNativeTarget "Japanese Inn ListTests" */;
+			buildPhases = (
+				8F2C7079F6712F36C63C7EBE /* [CP] Check Pods Manifest.lock */,
+				D1D23C3A1FBCB426009D3895 /* Sources */,
+				D1D23C3B1FBCB426009D3895 /* Frameworks */,
+				D1D23C3C1FBCB426009D3895 /* Resources */,
+				4168DC6A5DEBB9411C0D29D6 /* [CP] Embed Pods Frameworks */,
+				F016CFE212EBA20FC4CA1B48 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1D23C401FBCB426009D3895 /* PBXTargetDependency */,
+			);
+			name = "Japanese Inn ListTests";
+			productName = "Japanese Inn ListTests";
+			productReference = D1D23C3E1FBCB426009D3895 /* Japanese Inn ListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D1D23C481FBCB426009D3895 /* Japanese Inn ListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1D23C581FBCB426009D3895 /* Build configuration list for PBXNativeTarget "Japanese Inn ListUITests" */;
+			buildPhases = (
+				827250B39D639F891D065029 /* [CP] Check Pods Manifest.lock */,
+				D1D23C451FBCB426009D3895 /* Sources */,
+				D1D23C461FBCB426009D3895 /* Frameworks */,
+				D1D23C471FBCB426009D3895 /* Resources */,
+				A6182C0A565275F18FF24D5D /* [CP] Embed Pods Frameworks */,
+				55AC08E1957022A02515C677 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D1D23C4B1FBCB426009D3895 /* PBXTargetDependency */,
+			);
+			name = "Japanese Inn ListUITests";
+			productName = "Japanese Inn ListUITests";
+			productReference = D1D23C491FBCB426009D3895 /* Japanese Inn ListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1D23C201FBCB426009D3895 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Yoshitomo Kobatashi";
+				TargetAttributes = {
+					D1D23C271FBCB426009D3895 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					D1D23C3D1FBCB426009D3895 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1D23C271FBCB426009D3895;
+					};
+					D1D23C481FBCB426009D3895 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D1D23C271FBCB426009D3895;
+					};
+				};
+			};
+			buildConfigurationList = D1D23C231FBCB426009D3895 /* Build configuration list for PBXProject "Japanese Inn List" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1D23C1F1FBCB426009D3895;
+			productRefGroup = D1D23C291FBCB426009D3895 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1D23C271FBCB426009D3895 /* Japanese Inn List */,
+				D1D23C3D1FBCB426009D3895 /* Japanese Inn ListTests */,
+				D1D23C481FBCB426009D3895 /* Japanese Inn ListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1D23C261FBCB426009D3895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D19AEF881FC731840080ACC0 /* hotel_list_Detail.plist in Resources */,
+				D1FEAD321FCA978600E25738 /* hotel_list_Top.plist in Resources */,
+				D1D23C351FBCB426009D3895 /* Assets.xcassets in Resources */,
+				D1FE761C1FC7C471000786C3 /* LaunchScreen.storyboard in Resources */,
+				D11709101FBE997500F4B3E4 /* Main.storyboard in Resources */,
+				D126E3861FC2823400FF0DE1 /* ParentsTableViewCell.xib in Resources */,
+				D184AF4B1FD2E6690089DB39 /* plus.png in Resources */,
+				D18D90CC1FD28E37005AF348 /* DetailedCell_W.xib in Resources */,
+				D1FEAD341FCAADCD00E25738 /* minus.png in Resources */,
+				D184AF4A1FD2E6690089DB39 /* minus.png in Resources */,
+				D184AF4C1FD2E6690089DB39 /* sampleHotelImage.jpg in Resources */,
+				D126E3851FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib in Resources */,
+				D126E3831FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib in Resources */,
+				D184AF491FD2E6690089DB39 /* infoLink.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D23C3C1FBCB426009D3895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D23C471FBCB426009D3895 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4168DC6A5DEBB9411C0D29D6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55AC08E1957022A02515C677 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		827250B39D639F891D065029 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Japanese Inn ListUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F2C7079F6712F36C63C7EBE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Japanese Inn ListTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A012575D5A761D0DAA653204 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/KJExpandableTableTree/KJExpandableTableTree.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KJExpandableTableTree.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6182C0A565275F18FF24D5D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC6296CB0C6F8105023DDC2A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Japanese Inn List-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F016CFE212EBA20FC4CA1B48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F6332101ADCCDA6D7B64CF54 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1D23C241FBCB426009D3895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D734421FD247C30092F001 /* DetailedCell_W.swift in Sources */,
+				D1D23C301FBCB426009D3895 /* SecondViewController.swift in Sources */,
+				D11BC1E01FD2327A001799EA /* Favorite+CoreDataProperties.swift in Sources */,
+				D14467651FCE60E900814D1C /* MapKeyStorageMKAV.swift in Sources */,
+				D1D23C641FBCBD13009D3895 /* DetailView.swift in Sources */,
+				D1D7343E1FD2479C0092F001 /* ReservationCell_G.swift in Sources */,
+				D1D7343C1FD247800092F001 /* ReservationCell_W.swift in Sources */,
+				D18F48551FC4722200535881 /* favoriteCoreData.xcdatamodeld in Sources */,
+				D1D23C2C1FBCB426009D3895 /* AppDelegate.swift in Sources */,
+				D1D23C5C1FBCB867009D3895 /* ThirdViewController.swift in Sources */,
+				D11BC1E11FD2327A001799EA /* Favorite+CoreDataClass.swift in Sources */,
+				D130F2621FCEF4A2008D0513 /* customCellTableViewCell.swift in Sources */,
+				D126E3821FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift in Sources */,
+				D1D23C2E1FBCB426009D3895 /* FirstViewController.swift in Sources */,
+				D126E3811FC2823400FF0DE1 /* ParentsTableViewCell.swift in Sources */,
+				D14467631FCE578900814D1C /* MapKeyStorageMKPA.swift in Sources */,
+				D1D734401FD247AD0092F001 /* DetailedCell_G.swift in Sources */,
+				D1D23C5E1FBCB882009D3895 /* FourthViewController.swift in Sources */,
+				D126E3841FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D23C3A1FBCB426009D3895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D23C431FBCB426009D3895 /* Japanese_Inn_ListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D23C451FBCB426009D3895 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1D23C4E1FBCB426009D3895 /* Japanese_Inn_ListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D1D23C401FBCB426009D3895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1D23C271FBCB426009D3895 /* Japanese Inn List */;
+			targetProxy = D1D23C3F1FBCB426009D3895 /* PBXContainerItemProxy */;
+		};
+		D1D23C4B1FBCB426009D3895 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D1D23C271FBCB426009D3895 /* Japanese Inn List */;
+			targetProxy = D1D23C4A1FBCB426009D3895 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D117090E1FBE997500F4B3E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D117090F1FBE997500F4B3E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1D23C501FBCB426009D3895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1D23C511FBCB426009D3895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1D23C531FBCB426009D3895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 231F72BE844036EE7825730F /* Pods-Japanese Inn List.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM5B8GL954;
+				INFOPLIST_FILE = "Japanese Inn List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "life-of.Japanese-Inn-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1D23C541FBCB426009D3895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E720447742A72020819B7602 /* Pods-Japanese Inn List.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM5B8GL954;
+				INFOPLIST_FILE = "Japanese Inn List/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "life-of.Japanese-Inn-List";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D1D23C561FBCB426009D3895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 973357B2BE6170B29DC6D6DC /* Pods-Japanese Inn ListTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM5B8GL954;
+				INFOPLIST_FILE = "Japanese Inn ListTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "life-of.Japanese-Inn-ListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Japanese Inn List.app/Japanese Inn List";
+			};
+			name = Debug;
+		};
+		D1D23C571FBCB426009D3895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6817DAAAD79BE22A8567594C /* Pods-Japanese Inn ListTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM5B8GL954;
+				INFOPLIST_FILE = "Japanese Inn ListTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "life-of.Japanese-Inn-ListTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Japanese Inn List.app/Japanese Inn List";
+			};
+			name = Release;
+		};
+		D1D23C591FBCB426009D3895 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6632F9CC127594A2FF3F903C /* Pods-Japanese Inn ListUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM5B8GL954;
+				INFOPLIST_FILE = "Japanese Inn ListUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "life-of.Japanese-Inn-ListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Japanese Inn List";
+			};
+			name = Debug;
+		};
+		D1D23C5A1FBCB426009D3895 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D25FEFD6B6AA635A2EC3D943 /* Pods-Japanese Inn ListUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TM5B8GL954;
+				INFOPLIST_FILE = "Japanese Inn ListUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "life-of.Japanese-Inn-ListUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Japanese Inn List";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1D23C231FBCB426009D3895 /* Build configuration list for PBXProject "Japanese Inn List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D23C501FBCB426009D3895 /* Debug */,
+				D1D23C511FBCB426009D3895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1D23C521FBCB426009D3895 /* Build configuration list for PBXNativeTarget "Japanese Inn List" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D23C531FBCB426009D3895 /* Debug */,
+				D1D23C541FBCB426009D3895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1D23C551FBCB426009D3895 /* Build configuration list for PBXNativeTarget "Japanese Inn ListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D23C561FBCB426009D3895 /* Debug */,
+				D1D23C571FBCB426009D3895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1D23C581FBCB426009D3895 /* Build configuration list for PBXNativeTarget "Japanese Inn ListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1D23C591FBCB426009D3895 /* Debug */,
+				D1D23C5A1FBCB426009D3895 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D18F48531FC4722200535881 /* favoriteCoreData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D18F48541FC4722200535881 /* favoriteCoreData.xcdatamodel */,
+			);
+			currentVersion = D18F48541FC4722200535881 /* favoriteCoreData.xcdatamodel */;
+			path = favoriteCoreData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D1D23C201FBCB426009D3895 /* Project object */;
+}

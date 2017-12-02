@@ -1,0 +1,860 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "KJTree"
+- "State"
+- "Node"
+- "Parent"
+- "Child"
+provides-nominal:
+- "21KJExpandableTableTree6KJTreeC"
+- "21KJExpandableTableTree6KJTreeC15ExpansionOptionO"
+- "21KJExpandableTableTree5StateO"
+- "21KJExpandableTableTree4NodeC"
+- "21KJExpandableTableTree6ParentC"
+- "21KJExpandableTableTree5ChildC"
+provides-member:
+- ["21KJExpandableTableTree6KJTreeC", ""]
+- ["21KJExpandableTableTree6KJTreeC15ExpansionOptionO", ""]
+- ["SS", ""]
+- ["21KJExpandableTableTree5StateO", ""]
+- ["21KJExpandableTableTree4NodeC", ""]
+- ["21KJExpandableTableTree6ParentC", ""]
+- ["21KJExpandableTableTree5ChildC", ""]
+- ["SS", "integerValue"]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!"
+- !private "!="
+- !private "+"
+- !private "+="
+- !private "-"
+- !private "-="
+- !private "..."
+- !private "..<"
+- "=="
+- !private ">"
+- !private "??"
+- !private "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- "BooleanLiteralType"
+- "CastingPrecedence"
+- "Child"
+- "IndexPath"
+- "Int"
+- "KJTree"
+- "NSArray"
+- !private "NSDictionary"
+- "NSInteger"
+- !private "NSString"
+- "Node"
+- "Parent"
+- "State"
+- "String"
+- "StringLiteralType"
+- "UITableView"
+- "UITableViewRowAnimation"
+- !private "UnicodeScalarType"
+depends-member:
+- !private ["Sa", "append"]
+- !private ["Sa", "contains"]
+- !private ["Sa", "count"]
+- !private ["Sa", "first"]
+- !private ["Sa", "index"]
+- !private ["Sa", "last"]
+- !private ["Sa", "removeAll"]
+- !private ["Sa", "removeFirst"]
+- !private ["Sa", "subscript"]
+- !private ["s23BidirectionalCollectionP", "append"]
+- !private ["s23BidirectionalCollectionP", "components"]
+- !private ["s23BidirectionalCollectionP", "contains"]
+- !private ["s23BidirectionalCollectionP", "count"]
+- !private ["s23BidirectionalCollectionP", "first"]
+- !private ["s23BidirectionalCollectionP", "index"]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["s23BidirectionalCollectionP", "integerValue"]
+- !private ["s23BidirectionalCollectionP", "last"]
+- !private ["s23BidirectionalCollectionP", "lowercased"]
+- !private ["s23BidirectionalCollectionP", "removeAll"]
+- !private ["s23BidirectionalCollectionP", "removeFirst"]
+- !private ["s23BidirectionalCollectionP", "row"]
+- !private ["s23BidirectionalCollectionP", "subscript"]
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["So15CALayerDelegateP", "deleteRows"]
+- !private ["So15CALayerDelegateP", "insertRows"]
+- !private ["So15CALayerDelegateP", "reloadRows"]
+- !private ["s7CVarArgP", "append"]
+- !private ["s7CVarArgP", "components"]
+- !private ["s7CVarArgP", "contains"]
+- !private ["s7CVarArgP", "count"]
+- !private ["s7CVarArgP", "deleteRows"]
+- !private ["s7CVarArgP", "first"]
+- !private ["s7CVarArgP", "hashValue"]
+- !private ["s7CVarArgP", "index"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "insertRows"]
+- !private ["s7CVarArgP", "integerValue"]
+- !private ["s7CVarArgP", "last"]
+- !private ["s7CVarArgP", "lowercased"]
+- !private ["s7CVarArgP", "object"]
+- !private ["s7CVarArgP", "reloadRows"]
+- !private ["s7CVarArgP", "removeAll"]
+- !private ["s7CVarArgP", "removeFirst"]
+- !private ["s7CVarArgP", "subscript"]
+- ["21KJExpandableTableTree5ChildC", "Bool"]
+- ["21KJExpandableTableTree5ChildC", "Child"]
+- ["21KJExpandableTableTree5ChildC", "String"]
+- !private ["21KJExpandableTableTree5ChildC", "arrayChilds"]
+- ["21KJExpandableTableTree5ChildC", "deinit"]
+- !private ["21KJExpandableTableTree5ChildC", "expandedRows"]
+- !private ["21KJExpandableTableTree5ChildC", "givenIndex"]
+- ["21KJExpandableTableTree5ChildC", "init"]
+- !private ["21KJExpandableTableTree5ChildC", "isVisibility"]
+- !private ["21KJExpandableTableTree5ChildC", "key"]
+- !private ["s10CollectionP", "append"]
+- !private ["s10CollectionP", "components"]
+- !private ["s10CollectionP", "contains"]
+- !private ["s10CollectionP", "count"]
+- !private ["s10CollectionP", "first"]
+- !private ["s10CollectionP", "index"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "integerValue"]
+- !private ["s10CollectionP", "last"]
+- !private ["s10CollectionP", "lowercased"]
+- !private ["s10CollectionP", "removeAll"]
+- !private ["s10CollectionP", "removeFirst"]
+- !private ["s10CollectionP", "row"]
+- !private ["s10CollectionP", "subscript"]
+- !private ["s10ComparableP", "components"]
+- !private ["s10ComparableP", "hashValue"]
+- ["s10ComparableP", "init"]
+- !private ["s10ComparableP", "integerValue"]
+- !private ["s10ComparableP", "lowercased"]
+- !private ["s10ComparableP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "append"]
+- !private ["s28CustomDebugStringConvertibleP", "components"]
+- !private ["s28CustomDebugStringConvertibleP", "contains"]
+- !private ["s28CustomDebugStringConvertibleP", "count"]
+- !private ["s28CustomDebugStringConvertibleP", "deleteRows"]
+- !private ["s28CustomDebugStringConvertibleP", "expand"]
+- !private ["s28CustomDebugStringConvertibleP", "first"]
+- !private ["s28CustomDebugStringConvertibleP", "index"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "insertRows"]
+- !private ["s28CustomDebugStringConvertibleP", "integerValue"]
+- !private ["s28CustomDebugStringConvertibleP", "last"]
+- !private ["s28CustomDebugStringConvertibleP", "lowercased"]
+- !private ["s28CustomDebugStringConvertibleP", "object"]
+- !private ["s28CustomDebugStringConvertibleP", "reloadRows"]
+- !private ["s28CustomDebugStringConvertibleP", "removeAll"]
+- !private ["s28CustomDebugStringConvertibleP", "removeFirst"]
+- !private ["s28CustomDebugStringConvertibleP", "row"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "components"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- !private ["s29CustomPlaygroundQuickLookableP", "integerValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "lowercased"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "append"]
+- !private ["s17CustomReflectableP", "components"]
+- !private ["s17CustomReflectableP", "contains"]
+- !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "expand"]
+- !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s17CustomReflectableP", "index"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "integerValue"]
+- !private ["s17CustomReflectableP", "last"]
+- !private ["s17CustomReflectableP", "lowercased"]
+- !private ["s17CustomReflectableP", "object"]
+- !private ["s17CustomReflectableP", "removeAll"]
+- !private ["s17CustomReflectableP", "removeFirst"]
+- !private ["s17CustomReflectableP", "row"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "append"]
+- !private ["s23CustomStringConvertibleP", "components"]
+- !private ["s23CustomStringConvertibleP", "contains"]
+- !private ["s23CustomStringConvertibleP", "count"]
+- !private ["s23CustomStringConvertibleP", "deleteRows"]
+- !private ["s23CustomStringConvertibleP", "first"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "index"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "insertRows"]
+- !private ["s23CustomStringConvertibleP", "integerValue"]
+- !private ["s23CustomStringConvertibleP", "last"]
+- !private ["s23CustomStringConvertibleP", "lowercased"]
+- !private ["s23CustomStringConvertibleP", "object"]
+- !private ["s23CustomStringConvertibleP", "reloadRows"]
+- !private ["s23CustomStringConvertibleP", "removeAll"]
+- !private ["s23CustomStringConvertibleP", "removeFirst"]
+- !private ["s23CustomStringConvertibleP", "row"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "append"]
+- !private ["s9DecodableP", "components"]
+- !private ["s9DecodableP", "contains"]
+- !private ["s9DecodableP", "count"]
+- !private ["s9DecodableP", "expand"]
+- !private ["s9DecodableP", "first"]
+- !private ["s9DecodableP", "hashValue"]
+- !private ["s9DecodableP", "index"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "integerValue"]
+- !private ["s9DecodableP", "last"]
+- !private ["s9DecodableP", "lowercased"]
+- !private ["s9DecodableP", "removeAll"]
+- !private ["s9DecodableP", "removeFirst"]
+- !private ["s9DecodableP", "row"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "append"]
+- !private ["s9EncodableP", "components"]
+- !private ["s9EncodableP", "contains"]
+- !private ["s9EncodableP", "count"]
+- !private ["s9EncodableP", "expand"]
+- !private ["s9EncodableP", "first"]
+- !private ["s9EncodableP", "hashValue"]
+- !private ["s9EncodableP", "index"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "integerValue"]
+- !private ["s9EncodableP", "last"]
+- !private ["s9EncodableP", "lowercased"]
+- !private ["s9EncodableP", "removeAll"]
+- !private ["s9EncodableP", "removeFirst"]
+- !private ["s9EncodableP", "row"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- !private ["s9EquatableP", "close"]
+- !private ["s9EquatableP", "components"]
+- !private ["s9EquatableP", "count"]
+- !private ["s9EquatableP", "deleteRows"]
+- !private ["s9EquatableP", "expand"]
+- ["s9EquatableP", "fade"]
+- ["s9EquatableP", "hashValue"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "insertRows"]
+- !private ["s9EquatableP", "integerValue"]
+- !private ["s9EquatableP", "lowercased"]
+- ["s9EquatableP", "none"]
+- !private ["s9EquatableP", "object"]
+- !private ["s9EquatableP", "open"]
+- !private ["s9EquatableP", "reloadRows"]
+- !private ["s9EquatableP", "row"]
+- !private ["s9EquatableP", "shrink"]
+- !private ["s9EquatableP", "subscript"]
+- ["s9EquatableP", ""]
+- ["21KJExpandableTableTree6KJTreeC15ExpansionOptionO", "__derived_enum_equals"]
+- ["21KJExpandableTableTree6KJTreeC15ExpansionOptionO", "deinit"]
+- ["21KJExpandableTableTree6KJTreeC15ExpansionOptionO", "expand"]
+- ["21KJExpandableTableTree6KJTreeC15ExpansionOptionO", "hashValue"]
+- ["21KJExpandableTableTree6KJTreeC15ExpansionOptionO", "none"]
+- ["21KJExpandableTableTree6KJTreeC15ExpansionOptionO", "shrink"]
+- !private ["s25ExpressibleByArrayLiteralP", "append"]
+- !private ["s25ExpressibleByArrayLiteralP", "contains"]
+- !private ["s25ExpressibleByArrayLiteralP", "count"]
+- !private ["s25ExpressibleByArrayLiteralP", "first"]
+- !private ["s25ExpressibleByArrayLiteralP", "index"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "last"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeAll"]
+- !private ["s25ExpressibleByArrayLiteralP", "removeFirst"]
+- !private ["s25ExpressibleByArrayLiteralP", "row"]
+- !private ["s25ExpressibleByArrayLiteralP", "subscript"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "object"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "components"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "integerValue"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s23ExpressibleByNilLiteralP", "expand"]
+- !private ["s26ExpressibleByStringLiteralP", "components"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "integerValue"]
+- !private ["s26ExpressibleByStringLiteralP", "lowercased"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "components"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "integerValue"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "lowercased"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- !private ["s8HashableP", "close"]
+- !private ["s8HashableP", "components"]
+- !private ["s8HashableP", "count"]
+- !private ["s8HashableP", "deleteRows"]
+- !private ["s8HashableP", "expand"]
+- ["s8HashableP", "fade"]
+- ["s8HashableP", "hashValue"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "insertRows"]
+- !private ["s8HashableP", "integerValue"]
+- !private ["s8HashableP", "lowercased"]
+- ["s8HashableP", "none"]
+- !private ["s8HashableP", "object"]
+- !private ["s8HashableP", "open"]
+- !private ["s8HashableP", "reloadRows"]
+- !private ["s8HashableP", "row"]
+- !private ["s8HashableP", "shrink"]
+- !private ["s8HashableP", "subscript"]
+- ["s8HashableP", ""]
+- !private ["10Foundation9IndexPathV", "init"]
+- !private ["10Foundation9IndexPathV", "row"]
+- !private ["Si", "hashValue"]
+- !private ["21KJExpandableTableTree6KJTreeC", "Bool"]
+- ["21KJExpandableTableTree6KJTreeC", "Child"]
+- ["21KJExpandableTableTree6KJTreeC", "ExpansionOption"]
+- ["21KJExpandableTableTree6KJTreeC", "IndexPath"]
+- ["21KJExpandableTableTree6KJTreeC", "Int"]
+- ["21KJExpandableTableTree6KJTreeC", "NSArray"]
+- !private ["21KJExpandableTableTree6KJTreeC", "NSDictionary"]
+- ["21KJExpandableTableTree6KJTreeC", "NSInteger"]
+- ["21KJExpandableTableTree6KJTreeC", "Node"]
+- ["21KJExpandableTableTree6KJTreeC", "Parent"]
+- !private ["21KJExpandableTableTree6KJTreeC", "State"]
+- ["21KJExpandableTableTree6KJTreeC", "String"]
+- ["21KJExpandableTableTree6KJTreeC", "UITableView"]
+- ["21KJExpandableTableTree6KJTreeC", "UITableViewRowAnimation"]
+- ["21KJExpandableTableTree6KJTreeC", "addChild"]
+- ["21KJExpandableTableTree6KJTreeC", "addChildsInTree"]
+- ["21KJExpandableTableTree6KJTreeC", "animation"]
+- !private ["21KJExpandableTableTree6KJTreeC", "arrayParents"]
+- !private ["21KJExpandableTableTree6KJTreeC", "arrayVisibles"]
+- ["21KJExpandableTableTree6KJTreeC", "calculateVisibileChilds"]
+- ["21KJExpandableTableTree6KJTreeC", "cellIdentifierUsingTableView"]
+- ["21KJExpandableTableTree6KJTreeC", "closeAllVisibleCells"]
+- ["21KJExpandableTableTree6KJTreeC", "deinit"]
+- ["21KJExpandableTableTree6KJTreeC", "detectVisibleSubCells"]
+- ["21KJExpandableTableTree6KJTreeC", "expandAllInitiallly"]
+- ["21KJExpandableTableTree6KJTreeC", "init"]
+- ["21KJExpandableTableTree6KJTreeC", "isInitiallyExpanded"]
+- ["21KJExpandableTableTree6KJTreeC", "justAddChildsIn"]
+- ["21KJExpandableTableTree6KJTreeC", "tableView"]
+- ["21KJExpandableTableTree6KJTreeC", "visibleChilds"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "components"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "integerValue"]
+- !private ["s25LosslessStringConvertibleP", "lowercased"]
+- !private ["s10MirrorPathP", "components"]
+- !private ["s10MirrorPathP", "hashValue"]
+- ["s10MirrorPathP", "init"]
+- !private ["s10MirrorPathP", "integerValue"]
+- !private ["s10MirrorPathP", "lowercased"]
+- !private ["s17MutableCollectionP", "append"]
+- !private ["s17MutableCollectionP", "contains"]
+- !private ["s17MutableCollectionP", "count"]
+- !private ["s17MutableCollectionP", "first"]
+- !private ["s17MutableCollectionP", "index"]
+- !private ["s17MutableCollectionP", "init"]
+- !private ["s17MutableCollectionP", "last"]
+- !private ["s17MutableCollectionP", "removeAll"]
+- !private ["s17MutableCollectionP", "removeFirst"]
+- !private ["s17MutableCollectionP", "row"]
+- !private ["s17MutableCollectionP", "subscript"]
+- !private ["So7NSArrayC", "count"]
+- !private ["So7NSArrayC", "subscript"]
+- !private ["So8NSCodingP", "components"]
+- !private ["So8NSCodingP", "count"]
+- !private ["So8NSCodingP", "deleteRows"]
+- ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "insertRows"]
+- !private ["So8NSCodingP", "integerValue"]
+- !private ["So8NSCodingP", "lowercased"]
+- !private ["So8NSCodingP", "object"]
+- !private ["So8NSCodingP", "reloadRows"]
+- !private ["So8NSCodingP", "subscript"]
+- !private ["So9NSCopyingP", "components"]
+- !private ["So9NSCopyingP", "count"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "integerValue"]
+- !private ["So9NSCopyingP", "lowercased"]
+- !private ["So9NSCopyingP", "object"]
+- !private ["So9NSCopyingP", "subscript"]
+- !private ["So12NSDictionaryC", "object"]
+- !private ["So17NSFastEnumerationP", "count"]
+- !private ["So17NSFastEnumerationP", "object"]
+- !private ["So17NSFastEnumerationP", "subscript"]
+- !private ["So21NSItemProviderReadingP", "components"]
+- ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "integerValue"]
+- !private ["So21NSItemProviderReadingP", "lowercased"]
+- !private ["So21NSItemProviderWritingP", "components"]
+- ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "integerValue"]
+- !private ["So21NSItemProviderWritingP", "lowercased"]
+- !private ["So16NSMutableCopyingP", "components"]
+- !private ["So16NSMutableCopyingP", "count"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So16NSMutableCopyingP", "integerValue"]
+- !private ["So16NSMutableCopyingP", "lowercased"]
+- !private ["So16NSMutableCopyingP", "object"]
+- !private ["So16NSMutableCopyingP", "subscript"]
+- !private ["So8NSObjectC", "components"]
+- !private ["So8NSObjectC", "count"]
+- !private ["So8NSObjectC", "deleteRows"]
+- !private ["So8NSObjectC", "insertRows"]
+- !private ["So8NSObjectC", "integerValue"]
+- !private ["So8NSObjectC", "lowercased"]
+- !private ["So8NSObjectC", "object"]
+- !private ["So8NSObjectC", "reloadRows"]
+- !private ["So8NSObjectC", "subscript"]
+- !private ["So16NSObjectProtocolP", "components"]
+- !private ["So16NSObjectProtocolP", "count"]
+- !private ["So16NSObjectProtocolP", "deleteRows"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "insertRows"]
+- !private ["So16NSObjectProtocolP", "integerValue"]
+- !private ["So16NSObjectProtocolP", "lowercased"]
+- !private ["So16NSObjectProtocolP", "object"]
+- !private ["So16NSObjectProtocolP", "reloadRows"]
+- !private ["So16NSObjectProtocolP", "subscript"]
+- !private ["So14NSSecureCodingP", "components"]
+- !private ["So14NSSecureCodingP", "count"]
+- ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "integerValue"]
+- !private ["So14NSSecureCodingP", "lowercased"]
+- !private ["So14NSSecureCodingP", "object"]
+- !private ["So14NSSecureCodingP", "subscript"]
+- !private ["So8NSStringC", "components"]
+- ["So8NSStringC", "init"]
+- !private ["So8NSStringC", "integerValue"]
+- !private ["So8NSStringC", "lowercased"]
+- ["21KJExpandableTableTree4NodeC", "Bool"]
+- ["21KJExpandableTableTree4NodeC", "Child"]
+- ["21KJExpandableTableTree4NodeC", "NSInteger"]
+- ["21KJExpandableTableTree4NodeC", "State"]
+- ["21KJExpandableTableTree4NodeC", "String"]
+- !private ["21KJExpandableTableTree4NodeC", "arrayChilds"]
+- ["21KJExpandableTableTree4NodeC", "deinit"]
+- !private ["21KJExpandableTableTree4NodeC", "expandedRows"]
+- ["21KJExpandableTableTree4NodeC", "givenIndex"]
+- ["21KJExpandableTableTree4NodeC", "grabTotalDefaultExpandedRowsCount"]
+- ["21KJExpandableTableTree4NodeC", "id"]
+- ["21KJExpandableTableTree4NodeC", "index"]
+- ["21KJExpandableTableTree4NodeC", "init"]
+- !private ["21KJExpandableTableTree4NodeC", "isVisibility"]
+- ["21KJExpandableTableTree4NodeC", "key"]
+- ["21KJExpandableTableTree4NodeC", "makeAllChildsExpanded"]
+- ["21KJExpandableTableTree4NodeC", "state"]
+- ["21KJExpandableTableTree4NodeC", ""]
+- !private ["s7NumericP", "hashValue"]
+- !private ["Sq", "expand"]
+- ["21KJExpandableTableTree6ParentC", "Bool"]
+- ["21KJExpandableTableTree6ParentC", "Child"]
+- ["21KJExpandableTableTree6ParentC", "String"]
+- !private ["21KJExpandableTableTree6ParentC", "arrayChilds"]
+- ["21KJExpandableTableTree6ParentC", "deinit"]
+- !private ["21KJExpandableTableTree6ParentC", "expandedRows"]
+- !private ["21KJExpandableTableTree6ParentC", "givenIndex"]
+- ["21KJExpandableTableTree6ParentC", "init"]
+- !private ["21KJExpandableTableTree6ParentC", "isVisibility"]
+- !private ["21KJExpandableTableTree6ParentC", "key"]
+- !private ["21KJExpandableTableTree6ParentC", "makeAllChildsExpanded"]
+- !private ["s22RandomAccessCollectionP", "append"]
+- !private ["s22RandomAccessCollectionP", "contains"]
+- !private ["s22RandomAccessCollectionP", "count"]
+- !private ["s22RandomAccessCollectionP", "first"]
+- !private ["s22RandomAccessCollectionP", "index"]
+- !private ["s22RandomAccessCollectionP", "init"]
+- !private ["s22RandomAccessCollectionP", "last"]
+- !private ["s22RandomAccessCollectionP", "removeAll"]
+- !private ["s22RandomAccessCollectionP", "removeFirst"]
+- !private ["s22RandomAccessCollectionP", "row"]
+- !private ["s22RandomAccessCollectionP", "subscript"]
+- !private ["s26RangeReplaceableCollectionP", "append"]
+- !private ["s26RangeReplaceableCollectionP", "components"]
+- !private ["s26RangeReplaceableCollectionP", "contains"]
+- !private ["s26RangeReplaceableCollectionP", "count"]
+- !private ["s26RangeReplaceableCollectionP", "first"]
+- !private ["s26RangeReplaceableCollectionP", "index"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s26RangeReplaceableCollectionP", "integerValue"]
+- !private ["s26RangeReplaceableCollectionP", "last"]
+- !private ["s26RangeReplaceableCollectionP", "lowercased"]
+- !private ["s26RangeReplaceableCollectionP", "removeAll"]
+- !private ["s26RangeReplaceableCollectionP", "removeFirst"]
+- !private ["s26RangeReplaceableCollectionP", "subscript"]
+- ["s16RawRepresentableP", "fade"]
+- !private ["s16RawRepresentableP", "none"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["10Foundation20ReferenceConvertibleP", "row"]
+- !private ["s8SequenceP", "append"]
+- !private ["s8SequenceP", "components"]
+- !private ["s8SequenceP", "contains"]
+- !private ["s8SequenceP", "count"]
+- !private ["s8SequenceP", "first"]
+- !private ["s8SequenceP", "index"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "integerValue"]
+- !private ["s8SequenceP", "last"]
+- !private ["s8SequenceP", "lowercased"]
+- !private ["s8SequenceP", "object"]
+- !private ["s8SequenceP", "removeAll"]
+- !private ["s8SequenceP", "removeFirst"]
+- !private ["s8SequenceP", "row"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- ["21KJExpandableTableTree5StateO", "__derived_enum_equals"]
+- ["21KJExpandableTableTree5StateO", "close"]
+- ["21KJExpandableTableTree5StateO", "deinit"]
+- ["21KJExpandableTableTree5StateO", "hashValue"]
+- ["21KJExpandableTableTree5StateO", "none"]
+- ["21KJExpandableTableTree5StateO", "open"]
+- !private ["s12StaticStringV", "init"]
+- !private ["s10StrideableP", "hashValue"]
+- ["SS", "NSInteger"]
+- !private ["SS", "NSString"]
+- !private ["SS", "components"]
+- ["SS", "init"]
+- ["SS", "integerValue"]
+- !private ["SS", "lowercased"]
+- !private ["s14StringProtocolP", "components"]
+- ["s14StringProtocolP", "init"]
+- !private ["s14StringProtocolP", "integerValue"]
+- !private ["s14StringProtocolP", "lowercased"]
+- !private ["s16TextOutputStreamP", "components"]
+- ["s16TextOutputStreamP", "init"]
+- !private ["s16TextOutputStreamP", "integerValue"]
+- !private ["s16TextOutputStreamP", "lowercased"]
+- !private ["s20TextOutputStreamableP", "components"]
+- ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "integerValue"]
+- !private ["s20TextOutputStreamableP", "lowercased"]
+- !private ["So29UIAccessibilityIdentificationP", "deleteRows"]
+- !private ["So29UIAccessibilityIdentificationP", "insertRows"]
+- !private ["So29UIAccessibilityIdentificationP", "reloadRows"]
+- !private ["So12UIAppearanceP", "deleteRows"]
+- !private ["So12UIAppearanceP", "insertRows"]
+- !private ["So12UIAppearanceP", "reloadRows"]
+- !private ["So21UIAppearanceContainerP", "deleteRows"]
+- !private ["So21UIAppearanceContainerP", "insertRows"]
+- !private ["So21UIAppearanceContainerP", "reloadRows"]
+- !private ["So17UICoordinateSpaceP", "deleteRows"]
+- !private ["So17UICoordinateSpaceP", "insertRows"]
+- !private ["So17UICoordinateSpaceP", "reloadRows"]
+- !private ["So23UIDataSourceTranslatingP", "deleteRows"]
+- !private ["So23UIDataSourceTranslatingP", "insertRows"]
+- !private ["So23UIDataSourceTranslatingP", "reloadRows"]
+- !private ["So13UIDynamicItemP", "deleteRows"]
+- !private ["So13UIDynamicItemP", "insertRows"]
+- !private ["So13UIDynamicItemP", "reloadRows"]
+- !private ["So18UIFocusEnvironmentP", "deleteRows"]
+- !private ["So18UIFocusEnvironmentP", "insertRows"]
+- !private ["So18UIFocusEnvironmentP", "reloadRows"]
+- !private ["So11UIFocusItemP", "deleteRows"]
+- !private ["So11UIFocusItemP", "insertRows"]
+- !private ["So11UIFocusItemP", "reloadRows"]
+- !private ["So30UIPasteConfigurationSupportingP", "deleteRows"]
+- !private ["So30UIPasteConfigurationSupportingP", "insertRows"]
+- !private ["So30UIPasteConfigurationSupportingP", "reloadRows"]
+- !private ["So11UIResponderC", "deleteRows"]
+- !private ["So11UIResponderC", "insertRows"]
+- !private ["So11UIResponderC", "reloadRows"]
+- !private ["So30UIResponderStandardEditActionsP", "deleteRows"]
+- !private ["So30UIResponderStandardEditActionsP", "insertRows"]
+- !private ["So30UIResponderStandardEditActionsP", "reloadRows"]
+- !private ["So12UIScrollViewC", "deleteRows"]
+- !private ["So12UIScrollViewC", "insertRows"]
+- !private ["So12UIScrollViewC", "reloadRows"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "deleteRows"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "insertRows"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "reloadRows"]
+- !private ["So11UITableViewC", "deleteRows"]
+- !private ["So11UITableViewC", "insertRows"]
+- !private ["So11UITableViewC", "reloadRows"]
+- ["SC23UITableViewRowAnimationO", "fade"]
+- !private ["SC23UITableViewRowAnimationO", "none"]
+- !private ["So18UITraitEnvironmentP", "deleteRows"]
+- !private ["So18UITraitEnvironmentP", "insertRows"]
+- !private ["So18UITraitEnvironmentP", "reloadRows"]
+- !private ["So6UIViewC", "deleteRows"]
+- !private ["So6UIViewC", "insertRows"]
+- !private ["So6UIViewC", "reloadRows"]
+- !private ["s14_ArrayProtocolP", "append"]
+- !private ["s14_ArrayProtocolP", "contains"]
+- !private ["s14_ArrayProtocolP", "count"]
+- !private ["s14_ArrayProtocolP", "first"]
+- !private ["s14_ArrayProtocolP", "index"]
+- !private ["s14_ArrayProtocolP", "last"]
+- !private ["s14_ArrayProtocolP", "removeAll"]
+- !private ["s14_ArrayProtocolP", "removeFirst"]
+- !private ["s14_ArrayProtocolP", "subscript"]
+- !private ["s23_BidirectionalIndexableP", "append"]
+- !private ["s23_BidirectionalIndexableP", "components"]
+- !private ["s23_BidirectionalIndexableP", "contains"]
+- !private ["s23_BidirectionalIndexableP", "count"]
+- !private ["s23_BidirectionalIndexableP", "first"]
+- !private ["s23_BidirectionalIndexableP", "index"]
+- ["s23_BidirectionalIndexableP", "init"]
+- !private ["s23_BidirectionalIndexableP", "integerValue"]
+- !private ["s23_BidirectionalIndexableP", "last"]
+- !private ["s23_BidirectionalIndexableP", "lowercased"]
+- !private ["s23_BidirectionalIndexableP", "removeAll"]
+- !private ["s23_BidirectionalIndexableP", "removeFirst"]
+- !private ["s23_BidirectionalIndexableP", "row"]
+- !private ["s23_BidirectionalIndexableP", "subscript"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "deleteRows"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "insertRows"]
+- !private ["s37_DefaultCustomPlaygroundQuickLookableP", "reloadRows"]
+- !private ["s24_DestructorSafeContainerP", "append"]
+- !private ["s24_DestructorSafeContainerP", "contains"]
+- !private ["s24_DestructorSafeContainerP", "count"]
+- !private ["s24_DestructorSafeContainerP", "first"]
+- !private ["s24_DestructorSafeContainerP", "index"]
+- !private ["s24_DestructorSafeContainerP", "last"]
+- !private ["s24_DestructorSafeContainerP", "removeAll"]
+- !private ["s24_DestructorSafeContainerP", "removeFirst"]
+- !private ["s24_DestructorSafeContainerP", "subscript"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "components"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "integerValue"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "lowercased"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "components"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "integerValue"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "lowercased"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "components"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "integerValue"]
+- !private ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "lowercased"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "components"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "integerValue"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "lowercased"]
+- !private ["s33_ExpressibleByStringInterpolationP", "components"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- !private ["s33_ExpressibleByStringInterpolationP", "integerValue"]
+- !private ["s33_ExpressibleByStringInterpolationP", "lowercased"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "components"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "integerValue"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "lowercased"]
+- !private ["s10_IndexableP", "append"]
+- !private ["s10_IndexableP", "components"]
+- !private ["s10_IndexableP", "contains"]
+- !private ["s10_IndexableP", "count"]
+- !private ["s10_IndexableP", "first"]
+- !private ["s10_IndexableP", "index"]
+- ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "integerValue"]
+- !private ["s10_IndexableP", "last"]
+- !private ["s10_IndexableP", "lowercased"]
+- !private ["s10_IndexableP", "removeAll"]
+- !private ["s10_IndexableP", "removeFirst"]
+- !private ["s10_IndexableP", "row"]
+- !private ["s10_IndexableP", "subscript"]
+- !private ["s14_IndexableBaseP", "append"]
+- !private ["s14_IndexableBaseP", "components"]
+- !private ["s14_IndexableBaseP", "contains"]
+- !private ["s14_IndexableBaseP", "count"]
+- !private ["s14_IndexableBaseP", "first"]
+- !private ["s14_IndexableBaseP", "index"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "integerValue"]
+- !private ["s14_IndexableBaseP", "last"]
+- !private ["s14_IndexableBaseP", "lowercased"]
+- !private ["s14_IndexableBaseP", "removeAll"]
+- !private ["s14_IndexableBaseP", "removeFirst"]
+- !private ["s14_IndexableBaseP", "row"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "components"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "deleteRows"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "insertRows"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "integerValue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "lowercased"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "object"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadRows"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
+- !private ["s17_MutableIndexableP", "append"]
+- !private ["s17_MutableIndexableP", "contains"]
+- !private ["s17_MutableIndexableP", "count"]
+- !private ["s17_MutableIndexableP", "first"]
+- !private ["s17_MutableIndexableP", "index"]
+- !private ["s17_MutableIndexableP", "init"]
+- !private ["s17_MutableIndexableP", "last"]
+- !private ["s17_MutableIndexableP", "removeAll"]
+- !private ["s17_MutableIndexableP", "removeFirst"]
+- !private ["s17_MutableIndexableP", "row"]
+- !private ["s17_MutableIndexableP", "subscript"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s21_ObjectiveCBridgeableP", "components"]
+- !private ["s21_ObjectiveCBridgeableP", "contains"]
+- !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "expand"]
+- !private ["s21_ObjectiveCBridgeableP", "first"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- !private ["s21_ObjectiveCBridgeableP", "index"]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "integerValue"]
+- !private ["s21_ObjectiveCBridgeableP", "last"]
+- !private ["s21_ObjectiveCBridgeableP", "lowercased"]
+- !private ["s21_ObjectiveCBridgeableP", "removeAll"]
+- !private ["s21_ObjectiveCBridgeableP", "removeFirst"]
+- !private ["s21_ObjectiveCBridgeableP", "row"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- !private ["s26_OptionalNilComparisonTypeV", "expand"]
+- !private ["s22_RandomAccessIndexableP", "append"]
+- !private ["s22_RandomAccessIndexableP", "contains"]
+- !private ["s22_RandomAccessIndexableP", "count"]
+- !private ["s22_RandomAccessIndexableP", "first"]
+- !private ["s22_RandomAccessIndexableP", "index"]
+- !private ["s22_RandomAccessIndexableP", "init"]
+- !private ["s22_RandomAccessIndexableP", "last"]
+- !private ["s22_RandomAccessIndexableP", "removeAll"]
+- !private ["s22_RandomAccessIndexableP", "removeFirst"]
+- !private ["s22_RandomAccessIndexableP", "row"]
+- !private ["s22_RandomAccessIndexableP", "subscript"]
+- !private ["s26_RangeReplaceableIndexableP", "append"]
+- !private ["s26_RangeReplaceableIndexableP", "components"]
+- !private ["s26_RangeReplaceableIndexableP", "contains"]
+- !private ["s26_RangeReplaceableIndexableP", "count"]
+- !private ["s26_RangeReplaceableIndexableP", "first"]
+- !private ["s26_RangeReplaceableIndexableP", "index"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- !private ["s26_RangeReplaceableIndexableP", "integerValue"]
+- !private ["s26_RangeReplaceableIndexableP", "last"]
+- !private ["s26_RangeReplaceableIndexableP", "lowercased"]
+- !private ["s26_RangeReplaceableIndexableP", "removeAll"]
+- !private ["s26_RangeReplaceableIndexableP", "removeFirst"]
+- !private ["s26_RangeReplaceableIndexableP", "subscript"]
+- !private ["s11_StrideableP", "hashValue"]
+- !private ["s16_SwiftStringViewP", "components"]
+- ["s16_SwiftStringViewP", "init"]
+- !private ["s16_SwiftStringViewP", "integerValue"]
+- !private ["s16_SwiftStringViewP", "lowercased"]
+depends-nominal:
+- !private "Sa"
+- "s23BidirectionalCollectionP"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "So15CALayerDelegateP"
+- "s7CVarArgP"
+- "21KJExpandableTableTree5ChildC"
+- "s10CollectionP"
+- "s10ComparableP"
+- "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
+- "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- "s9EncodableP"
+- "s9EquatableP"
+- "21KJExpandableTableTree6KJTreeC15ExpansionOptionO"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "10Foundation9IndexPathV"
+- !private "Si"
+- "21KJExpandableTableTree6KJTreeC"
+- "s25LosslessStringConvertibleP"
+- "s10MirrorPathP"
+- !private "s17MutableCollectionP"
+- !private "So7NSArrayC"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So12NSDictionaryC"
+- !private "So17NSFastEnumerationP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- "So16NSMutableCopyingP"
+- !private "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- "21KJExpandableTableTree4NodeC"
+- !private "s7NumericP"
+- !private "Sq"
+- "21KJExpandableTableTree6ParentC"
+- !private "s22RandomAccessCollectionP"
+- "s26RangeReplaceableCollectionP"
+- "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- "s8SequenceP"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- "21KJExpandableTableTree5StateO"
+- !private "s12StaticStringV"
+- !private "s10StrideableP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- !private "So29UIAccessibilityIdentificationP"
+- !private "So12UIAppearanceP"
+- !private "So21UIAppearanceContainerP"
+- !private "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
+- !private "So13UIDynamicItemP"
+- !private "So18UIFocusEnvironmentP"
+- !private "So11UIFocusItemP"
+- !private "So30UIPasteConfigurationSupportingP"
+- !private "So11UIResponderC"
+- !private "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- !private "So35UISpringLoadedInteractionSupportingP"
+- !private "So11UITableViewC"
+- "SC23UITableViewRowAnimationO"
+- !private "So18UITraitEnvironmentP"
+- !private "So6UIViewC"
+- !private "s14_ArrayProtocolP"
+- "s23_BidirectionalIndexableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s37_DefaultCustomPlaygroundQuickLookableP"
+- !private "s24_DestructorSafeContainerP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+- !private "s17_MutableIndexableP"
+- "s21_ObjectiveCBridgeableP"
+- !private "s26_OptionalNilComparisonTypeV"
+- !private "s22_RandomAccessIndexableP"
+- "s26_RangeReplaceableIndexableP"
+- !private "s11_StrideableP"
+- "s16_SwiftStringViewP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/user/OneDrive/NexSeed\u30D5\u309A\u30ED\u30AF\u3099\u30E9\u30DF\u30F3\u30AF\u3099/Japanese Inn List App/Japanese Inn List/Pods/Target Support Files/KJExpandableTableTree/KJExpandableTableTree-umbrella.h"
+- "/Users/user/OneDrive/NexSeed\u30D5\u309A\u30ED\u30AF\u3099\u30E9\u30DF\u30F3\u30AF\u3099/Japanese Inn List App/Japanese Inn List/build/Pods.build/Debug-iphonesimulator/KJExpandableTableTree.build/unextended-module.modulemap"
+interface-hash: "58facba711d1ae04094d1546aa33a726"
