@@ -28,6 +28,20 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PjH-ZY-Qmf">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="519"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="pGB-Sd-GcI">
+                                        <rect key="frame" x="0.0" y="28" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pGB-Sd-GcI" id="clN-EE-5YO">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="oSp-uy-8WR"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="G3p-qs-gy4"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -41,7 +55,6 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="tableView" destination="PjH-ZY-Qmf" id="JRA-kH-Csw"/>
                         <segue destination="ZmF-6z-xQM" kind="showDetail" identifier="toDetail" id="aBl-Xm-eJD"/>
                     </connections>
                 </viewController>
@@ -171,7 +184,7 @@
                                                         </tableViewCellContentView>
                                                         <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     </tableViewCell>
-                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailedCell_W" id="T0o-vm-Sog">
+                                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetailedCell_W" id="T0o-vm-Sog" customClass="ReservationCell_W" customModule="Japanese_Inn_List" customModuleProvider="target">
                                                         <rect key="frame" x="0.0" y="97" width="288" height="26"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T0o-vm-Sog" id="NEe-CK-c2q">
@@ -474,6 +487,6 @@
         <image name="sampleHotelImage.jpg" width="640" height="480"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="qhR-R1-r7y"/>
+        <segue reference="aBl-Xm-eJD"/>
     </inferredMetricsTieBreakers>
 </document>

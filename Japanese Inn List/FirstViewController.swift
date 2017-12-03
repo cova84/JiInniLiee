@@ -6,274 +6,251 @@
 //  Copyright © 2017年 Yoshitomo Kobatashi. All rights reserved.
 //
 
+
 import UIKit
-import KJExpandableTableTree
 
-class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+    
+    @IBOutlet weak var topTableView: UITableView!
+    var area:[(title: String, details: [Int], extended: Bool,category:Int)] = []
 
-    @IBOutlet weak var tableView: UITableView!
-    
-    
-    // KJ Tree instances -------------------------
-    var arrayTree:[Parent] = []
-    var kjtreeInstance: KJTree = KJTree()
-    
-    //plistの読み込み01--------------------------------------------------------
-    //選択されたエリア名を保存するメンバ変数
-    var selectedName = ""
-    var keyList:[String] = []
-    var dataList:[NSDictionary] = []
+    var country:[(title: String, no:Int, details: [Int], extended: Bool,category:Int)] = []
 
-    
+    var inn:[(title: String, no:Int, details: [Int], extended: Bool,category:Int)] = []
+
+    //表示専用の配列
+    var viewData:[(title: String, details: [Int], extended: Bool,category:Int)] = []
+
+
+    @IBOutlet weak var myTableView: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //plistの読み込み02--------------------------------------------------------
-        //ファイルパスを取得（エリア名が格納されているプロパティリスト）
-        let path = Bundle.main.path(forResource: "hotel_list_Detail", ofType: "plist")
-        //ファイルの内容を読み込んでディクショナリー型に格納
-        let dic = NSDictionary(contentsOfFile: path!)
-        
-        //TableView で扱いやすい配列の形(エリア名の入っている配列)を作成
-        for (key,data) in dic! {
-            
-//            print(key)
-//            print(data)
-            keyList.append(key as! String)
-            let detailInfo = dic![key] as! NSDictionary
-            /* NSDictionaryからキー指定で取り出すと必ずAnyになるので、Dictionary型だと教えてやらないといけないので、ダウンキャスト必須 */
-            
-            dataList.append(detailInfo)
-            
-        }
-        
-        //----------------------------------------------------------------------------------------
-        //        北アメリカ northAmerican
-        //        中南米   latinAmerica
-        //        アジア（北〜東〜東南アジア）  asia_north_east_southeast
-        //        アジア（中央〜西〜南アジア）    asia_center_west_south
-        //        アフリカ  africa
-        //        ヨーロッパ europe
-        //        オーストラリア・オセアニア australia_oceania
-        //----------------------------------------------------------------------------------------
 
-        let northAmerican = Parent(expanded: true) { () -> [Child] in
-            let child1 = Child(expanded: true, subChilds: { () -> [Child] in
-                let subchild1 = Child()
-                return [subchild1]
-            })
-            return [child1]
-        }
-        
-        let latinAmerica = Parent(expanded: true) { () -> [Child] in
-            let child1 = Child(expanded: true, subChilds: { () -> [Child] in
-                let subchild1 = Child()
-                return [subchild1]
-            })
-            return [child1]
-        }
-        
-        let asia_north_east_southeast = Parent(expanded: true) { () -> [Child] in
-            let child1 = Child(expanded: true, subChilds: { () -> [Child] in
-                let subchild1 = Child()
-                return [subchild1]
-            })
-            return [child1]
-        }
-        
-        let asia_center_west_south = Parent(expanded: true) { () -> [Child] in
-            let child1 = Child(expanded: true, subChilds: { () -> [Child] in
-                let subchild1 = Child()
-                return [subchild1]
-            })
-            return [child1]
-        }
-        
-        let africa = Parent(expanded: true) { () -> [Child] in
-            let child1 = Child(expanded: true, subChilds: { () -> [Child] in
-                let subchild1 = Child()
-                return [subchild1]
-            })
-            return [child1]
-        }
-        
-        let europe = Parent(expanded: true) { () -> [Child] in
-            let child1 = Child(expanded: true, subChilds: { () -> [Child] in
-                let subchild1 = Child()
-                return [subchild1]
-            })
-            return [child1]
-        }
-        
-        let australia_oceania = Parent(expanded: true) { () -> [Child] in
-            let child1 = Child(expanded: true, subChilds: { () -> [Child] in
-                let subchild1 = Child()
-                return [subchild1]
-            })
-            return [child1]
-        }
-        
-        arrayTree.append(northAmerican)
-        arrayTree.append(latinAmerica)
-        arrayTree.append(asia_north_east_southeast)
-        arrayTree.append(asia_center_west_south)
-        arrayTree.append(africa)
-        arrayTree.append(europe)
-        arrayTree.append(australia_oceania)
-        kjtreeInstance = KJTree(Parents: arrayTree)
-        kjtreeInstance.isInitiallyExpanded = true
-        
-        tableView.dataSource = self
-        tableView.delegate = self
-        tableView.rowHeight = UITableViewAutomaticDimension
-        tableView.estimatedRowHeight = 44
-        tableView.tableFooterView = UIView(frame: .zero)
-        
+        //動きを確認するのに必要なデータの作成
+        createData()
+
     }
 
-//MiniGauideBook代入---情報を次のページに渡す-------------------------------------------------------------------
-//
-//    //セルがタップされた時
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        //タップされた行のエリア名を保存
-//        //areList[indexPath.row]はタップされた行番号の情報
-//        selectedName = hotel_list[indexPath.row]
-//
-//        //セグエのidentifierを指定して、画面移動
-//        performSegue(withIdentifier: "showTopToDetail", sender: nil)
-//    }
-//
-//    //セグエを使って画面移動する時発動
-//    override func prepare(for segue:UIStoryboardSegue, sender:Any?){
-//
-//        //次の画面のインスタンスを取得
-//        var dvc = segue.destination as! DetailViewController
-//
-//        //次の画面のプロパティにタップされた行のエリア名を渡す
-//        dvc.getAreaName = selectedName
-//
-//    }
-//MiniGauideBook代入---情報を次のページに渡す-------------------------------------------------------------------
 
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return viewData.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        //文字列を表示するセルの取得（セルの再利用）
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+
+        //表示したい文字の設定
+        cell.textLabel?.text = viewData[indexPath.row].title
+
+        //文字を設定したセルを返す
+        return cell
+    }
+
+
+    /// MARK: UITableViewDelegate
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        if viewData[indexPath.row].category == 3{
+            //宿の場合、別画面に遷移するなどの処理を記載する
+            print(viewData[indexPath.row].title)
+        }else{
+            //開閉処理
+            if viewData[indexPath.row].extended {
+                //閉じる
+                viewData[indexPath.row].extended = false
+                var changeRowNum = createViewData(indexNumber: indexPath.row)
+
+                self.toContract(tableView, indexPath: indexPath,changeRowNum: changeRowNum)
+            }else{
+                //開く
+                viewData[indexPath.row].extended = true
+
+                var changeRowNum = createViewData(indexNumber: indexPath.row)
+
+                self.toExpand(tableView, indexPath: indexPath,changeRowNum: changeRowNum)
+            }
+
+        }
+    }
+
+    /// close details.
+    ///
+    /// - Parameter tableView: self.tableView
+    /// - Parameter indexPath: NSIndexPath
+    fileprivate func toContract(_ tableView: UITableView, indexPath: IndexPath, changeRowNum:Int) {
+        let startRow = indexPath.row + 1
+        let endRow = indexPath.row + changeRowNum + 1
+
+        var indexPaths: [IndexPath] = []
+        for i in startRow ..< endRow {
+            indexPaths.append(IndexPath(row: i , section:indexPath.section))
+        }
+
+        tableView.deleteRows(at: indexPaths,
+                             with: UITableViewRowAnimation.fade)
+    }
+
+    /// open details.
+    ///
+    /// - Parameter tableView: self.tableView
+    /// - Parameter indexPath: NSIndexPath
+    fileprivate func toExpand(_ tableView: UITableView, indexPath: IndexPath, changeRowNum:Int) {
+        let startRow = indexPath.row + 1
+        let endRow = indexPath.row + changeRowNum + 1
+
+        var indexPaths: [IndexPath] = []
+        for i in startRow ..< endRow {
+            indexPaths.append(IndexPath(row: i, section:indexPath.section))
+        }
+
+        tableView.insertRows(at: indexPaths, with: UITableViewRowAnimation.fade)
+
+        // scroll to the selected cell.
+        tableView.scrollToRow(at: IndexPath(
+            row:indexPath.row, section:indexPath.section),
+                              at: UITableViewScrollPosition.top, animated: true)
+    }
+
+    func createViewData(indexNumber:Int)->Int{
+
+        var changeNum = 0
+        //開閉状態を一旦別変数へ退避
+        let previousViewData = viewData
+
+        viewData = []
+
+        var pNumber = 0
+        var skipNumber = 0
+        for data in previousViewData{
+            if pNumber < indexNumber {
+                viewData.append(data)
+            }
+
+            if indexNumber == pNumber {
+                viewData.append(data)
+                if previousViewData[pNumber].extended{
+                    //開く（子データ追加）
+                    var ids = previousViewData[pNumber].details
+
+                    //エリアの場合は紐づく国を追加
+                    if previousViewData[pNumber].category == 1 {
+
+                        for deach in ids{
+                            for ceach in country{
+                                if ceach.no == deach{
+                                    viewData.append((title: ceach.title,details:ceach.details,extended:false,category:2))
+                                    changeNum += 1
+                                }
+                            }
+
+                        }
+
+
+                    }
+
+                    //国の場合は紐づく宿を追加
+                    if previousViewData[pNumber].category == 2 {
+
+                        for deach in ids{
+                            for ieach in inn{
+                                if ieach.no == deach{
+                                    viewData.append((title: ieach.title,details:ieach.details,extended:false,category:3))
+                                    changeNum += 1
+                                }
+                            }
+
+                        }
+
+
+                    }
+
+                }else{
+                    //閉じる（子データの削除）
+                    //スキップするデータ数を計算
+                    var sindex = 0
+                    for sdata in previousViewData{
+                        if sindex > pNumber {
+                            if sdata.category > previousViewData[pNumber].category{
+                                skipNumber += 1
+                            }else{
+                                break
+                            }
+
+                        }
+                        sindex += 1
+                    }
+
+                    changeNum = skipNumber
+
+
+                }
+            }
+
+            print(skipNumber)
+
+
+            if pNumber > indexNumber {
+                if pNumber > indexNumber + skipNumber{
+                    viewData.append(data)
+                }
+            }
+
+            pNumber += 1
+        }
+
+
+        return changeNum
+    }
+
+    func createData(){
+        area.append((title: "エリア１", details: [1,2], extended: false,category:1))
+
+        area.append((title: "エリア２", details: [11,12,13,14], extended: false,category:1))
+
+        area.append((title: "エリア３", details: [111,112,113,114,115], extended: false,category:1))
+
+
+        country.append((title: "国1",no:1, details: [21,22], extended: false,category:2))
+        country.append((title: "国2",no:2, details: [31,32], extended: false,category:2))
+
+        country.append((title: "国11",no:11, details: [41,42], extended: false,category:2))
+        country.append((title: "国12",no:12, details: [51,52], extended: false,category:2))
+        country.append((title: "国13",no:13, details: [61,62], extended: false,category:2))
+        country.append((title: "国14",no:14, details: [71,72], extended: false,category:2))
+
+        country.append((title: "国111",no:111, details: [141], extended: false,category:2))
+        country.append((title: "国112",no:112, details: [151], extended: false,category:2))
+        country.append((title: "国113",no:113, details: [161,162,163], extended: false,category:2))
+        country.append((title: "国114",no:114, details: [171,172], extended: false,category:2))
+        country.append((title: "国115",no:115, details: [171,172], extended: false,category:2))
+
+        inn.append((title: "宿21",no:21, details: [], extended: false,category:3))
+        inn.append((title: "宿22",no:22, details: [], extended: false,category:3))
+        inn.append((title: "宿31",no:31, details: [], extended: false,category:3))
+        inn.append((title: "宿32",no:32, details: [], extended: false,category:3))
+        inn.append((title: "宿41",no:41, details: [], extended: false,category:3))
+        inn.append((title: "宿42",no:42, details: [], extended: false,category:3))
+        inn.append((title: "宿51",no:51, details: [], extended: false,category:3))
+        inn.append((title: "宿52",no:52, details: [], extended: false,category:3))
+        inn.append((title: "宿61",no:61, details: [], extended: false,category:3))
+        inn.append((title: "宿62",no:62, details: [], extended: false,category:3))
+        inn.append((title: "宿71",no:71, details: [], extended: false,category:3))
+        inn.append((title: "宿72",no:72, details: [], extended: false,category:3))
+        inn.append((title: "宿141",no:141, details: [], extended: false,category:3))
+        inn.append((title: "宿151",no:151, details: [], extended: false,category:3))
+        inn.append((title: "宿161",no:161, details: [], extended: false,category:3))
+        inn.append((title: "宿162",no:162, details: [], extended: false,category:3))
+        inn.append((title: "宿163",no:163, details: [], extended: false,category:3))
+        inn.append((title: "宿171",no:171, details: [], extended: false,category:3))
+        inn.append((title: "国172",no:172, details: [], extended: false,category:3))
+
+        //最初はエリアだけを表示するためエリアのみを表示用の配列に保存しておく
+        viewData = area
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
-}
-//TODO:ck これをカブリの為、削除 : UITableViewDataSource, UITableViewDelegate
-extension FirstViewController {
-    //行数の設定
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let total = kjtreeInstance.tableView(tableView, numberOfRowsInSection: section)
-        return total
-    }
-    
-    //リストに表示する文字列
-    //indexPath 行番号とかいろいろ入っている　セルを指定する時によく使う
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        //文字列を表示するセルの取得（セルの再利用）
-        //表示したい文字の設定？？
-        let node = kjtreeInstance.cellIdentifierUsingTableView(tableView, cellForRowAt: indexPath)
-        
-        //TODO:ck indexTuplesのデータがどこにあるかわからない。なので、何をしてるかわからない。
-        let indexTuples = node.index.components(separatedBy: ".")
-        
-        if indexTuples.count == 1  || indexTuples.count == 4 {
-            
-            // Parents
-            let cellIdentifierParents = "ParentsTableViewCellIdentity"
-            var cellParents: ParentsTableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellIdentifierParents) as? ParentsTableViewCell
-            if cellParents == nil {
-                tableView.register(UINib(nibName: "ParentsTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifierParents)
-                cellParents = tableView.dequeueReusableCell(withIdentifier: cellIdentifierParents) as? ParentsTableViewCell
-            }
-            
-            //TODO:ck ママ編集。実相するための応急処置
-            //cellParents?.cellFillUp(indexParam: node.index, key: indexTuples.count)
-            cellParents?.selectionStyle = .none
-            
-            if node.state == .open {
-                cellParents?.buttonState.setImage(UIImage(named: "minus"), for: .normal)
-            }else if node.state == .close {
-                cellParents?.buttonState.setImage(UIImage(named: "plus"), for: .normal)
-            }else{
-                cellParents?.buttonState.setImage(nil, for: .normal)
-            }
-            
-            return cellParents!
-            
-        }else if indexTuples.count == 2{
-            
-            // Parents
-            let cellIdentifierChilds = "Childs2ndStageTableViewCellIdentity"
-            var cellChild: Childs2ndStageTableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellIdentifierChilds) as? Childs2ndStageTableViewCell
-            if cellChild == nil {
-                tableView.register(UINib(nibName: "Childs2ndStageTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifierChilds)
-                cellChild = tableView.dequeueReusableCell(withIdentifier: cellIdentifierChilds) as? Childs2ndStageTableViewCell
-            }
-            cellChild?.cellFillUp(indexParam: node.index)
-            cellChild?.selectionStyle = .none
-            
-            if node.state == .open {
-                cellChild?.buttonState.setImage(UIImage(named: "minus"), for: .normal)
-            }else if node.state == .close {
-                cellChild?.buttonState.setImage(UIImage(named: "plus"), for: .normal)
-            }else{
-                cellChild?.buttonState.setImage(nil, for: .normal)
-            }
-            
-            return cellChild!
-            
-        }else if indexTuples.count == 3 || indexTuples.count == 5 || indexTuples.count == 6 || indexTuples.count == 7{
-            
-            // Parents
-            let cellIdentifierChilds = "Childs3rdStageTableViewCellIdentity"
-            var cellChild: Childs3rdStageTableViewCell? = tableView.dequeueReusableCell(withIdentifier: cellIdentifierChilds) as? Childs3rdStageTableViewCell
-            if cellChild == nil {
-                tableView.register(UINib(nibName: "Childs3rdStageTableViewCell", bundle: nil), forCellReuseIdentifier: cellIdentifierChilds)
-                cellChild = tableView.dequeueReusableCell(withIdentifier: cellIdentifierChilds) as? Childs3rdStageTableViewCell
-            }
-            cellChild?.cellFillUp(indexParam: node.index, tupleCount: indexTuples.count)
-            cellChild?.selectionStyle = .none
-            
-            if node.state == .open {
-                cellChild?.buttonState.setImage(UIImage(named: "minus"), for: .normal)
-            }else if node.state == .close {
-                cellChild?.buttonState.setImage(UIImage(named: "plus"), for: .normal)
-            }else{
-                cellChild?.buttonState.setImage(nil, for: .normal)
-            }
-            
-            return cellChild!
-            
-        }else{
-            // Childs
-            // grab cell
-            var tableviewcell = tableView.dequeueReusableCell(withIdentifier: "cellidentity")
-            if tableviewcell == nil {
-                tableviewcell = UITableViewCell(style: .default, reuseIdentifier: "cellidentity")
-            }
-            
-            tableviewcell?.backgroundColor = UIColor.lightGray
-            tableviewcell?.textLabel?.text = node.index
-            tableviewcell?.selectionStyle = .none
-            return tableviewcell!
-        }
-    }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let node = kjtreeInstance.tableView(tableView, didSelectRowAt: indexPath)
-        print(node.index)
-        print(node.key)
-        // if you've added any identifier or used indexing format
-        print(node.givenIndex)
     }
 }

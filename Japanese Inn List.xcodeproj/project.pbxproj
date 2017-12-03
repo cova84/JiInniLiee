@@ -7,16 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		650A5E5C4D3B0156D22BAF34 /* Pods_Japanese_Inn_ListTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDF8B10278A521C6C90959D0 /* Pods_Japanese_Inn_ListTests.framework */; };
 		D11709101FBE997500F4B3E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D117090E1FBE997500F4B3E4 /* Main.storyboard */; };
 		D11BC1E01FD2327A001799EA /* Favorite+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BC1DE1FD23279001799EA /* Favorite+CoreDataProperties.swift */; };
 		D11BC1E11FD2327A001799EA /* Favorite+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D11BC1DF1FD2327A001799EA /* Favorite+CoreDataClass.swift */; };
-		D126E3811FC2823400FF0DE1 /* ParentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D126E37B1FC2823400FF0DE1 /* ParentsTableViewCell.swift */; };
-		D126E3821FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D126E37C1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift */; };
-		D126E3831FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D126E37D1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib */; };
-		D126E3841FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D126E37E1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift */; };
-		D126E3851FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D126E37F1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib */; };
-		D126E3861FC2823400FF0DE1 /* ParentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D126E3801FC2823400FF0DE1 /* ParentsTableViewCell.xib */; };
 		D130F2621FCEF4A2008D0513 /* customCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D130F2611FCEF4A2008D0513 /* customCellTableViewCell.swift */; };
 		D14467631FCE578900814D1C /* MapKeyStorageMKPA.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14467621FCE578900814D1C /* MapKeyStorageMKPA.swift */; };
 		D14467651FCE60E900814D1C /* MapKeyStorageMKAV.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14467641FCE60E900814D1C /* MapKeyStorageMKAV.swift */; };
@@ -43,8 +36,6 @@
 		D1FE761C1FC7C471000786C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1FE761B1FC7C471000786C3 /* LaunchScreen.storyboard */; };
 		D1FEAD321FCA978600E25738 /* hotel_list_Top.plist in Resources */ = {isa = PBXBuildFile; fileRef = D1FEAD311FCA978600E25738 /* hotel_list_Top.plist */; };
 		D1FEAD341FCAADCD00E25738 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = D1FEAD331FCAADCD00E25738 /* minus.png */; };
-		E07F0054C71539E0DDBF47E3 /* Pods_Japanese_Inn_ListUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 90D372ECE9E429B036752DAE /* Pods_Japanese_Inn_ListUITests.framework */; };
-		EC859E77DECC32464D4DEA55 /* Pods_Japanese_Inn_List.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD72F3D9F8DC70C24A3A6A2 /* Pods_Japanese_Inn_List.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,21 +69,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		231F72BE844036EE7825730F /* Pods-Japanese Inn List.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn List.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List.debug.xcconfig"; sourceTree = "<group>"; };
-		6632F9CC127594A2FF3F903C /* Pods-Japanese Inn ListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn ListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		6817DAAAD79BE22A8567594C /* Pods-Japanese Inn ListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn ListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests.release.xcconfig"; sourceTree = "<group>"; };
-		90D372ECE9E429B036752DAE /* Pods_Japanese_Inn_ListUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_ListUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		973357B2BE6170B29DC6D6DC /* Pods-Japanese Inn ListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn ListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests.debug.xcconfig"; sourceTree = "<group>"; };
-		AAD72F3D9F8DC70C24A3A6A2 /* Pods_Japanese_Inn_List.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_List.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D117090F1FBE997500F4B3E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D11BC1DE1FD23279001799EA /* Favorite+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D11BC1DF1FD2327A001799EA /* Favorite+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Favorite+CoreDataClass.swift"; sourceTree = "<group>"; };
-		D126E37B1FC2823400FF0DE1 /* ParentsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentsTableViewCell.swift; sourceTree = "<group>"; };
-		D126E37C1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Childs2ndStageTableViewCell.swift; sourceTree = "<group>"; };
-		D126E37D1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Childs3rdStageTableViewCell.xib; sourceTree = "<group>"; };
-		D126E37E1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Childs3rdStageTableViewCell.swift; sourceTree = "<group>"; };
-		D126E37F1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Childs2ndStageTableViewCell.xib; sourceTree = "<group>"; };
-		D126E3801FC2823400FF0DE1 /* ParentsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ParentsTableViewCell.xib; sourceTree = "<group>"; };
 		D130F2611FCEF4A2008D0513 /* customCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customCellTableViewCell.swift; sourceTree = "<group>"; };
 		D14467621FCE578900814D1C /* MapKeyStorageMKPA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKeyStorageMKPA.swift; sourceTree = "<group>"; };
 		D14467641FCE60E900814D1C /* MapKeyStorageMKAV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKeyStorageMKAV.swift; sourceTree = "<group>"; };
@@ -123,12 +102,8 @@
 		D1D7343F1FD247AD0092F001 /* DetailedCell_G.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCell_G.swift; sourceTree = "<group>"; };
 		D1D734411FD247C30092F001 /* DetailedCell_W.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedCell_W.swift; sourceTree = "<group>"; };
 		D1FE761B1FC7C471000786C3 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D1FE762B1FC7D6B0000786C3 /* KJExpandableTableTree.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = KJExpandableTableTree.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1FEAD311FCA978600E25738 /* hotel_list_Top.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hotel_list_Top.plist; sourceTree = SOURCE_ROOT; };
 		D1FEAD331FCAADCD00E25738 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = SOURCE_ROOT; };
-		D25FEFD6B6AA635A2EC3D943 /* Pods-Japanese Inn ListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn ListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests.release.xcconfig"; sourceTree = "<group>"; };
-		DDF8B10278A521C6C90959D0 /* Pods_Japanese_Inn_ListTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Japanese_Inn_ListTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E720447742A72020819B7602 /* Pods-Japanese Inn List.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Japanese Inn List.release.xcconfig"; path = "Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC859E77DECC32464D4DEA55 /* Pods_Japanese_Inn_List.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +118,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				650A5E5C4D3B0156D22BAF34 /* Pods_Japanese_Inn_ListTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,50 +125,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E07F0054C71539E0DDBF47E3 /* Pods_Japanese_Inn_ListUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B502C06EAC2212A83BC67322 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D1FE762B1FC7D6B0000786C3 /* KJExpandableTableTree.framework */,
-				AAD72F3D9F8DC70C24A3A6A2 /* Pods_Japanese_Inn_List.framework */,
-				DDF8B10278A521C6C90959D0 /* Pods_Japanese_Inn_ListTests.framework */,
-				90D372ECE9E429B036752DAE /* Pods_Japanese_Inn_ListUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		B5449BB28D5D93F138B106F2 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				231F72BE844036EE7825730F /* Pods-Japanese Inn List.debug.xcconfig */,
-				E720447742A72020819B7602 /* Pods-Japanese Inn List.release.xcconfig */,
-				973357B2BE6170B29DC6D6DC /* Pods-Japanese Inn ListTests.debug.xcconfig */,
-				6817DAAAD79BE22A8567594C /* Pods-Japanese Inn ListTests.release.xcconfig */,
-				6632F9CC127594A2FF3F903C /* Pods-Japanese Inn ListUITests.debug.xcconfig */,
-				D25FEFD6B6AA635A2EC3D943 /* Pods-Japanese Inn ListUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D126E3871FC2823A00FF0DE1 /* TableviewCells */ = {
-			isa = PBXGroup;
-			children = (
-				D126E37B1FC2823400FF0DE1 /* ParentsTableViewCell.swift */,
-				D126E3801FC2823400FF0DE1 /* ParentsTableViewCell.xib */,
-				D126E37C1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift */,
-				D126E37F1FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib */,
-				D126E37E1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift */,
-				D126E37D1FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib */,
-			);
-			path = TableviewCells;
-			sourceTree = "<group>";
-		};
 		D184AF3B1FD2E5F60089DB39 /* image */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,8 +149,6 @@
 				D1D23C411FBCB426009D3895 /* Japanese Inn ListTests */,
 				D1D23C4C1FBCB426009D3895 /* Japanese Inn ListUITests */,
 				D1D23C291FBCB426009D3895 /* Products */,
-				B5449BB28D5D93F138B106F2 /* Pods */,
-				B502C06EAC2212A83BC67322 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,7 +165,6 @@
 		D1D23C2A1FBCB426009D3895 /* Japanese Inn List */ = {
 			isa = PBXGroup;
 			children = (
-				D126E3871FC2823A00FF0DE1 /* TableviewCells */,
 				D1E9ACE81FCEA2D0005853C5 /* MyClass */,
 				D1D734381FD246B90092F001 /* CustomCellTableViewCell */,
 				D1D23C2B1FBCB426009D3895 /* AppDelegate.swift */,
@@ -247,9 +179,9 @@
 				D1FEAD331FCAADCD00E25738 /* minus.png */,
 				D184AF3B1FD2E5F60089DB39 /* image */,
 				D1FEAD311FCA978600E25738 /* hotel_list_Top.plist */,
-				D19AEF871FC731840080ACC0 /* hotel_list_Detail.plist */,
 				D1D23C391FBCB426009D3895 /* Info.plist */,
 				D18F48531FC4722200535881 /* favoriteCoreData.xcdatamodeld */,
+				D19AEF871FC731840080ACC0 /* hotel_list_Detail.plist */,
 			);
 			path = "Japanese Inn List";
 			sourceTree = "<group>";
@@ -303,12 +235,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D1D23C521FBCB426009D3895 /* Build configuration list for PBXNativeTarget "Japanese Inn List" */;
 			buildPhases = (
-				CC6296CB0C6F8105023DDC2A /* [CP] Check Pods Manifest.lock */,
 				D1D23C241FBCB426009D3895 /* Sources */,
 				D1D23C251FBCB426009D3895 /* Frameworks */,
 				D1D23C261FBCB426009D3895 /* Resources */,
-				A012575D5A761D0DAA653204 /* [CP] Embed Pods Frameworks */,
-				F6332101ADCCDA6D7B64CF54 /* [CP] Copy Pods Resources */,
 				D18DF5CA1FC809730094C260 /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -418,14 +347,11 @@
 				D1D23C351FBCB426009D3895 /* Assets.xcassets in Resources */,
 				D1FE761C1FC7C471000786C3 /* LaunchScreen.storyboard in Resources */,
 				D11709101FBE997500F4B3E4 /* Main.storyboard in Resources */,
-				D126E3861FC2823400FF0DE1 /* ParentsTableViewCell.xib in Resources */,
 				D184AF4B1FD2E6690089DB39 /* plus.png in Resources */,
 				D18D90CC1FD28E37005AF348 /* DetailedCell_W.xib in Resources */,
 				D1FEAD341FCAADCD00E25738 /* minus.png in Resources */,
 				D184AF4A1FD2E6690089DB39 /* minus.png in Resources */,
 				D184AF4C1FD2E6690089DB39 /* sampleHotelImage.jpg in Resources */,
-				D126E3851FC2823400FF0DE1 /* Childs2ndStageTableViewCell.xib in Resources */,
-				D126E3831FC2823400FF0DE1 /* Childs3rdStageTableViewCell.xib in Resources */,
 				D184AF491FD2E6690089DB39 /* infoLink.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -513,24 +439,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A012575D5A761D0DAA653204 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/KJExpandableTableTree/KJExpandableTableTree.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KJExpandableTableTree.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		A6182C0A565275F18FF24D5D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -546,24 +454,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn ListUITests/Pods-Japanese Inn ListUITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CC6296CB0C6F8105023DDC2A /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Japanese Inn List-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		F016CFE212EBA20FC4CA1B48 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,21 +467,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn ListTests/Pods-Japanese Inn ListTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F6332101ADCCDA6D7B64CF54 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Japanese Inn List/Pods-Japanese Inn List-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -613,13 +488,10 @@
 				D1D23C5C1FBCB867009D3895 /* ThirdViewController.swift in Sources */,
 				D11BC1E11FD2327A001799EA /* Favorite+CoreDataClass.swift in Sources */,
 				D130F2621FCEF4A2008D0513 /* customCellTableViewCell.swift in Sources */,
-				D126E3821FC2823400FF0DE1 /* Childs2ndStageTableViewCell.swift in Sources */,
 				D1D23C2E1FBCB426009D3895 /* FirstViewController.swift in Sources */,
-				D126E3811FC2823400FF0DE1 /* ParentsTableViewCell.swift in Sources */,
 				D14467631FCE578900814D1C /* MapKeyStorageMKPA.swift in Sources */,
 				D1D734401FD247AD0092F001 /* DetailedCell_G.swift in Sources */,
 				D1D23C5E1FBCB882009D3895 /* FourthViewController.swift in Sources */,
-				D126E3841FC2823400FF0DE1 /* Childs3rdStageTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,7 +647,6 @@
 		};
 		D1D23C531FBCB426009D3895 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 231F72BE844036EE7825730F /* Pods-Japanese Inn List.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -793,7 +664,6 @@
 		};
 		D1D23C541FBCB426009D3895 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E720447742A72020819B7602 /* Pods-Japanese Inn List.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -811,7 +681,6 @@
 		};
 		D1D23C561FBCB426009D3895 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 973357B2BE6170B29DC6D6DC /* Pods-Japanese Inn ListTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -829,7 +698,6 @@
 		};
 		D1D23C571FBCB426009D3895 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6817DAAAD79BE22A8567594C /* Pods-Japanese Inn ListTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -847,7 +715,6 @@
 		};
 		D1D23C591FBCB426009D3895 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6632F9CC127594A2FF3F903C /* Pods-Japanese Inn ListUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -864,7 +731,6 @@
 		};
 		D1D23C5A1FBCB426009D3895 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D25FEFD6B6AA635A2EC3D943 /* Pods-Japanese Inn ListUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -9,24 +9,22 @@
 import UIKit
 //import CoreGraphics
 
-class ViewController: UIViewController {
+class DetailedCell_W: UIViewController {
     
 
     @IBOutlet weak var textLabel: UILabel!
-    
     @IBOutlet weak var background: UIView!
+    
+    static func instantiateFromNib() -> DetailedCell_W {
+        let nib = UINib(nibName: String(describing: self), bundle: nil)
+        guard let cell = nib.instantiate(withOwner: nil, options: nil).first as? DetailedCell_W else {
+            fatalError()
+        }
+        return cell
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        func instantiateFromNib() -> DetailedCell_W {
-            let nib = UINib(nibName: String(describing: self), bundle: nil)
-            guard let cell = nib.instantiate(withOwner: nil, options: nil).first as? DetailedCell_W else {
-                fatalError()
-            }
-            
-            return cell
-        }
         
         //textLabelデザイン-----------------------------------------
         textLabel?.font = UIFont(name: "Futura", size: 12)
