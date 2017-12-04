@@ -9,7 +9,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
+class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
     @IBOutlet weak var topTableView: UITableView!
     var area:[(title: String, details: [Int], extended: Bool,category:Int)] = []

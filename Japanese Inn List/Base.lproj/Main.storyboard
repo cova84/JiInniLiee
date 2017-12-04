@@ -55,6 +55,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="mostViewed" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="myTableView" destination="PjH-ZY-Qmf" id="ouX-Rh-BXe"/>
+                        <outlet property="topTableView" destination="PjH-ZY-Qmf" id="p8d-Y6-KAN"/>
                         <segue destination="ZmF-6z-xQM" kind="showDetail" identifier="toDetail" id="aBl-Xm-eJD"/>
                     </connections>
                 </viewController>

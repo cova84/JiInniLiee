@@ -1,4 +1,4 @@
-  //
+//
 //  AppDelegate.swift
 //  Japanese Inn List
 //
