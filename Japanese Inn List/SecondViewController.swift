@@ -13,14 +13,10 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
     
-    
-    //plistの読み込み01--------------------------------------------------------
-    //選択されたエリア名を保存するメンバ変数
-    //var selectPinKeyDic = ""
+    //toDitailセグエ用　plistの配列を保存するメンバ変数
     var getKeyDic = NSDictionary()
+    //セル内の情報を保存するメンバ変数
     var selectPinKeyDic = NSDictionary()
-    var keyList:[String] = []
-    var dataList:[NSDictionary] = []
     
     
     override func viewDidLoad() {

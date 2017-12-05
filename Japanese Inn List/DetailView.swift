@@ -16,10 +16,8 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     @IBOutlet weak var ditailScrollView: UIScrollView!
 
     //plistの読み込み01--------------------------------------------------------
-    //選択されたエリア名を保存するメンバ変数。前の画面から受け取る為のプロパティ
+    //toDitailセグエ用　plistの配列を保存するメンバ変数
     var getKeyDic = NSDictionary()
-    var keyList:[String] = []
-    var dataList:[NSDictionary] = []
     
     //Favorite（内容を）格納する配列TabelViewを準備
     var contentHotel:[NSDictionary] = []
@@ -36,6 +34,8 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     //TODO:追加ボタンを押された時発動　確認用^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     @IBAction func saveFavorites(_ sender: UIButton) {
 
+        print("お気に入りに保存されました")
+
         //AppDelegateを使う用意をしておく（インスタンス化）
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
         //エンティティを操作する為のオブジェクト作成
@@ -47,21 +47,30 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         let newRecord = NSManagedObject(entity: Favorite!, insertInto: viewContext)
         
         //値のセット
-        //        var hotel = getKeyDic["hotelName"] as! String
-        //        var country = getKeyDic["country"] as! String
-        //        var id = getKeyDic["key"] as! String
-        newRecord.setValue(getKeyDic["hotelName"], forKey: "hotel")  //hotel列に文字列をセット
-        newRecord.setValue(getKeyDic["country"], forKey: "country")  //country列に文字列をセット
-        newRecord.setValue(getKeyDic["key"], forKey: "id")  //country列に文字列をセット
-        print("お気に入りに保存されました")
+        let hotel = getKeyDic["hotelName"] as! String
+        let country = getKeyDic["country"] as! String
+        let id = getKeyDic["key"] as! String
+        newRecord.setValue(hotel, forKey: "hotel")  //hotel列に文字列をセット
+        newRecord.setValue(country, forKey: "country")  //country列に文字列をセット
+        newRecord.setValue(id, forKey: "id")  //country列に文字列をセット
+
+        //TODO:値の送信直後にエラーで落ちる？原因不明。
+//        newRecord.setValue(getKeyDic["hotelName"], forKey: "hotel")  //hotel列に文字列をセット
+//        newRecord.setValue(getKeyDic["country"], forKey: "country")  //country列に文字列をセット
+//        newRecord.setValue(getKeyDic["key"], forKey: "id")  //country列に文字列をセット
+        print("\(hotel)","\(id)","\(country)")
 
         //レコード（行）の即時保存
         do{
             try viewContext.save()
         }catch{
+            //エラーが出た時に行う処理を書いておく場所
         }
+        print("5お気に入りに保存されました")
+
     }
-////詳細情報-----------------------------------------------------------------------
+    
+    ////詳細情報-----------------------------------------------------------------------
     @IBAction func test(_ sender: UIButton) {
         print("テストボタンが押されました")
 
@@ -74,11 +83,8 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //TODO:ScrollViewを触れるようにする。
-        //ditailScrollView.delaysContentTouches = NO
-        //ditailScrollView.delaysContentTouches = false
         
-        //plistの読み込み02--------------------------------------------------------
+        //plistの読み込み--------------------------------------------------------
         //ファイルパスを取得（エリア名が格納されているプロパティリスト）
         let path = Bundle.main.path(forResource: "hotel_list_Detail", ofType: "plist")
         
@@ -95,8 +101,6 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
 
         //TODO:01 画像を５枚入れてスワイプで切り替えたい(ライブラリ探し中)
         //        hotelImageView.image = UIImage(named:getKeyDic["image"] as! String)
-
-        //TODO:02 お気に入りに追加のコード必要-------------------------------------------------
 
         //地図
         let latitude = getKeyDic["latitude"] as! String
@@ -137,9 +141,6 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
             return 8
         }
     }
-    
-    //テスト高さの可変detailedCell_W.layoutIfNeeded()
-
     
     //TableView表示する文字列を決定（テーブルビュー２つ）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -197,16 +198,9 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
                 return reservation_G
             case 1:
                 let reservationCell_W = tableView.dequeueReusableCell(withIdentifier: "reservationCell_W", for: indexPath)
-                reservationCell_W.textLabel?.text = getKeyDic["reservation"] as! String
-                
-                //TODO:リンクの設定　カスタムセルのにボタンをつける
-                let resUrl = getKeyDic["reservation_URL"] as! String
-                let url = NSURL(string: "resUrl")
-                if UIApplication.shared.canOpenURL(url! as URL){
-                    UIApplication.shared.openURL(url! as URL)
-                }
-                //リンク　getKeyDic["reservation_URL"] as! String
-                
+                reservationCell_W.textLabel?.text = "\(getKeyDic["reservation"] as! String)（\(getKeyDic["reservation_URL"] as! String)）"
+                reservationCell_W.textLabel?.textColor = UIColor.blue
+
                 return reservationCell_W
             case 2:
                 let reservation_G = tableView.dequeueReusableCell(withIdentifier: "reservationCell_G", for: indexPath)
@@ -231,12 +225,34 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
             default:
                 let reservationCell_W = tableView.dequeueReusableCell(withIdentifier: "reservationCell_W", for: indexPath)
                 reservationCell_W.textLabel?.text = getKeyDic["url"] as! String
+                reservationCell_W.textLabel?.textColor = UIColor.blue
                 return reservationCell_W
             }
         }
     }
-    
-    
+
+    //TODO:飛ばない・・・セルがタップされたらURLに飛ぶ（セル内にURL情報）ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+//    //セルがタップされたら発動
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        switch tableView.tag {
+        case 1:
+            return
+        default:
+            //タップ時に色が変わらない
+            tableView.deselectRow(at: indexPath, animated: true)
+            print("\(indexPath.row)行目をタップしました。")
+            //指定のリンク先へ飛ぶ
+            let resUrl = getKeyDic["reservation_URL"] as! String
+            let url = URL(string: "resUrl")!
+            if UIApplication.shared.canOpenURL(url) {
+                UIApplication.shared.open(url)
+            }
+            return
+        }
+    }
+
+    //TODO:セルがタップされたらURLに飛ぶーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+
     
     
     //TODO:オートレイアウト　謎のエラー？？？

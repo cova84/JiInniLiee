@@ -14,11 +14,10 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
     @IBOutlet weak var favoriteTableView: UITableView!
 
-    //選択されたエリア名を保存するメンバ変数
-//これもいらない    var getKeyDic = NSDictionary()
+    //toDitailセグエ用　plistの配列を保存するメンバ変数
+    var getKeyDic = NSDictionary()
+    //セル内の情報を保存するメンバ変数
     var selectPinKeyDic = NSDictionary()
-    var keyList:[String] = []
-    var dataList:[NSDictionary] = []
     
     //Favorite（内容を）格納する配列TabelViewを準備
     var contentHotel:[NSDictionary] = []
@@ -32,7 +31,6 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewWillAppear(_ animated: Bool) {
         //CoreDataを読み込む処理
         read()
-
     }
     
     //すでに存在するデータの読み込み処理
@@ -56,6 +54,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                 let hotel :String? = result.value(forKey:"hotel") as? String
                 let country :String? = result.value(forKey:"country") as? String
                 let id :String? = result.value(forKey:"id") as? String
+                
                 let dic = ["id":id!,"hotel":hotel!,"country":country!] as [String : Any]
                 print("hotel:\(hotel) hotel:\(hotel!) country:\(country!) ")
                 contentHotel.append(dic as NSDictionary)
@@ -63,15 +62,16 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             }
         }catch{
         }
-        let test = ["id":"106","hotel":"わわわ","country":"ジャパン"]
-
-        contentHotel.append(test as NSDictionary)
+        //TODO:おかゆままテスト
+        //let test = ["id":"106","hotel":"わわわ","country":"ジャパン"]
+        //contentHotel.append(test as NSDictionary)
+        
         favoriteTableView.reloadData()
     }
     
     
-    //TODO:スクロール改善後、動作確認。-----------------------------------------------------------------------------------------------------
-    //TODO:本当は、削除設定カスタムセルにボタンをつけたい--------------------------------------------------------------------------------------
+    //TODO:スクロール改善後、動作確認。-----------------------------------------------------------------
+    //TODO:本当は、削除設定カスタムセルにボタンをつけたい---------------------------------------------------
     
     @IBAction func tapAllDelete(_ sender: UIButton) {
         

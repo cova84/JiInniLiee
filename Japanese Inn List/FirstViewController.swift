@@ -11,6 +11,11 @@ import UIKit
 
 class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
+    //toDitailセグエ用　plistの配列を保存するメンバ変数
+    var getKeyDic = NSDictionary()
+    //セル内の情報を保存するメンバ変数
+    var selectPinKeyDic = NSDictionary()
+    
     @IBOutlet weak var topTableView: UITableView!
     var area:[(title: String, details: [Int], extended: Bool,category:Int)] = []
 
