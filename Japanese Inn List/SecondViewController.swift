@@ -61,7 +61,7 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
             
             //型変換が必要。String型〜Double型へ。atof()でくくると変わる。
             let coodineate = CLLocationCoordinate2DMake(atof(latitude), atof(longitude))
-            
+                        
             //地図にセット
             mapView.setRegion(region,animated: true)
             //1.pinオブシェクトを生成（）内は不要
@@ -72,7 +72,6 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
             myPin.coordinate = coodineate
             //3.タイトル、サブタイトルを設定（タップした時に出る、吹き出しの情報）
             myPin.title = "\(hotelName)"
-            //TODO:消す？？myPin.subtitle = "\(comment)"
             self.mapView.addAnnotation(myPin)
             //4.mapViewにPinを追加
             mapView.addAnnotation(myPin)
@@ -88,7 +87,7 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
     // MARK: - MKMapView delegate
     // Called when the region displayed by the map view is about to change
     func mapView(_ mapView: MKMapView, regionWillChangeAnimated animated: Bool) {
-        print(#function)
+        //print(#function)
     }
     
     // Called when the annotation was added
@@ -127,12 +126,11 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
     
     //But03:ボタンがタップされると calloutAccessoryControlTapped デリゲートが呼ばれます。ここに必要な処理を書いていくと良いでしょう。
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        
         if control == view.rightCalloutAccessoryView {
-            
             //Key(ディクショナリー型で)値の保存
             var pin:mapKeyStorageMKPA = view.annotation as! mapKeyStorageMKPA
             selectPinKeyDic = pin.pinKeyDic
-            
             //セグエのidentifierを指定して、画面移動
             performSegue(withIdentifier: "toDetail", sender: self)
         }
@@ -147,8 +145,6 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
         //次の画面のプロパティにタップされたピンのIDを渡す
         
         dvc.getKeyDic = selectPinKeyDic
-        
-        
-        
+
     }
 }

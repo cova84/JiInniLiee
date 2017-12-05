@@ -10,18 +10,18 @@ import UIKit
 //import CoreGraphics
 
 class DetailedCell_W: UIViewController {
-    
 
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var background: UIView!
     
-    static func instantiateFromNib() -> DetailedCell_W {
-        let nib = UINib(nibName: String(describing: self), bundle: nil)
-        guard let cell = nib.instantiate(withOwner: nil, options: nil).first as? DetailedCell_W else {
-            fatalError()
-        }
-        return cell
-    }
+//オートレイアウト
+//    static func instantiateFromNib() -> DetailedCell_W {
+//        let nib = UINib(nibName: String(describing: self), bundle: nil)
+//        guard let cell = nib.instantiate(withOwner: nil, options: nil).first as? DetailedCell_W else {
+//            fatalError()
+//        }
+//        return cell
+//    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,6 +45,4 @@ class DetailedCell_W: UIViewController {
             , alpha: 1.0
             ) as! CGColor
     }
-
 }
-

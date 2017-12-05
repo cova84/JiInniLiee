@@ -4,7 +4,7 @@
 //
 //  Created by 小林由知 on 2017/11/16.
 //  Copyright © 2017年 Yoshitomo Kobatashi. All rights reserved.
-//
+
 
 import UIKit
 import CoreData //フレームワーク追加！！！！！！
@@ -12,14 +12,18 @@ import CoreData //フレームワーク追加！！！！！！
 
 class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
-//TODO:必要ないかも？？？
-//    //前の画面から受け取る為のプロパティ
-//    var getHotel = ""
-
     @IBOutlet weak var favoriteTableView: UITableView!
 
+    //選択されたエリア名を保存するメンバ変数
+    var getKeyDic = NSDictionary()
+    var selectPinKeyDic = NSDictionary()
+    var keyList:[String] = []
+    var dataList:[NSDictionary] = []
+    
     //Favorite（内容を）格納する配列TabelViewを準備
-    var contentHotel:[NSDictionary] = []  //Stringを修正
+    var contentHotel:[NSDictionary] = []
+    var contentCountry:[NSDictionary] = []
+    var contentID:[NSDictionary] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,13 +39,10 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         
         //一旦からにする（初期化）
         contentHotel = []
-        
         //AppDelegateを使う用意をしておく
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-        
         //エンティティを操作する為のオブジェクトを作成
         let viewContext = appDelegate.persistentContainer.viewContext
-        
         //どのエンティティからデータを取得してくるか設定（Favoriteエンティティ）
         let query:NSFetchRequest<Favorite> = Favorite.fetchRequest()
         
@@ -53,21 +54,21 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             for result: AnyObject in fetchResults{
                 let hotel :String? = result.value(forKey:"hotel") as? String
                 let country :String? = result.value(forKey:"country") as? String
-                
+                var id :String? = result.value(forKey:"id") as? String
+                var dic = ["hotel":hotel,"country":country] as [String : Any]
                 print("hotel:\(hotel!) country:\(country!) ")
-                
-                let dic = ["hotel":hotel,"country":country] as [String : Any]
-                
                 contentHotel.append(dic as NSDictionary)
+                
+                //TODO:idをカスタムクラスに保存
+                //var id = getKeyCore()
             }
         }catch{
         }
         favoriteTableView.reloadData()
     }
     
-    //TODO:値のセット　メモへ移動--------------------------------------------------------------------------------------
     
-    //TODO:削除設定--------------------------------------------------------------------------------------
+    //TODO:削除設定カスタムセルにボタンをつける--------------------------------------------------------------------------------------
     //    @IBAction func tapDelete(_ sender: UIButton) {
     //
     //        //AppDelegate使う準備をする（インスタンス化）
@@ -112,29 +113,35 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     //リストに表示する文字列を決定し、表示（cellForRowAtを検索）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         //文字列を表示するセルの取得（セルの再利用）
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteCell", for: indexPath) as! customCellTableViewCell
-        
         //表示したい文字の設定（セルの中には文字、画像も入る）
         var dic = contentHotel[indexPath.row] as! NSDictionary
-        
         //文字を設定したセルを返す
         return cell
     }
     
+    
+    ///TODO:ここの設定が必要
     //セルがタップされた時
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        var dic = contentHotel[indexPath.row] as! NSDictionary
-        //selectedSaveDate = dic["saveDate"] as! Date
-        performSegue(withIdentifier: "toDetail", sender: nil)
+        //Key(ディクショナリー型で)値の保存
+        var dic:getKeyCore = contentHotel[indexPath.row] as! NSDictionary
+
+        
+        
+        selectPinKeyDic =
+        //セグエのidentifierを指定して、画面移動
+        performSegue(withIdentifier: "toDetail", sender: self)
     }
-    
-    //セグエのidentifierを指定して、画面移動
-    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
-        //
-        //        var dvc:DetailViewController = segue.destination as! DetailViewController
-        //        dvc.favoriteDate = selectedSaveDate
+
+    //セグエを使って画面移動する時発動
+    override func prepare(for segue:UIStoryboardSegue, sender:Any?){
+        //次の画面のインスタンスを取得
+        var dvc = segue.destination as! DetailView
+        //次の画面のプロパティにタップされたセルのkeyを渡す
+        dvc.getKeyDic = selectPinKeyDic
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -144,3 +151,30 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
 }
 
+
+
+
+
+
+
+
+//    //セルがタップされた時
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//
+//        var dic = contentHotel[indexPath.row] as! NSDictionary
+//        performSegue(withIdentifier: "toDetail", sender: nil)
+//    }
+//
+//    //セグエのidentifierを指定して、画面移動
+//    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
+//
+//    }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//        // Dispose of any resources that can be recreated.
+//    }
+//
+//}
+//

@@ -9,9 +9,11 @@
 import Foundation
 import MapKit
 
-class mapKeyStorageMKPA: MKPointAnnotation {
+class getDicMap: MKPointAnnotation {
     
     //受け取る箱を準備
-    var pinKeyDic:NSDictionary = NSDictionary()
+    var getDic:NSDictionary = NSDictionary()
 
 }
+
+
