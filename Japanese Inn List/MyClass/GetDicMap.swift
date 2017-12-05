@@ -13,7 +13,7 @@ class getDicMap: MKPointAnnotation {
     
     //受け取る箱を準備
     var getDic:NSDictionary = NSDictionary()
-    
+
 }
 
 

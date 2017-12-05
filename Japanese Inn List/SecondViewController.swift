@@ -131,6 +131,9 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
             //Key(ディクショナリー型で)値の保存
             var pin:mapKeyStorageMKPA = view.annotation as! mapKeyStorageMKPA
             selectPinKeyDic = pin.pinKeyDic
+//            print("view.annotation : \(view.annotation!)")
+//            print("pin.pinKeyDic : \(pin.pinKeyDic)")
+//
             //セグエのidentifierを指定して、画面移動
             performSegue(withIdentifier: "toDetail", sender: self)
         }

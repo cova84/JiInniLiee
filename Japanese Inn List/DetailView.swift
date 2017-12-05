@@ -35,7 +35,6 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     //TODO:追加ボタンを押された時発動　確認用^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     @IBAction func saveFavorites(_ sender: UIButton) {
-        print("お気に入りに保存されました")
 
         //AppDelegateを使う用意をしておく（インスタンス化）
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -64,7 +63,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
 ////詳細情報-----------------------------------------------------------------------
     @IBAction func test(_ sender: UIButton) {
-        print("お気に入りに保存されました")
+        print("テストボタンが押されました")
 
     }
     @IBOutlet weak var detailedInfoTableView: UITableView!

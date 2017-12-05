@@ -98,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="-26" y="1024"/>
         </scene>
-        <!--ditail-->
+        <!--Detail View-->
         <scene sceneID="d61-2Q-hig">
             <objects>
                 <viewController id="ZmF-6z-xQM" customClass="DetailView" customModule="Japanese_Inn_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -109,8 +109,8 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fYQ-yA-5aK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="1600"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lK8-Zp-onP">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1551"/>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lK8-Zp-onP">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="1600"/>
                                         <subviews>
                                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" text="Hare Kapone" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="DGg-4w-L04">
                                                 <rect key="frame" x="16" y="28" width="288" height="43"/>
@@ -265,7 +265,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1Tf-4F-5Tu"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="ditail" id="27Y-E4-NFC"/>
+                    <tabBarItem key="tabBarItem" systemItem="more" id="qmR-B3-eiL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <size key="freeformSize" width="320" height="1600"/>
                     <connections>
@@ -385,7 +385,7 @@
             </objects>
             <point key="canvasLocation" x="1651.875" y="1022.5352112676056"/>
         </scene>
-        <!--Title-->
+        <!--Third View Controller-->
         <scene sceneID="7bc-1J-6i5">
             <objects>
                 <viewController id="1kl-1c-K7h" customClass="ThirdViewController" customModule="Japanese_Inn_List" customModuleProvider="target" sceneMemberID="viewController">
@@ -413,7 +413,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="ノースアクトンフィールズSTUDIO Ⅱ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDa-IP-Rhr">
-                                                    <rect key="frame" x="15" y="11" width="284" height="21"/>
+                                                    <rect key="frame" x="15" y="11" width="242" height="21"/>
                                                     <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -436,6 +436,17 @@
                                     <outlet property="delegate" destination="1kl-1c-K7h" id="0uk-E9-J0F"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9pS-ma-LSH">
+                                <rect key="frame" x="229" y="29" width="75" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                                <state key="normal" title="All Delete">
+                                    <color key="titleColor" red="0.96470588239999999" green="0.19215686269999999" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapAllDelete:" destination="1kl-1c-K7h" eventType="touchUpInside" id="DuX-tH-bJD"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -447,7 +458,6 @@
                         <viewLayoutGuide key="safeArea" id="rTa-7S-OAR"/>
                     </view>
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="Wzb-oZ-T0U"/>
-                    <navigationItem key="navigationItem" title="Title" id="xrc-og-nfV"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="favoriteTableView" destination="vge-Is-w9K" id="SvV-3k-9Tl"/>
@@ -456,13 +466,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="chG-9k-fwp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="864" y="1024"/>
+            <point key="canvasLocation" x="862.5" y="1023.5915492957747"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="Lj1-xj-TDh"/>
                     <tabBar key="tabBar" contentMode="bottom" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>

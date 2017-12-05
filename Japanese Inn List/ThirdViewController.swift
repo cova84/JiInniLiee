@@ -7,7 +7,7 @@
 
 
 import UIKit
-import CoreData //フレームワーク追加！！！！！！
+import CoreData
 
 
 class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
@@ -15,7 +15,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     @IBOutlet weak var favoriteTableView: UITableView!
 
     //選択されたエリア名を保存するメンバ変数
-    var getKeyDic = NSDictionary()
+//これもいらない    var getKeyDic = NSDictionary()
     var selectPinKeyDic = NSDictionary()
     var keyList:[String] = []
     var dataList:[NSDictionary] = []
@@ -32,6 +32,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewWillAppear(_ animated: Bool) {
         //CoreDataを読み込む処理
         read()
+
     }
     
     //すでに存在するデータの読み込み処理
@@ -54,57 +55,67 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             for result: AnyObject in fetchResults{
                 let hotel :String? = result.value(forKey:"hotel") as? String
                 let country :String? = result.value(forKey:"country") as? String
-                var id :String? = result.value(forKey:"id") as? String
-                var dic = ["hotel":hotel,"country":country] as [String : Any]
-                print("hotel:\(hotel!) country:\(country!) ")
+                let id :String? = result.value(forKey:"id") as? String
+                let dic = ["id":id!,"hotel":hotel!,"country":country!] as [String : Any]
+                print("hotel:\(hotel) hotel:\(hotel!) country:\(country!) ")
                 contentHotel.append(dic as NSDictionary)
-                
-                //TODO:idをカスタムクラスに保存
-                //var id = getKeyCore()
+
             }
         }catch{
         }
+        let test = ["id":"106","hotel":"わわわ","country":"ジャパン"]
+
+        contentHotel.append(test as NSDictionary)
         favoriteTableView.reloadData()
     }
     
     
-    //TODO:削除設定カスタムセルにボタンをつける--------------------------------------------------------------------------------------
-    //    @IBAction func tapDelete(_ sender: UIButton) {
-    //
-    //        //AppDelegate使う準備をする（インスタンス化）
-    //        let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
-    //
-    //        //エンティティを操作する為のオブジェクトを作成
-    //        let viewContext = appDelegate.persistentContainer.viewContext
-    //
-    //        //どのエンティティからデータを取得するか設定（Favoriteエンティティ）
-    //        let query:NSFetchRequest<Favorite> = Favorite.fetchRequest()
-    //
-    //        //削除したデータを取得（今回は全て取得）
-    //        do{
-    //            //削除するデータを取得(今回は全て)
-    //            let fetchResulte = try viewContext.fetch(query)
-    //
-    //            //１行ずつ（取り出した上で）削除
-    //            for result:AnyObject in fetchResulte{
-    //
-    //                //削除処理を行うために型変換
-    //                let record = result as! NSManagedObject
-    //                viewContext.delete(record)
-    //            }
-    //
-    //            //削除した状態を保存
-    //            try viewContext.save()
-    //
-    //        }catch{
-    //        }
-    //
-    //        //再読み込み
-    //        read()
-    //
-    //    }
-    ////TODO:削除設定--------------------------------------------------------------------------------------
+    //TODO:スクロール改善後、動作確認。-----------------------------------------------------------------------------------------------------
+    //TODO:本当は、削除設定カスタムセルにボタンをつけたい--------------------------------------------------------------------------------------
     
+    @IBAction func tapAllDelete(_ sender: UIButton) {
+        
+        //部品となるアラート作成
+        let alert = UIAlertController(
+            title: "All Delete", message: "全ての登録が削除されます。よろしいですか？", preferredStyle: .alert)
+        
+        //アラートの表示
+        //completion: 動作が完了した後に発動される処理を指示
+        //present(alert, animated: true, completion: nil)
+        present(alert, animated: true, completion: {() -> Void in print("選択画面が表示されました。")})
+        
+        //アラートにOKボタンを追加
+        //handler : OKボタンが押された時に、行いたい処理に指定する場所
+        //alert.addAction(UIAlertAction(title: "OPPAI", style: .default, handler: nil))
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: {
+            action in print("OKが押されました。")
+        
+            //AppDelegate使う準備をする（インスタンス化）
+            let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
+            //エンティティを操作する為のオブジェクトを作成
+            let viewContext = appDelegate.persistentContainer.viewContext
+            //どのエンティティからデータを取得するか設定（Favoriteエンティティ）
+            let query:NSFetchRequest<Favorite> = Favorite.fetchRequest()
+    
+            //削除したデータを取得（今回は全て取得）
+            do{
+                //削除するデータを取得(今回は全て)
+                let fetchResulte = try viewContext.fetch(query)
+                //１行ずつ（取り出した上で）削除
+                for result:AnyObject in fetchResulte{
+                    //削除処理を行うために型変換
+                    let record = result as! NSManagedObject
+                    viewContext.delete(record)
+                }
+                //削除した状態を保存
+                try viewContext.save()
+            }catch{
+            }
+            //再読み込み
+            self.read()
+        }))
+    }
+
     //TabelView用処理
     //行数の決定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -121,16 +132,15 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         return cell
     }
     
-    
-    ///TODO:ここの設定が必要
-    //セルがタップされた時
+    //セルがタップされた時のイベント
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Key(ディクショナリー型で)値の保存
-        var dic:getKeyCore = contentHotel[indexPath.row] as! NSDictionary
+        let hotelDic = contentHotel[indexPath.row]
+        let key = hotelDic["id"] as! String
+        let dic = readPlist(key:key)
+        print(dic)
+        selectPinKeyDic = dic as! NSDictionary
 
-        
-        
-        selectPinKeyDic =
         //セグエのidentifierを指定して、画面移動
         performSegue(withIdentifier: "toDetail", sender: self)
     }
@@ -141,7 +151,16 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         var dvc = segue.destination as! DetailView
         //次の画面のプロパティにタップされたセルのkeyを渡す
         dvc.getKeyDic = selectPinKeyDic
+    }
+    
+    func readPlist(key: String) -> NSDictionary? {
+        //plistの読み込み02--------------------------------------------------------
+        //ファイルパスを取得（エリア名が格納されているプロパティリスト）
+        let path = Bundle.main.path(forResource: "hotel_list_Detail", ofType: "plist")
+        //ファイルの内容を読み込んでディクショナリー型に格納
+        let dic = NSDictionary(contentsOfFile: path!)
         
+        return dic![key] as! NSDictionary
     }
     
     override func didReceiveMemoryWarning() {
@@ -151,30 +170,3 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
 }
 
-
-
-
-
-
-
-
-//    //セルがタップされた時
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//
-//        var dic = contentHotel[indexPath.row] as! NSDictionary
-//        performSegue(withIdentifier: "toDetail", sender: nil)
-//    }
-//
-//    //セグエのidentifierを指定して、画面移動
-//    override func prepare(for segue:UIStoryboardSegue, sender: Any?){
-//
-//    }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//        // Dispose of any resources that can be recreated.
-//    }
-//
-//}
-//
