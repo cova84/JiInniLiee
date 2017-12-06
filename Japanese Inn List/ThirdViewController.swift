@@ -63,9 +63,11 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         }catch{
         }
         //TODO:おかゆままテスト
-        //let test = ["id":"106","hotel":"わわわ","country":"ジャパン"]
-        //contentHotel.append(test as NSDictionary)
-        
+        if contentHotel.count == 0 {
+            //登録型一つも無かったら表示するようのダミー定義
+            let dummy = ["id":"000","hotel":"お気に入りの登録がありません","country":""]
+            contentHotel.append(dummy as NSDictionary)
+        }
         favoriteTableView.reloadData()
     }
     
@@ -127,22 +129,29 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         //文字列を表示するセルの取得（セルの再利用）
         let cell = tableView.dequeueReusableCell(withIdentifier: "FavoriteCell", for: indexPath) as! customCellTableViewCell
         //表示したい文字の設定（セルの中には文字、画像も入る）
-        var dic = contentHotel[indexPath.row] as! NSDictionary
+        var dic = contentHotel[indexPath.row] 
+        
+        cell.hotelLabel.text = dic["hotel"] as! String
         //文字を設定したセルを返す
         return cell
     }
     
     //セルがタップされた時のイベント
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //Key(ディクショナリー型で)値の保存
+        //okayumemo Favoriteデータから読出ししたデータを取り出し
         let hotelDic = contentHotel[indexPath.row]
         let key = hotelDic["id"] as! String
-        let dic = readPlist(key:key)
-        print(dic)
-        selectPinKeyDic = dic as! NSDictionary
 
-        //セグエのidentifierを指定して、画面移動
-        performSegue(withIdentifier: "toDetail", sender: self)
+        // 000の時はセグエ発動しなくて良い
+        if key != "000" {
+            //Key(ディクショナリー型で)Plistから取り出し
+            let dic = readPlist(key:key)
+            print(dic)
+            selectPinKeyDic = dic as! NSDictionary
+
+            //セグエのidentifierを指定して、画面移動
+            performSegue(withIdentifier: "toDetail", sender: self)
+        }
     }
 
     //セグエを使って画面移動する時発動
@@ -160,7 +169,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         //ファイルの内容を読み込んでディクショナリー型に格納
         let dic = NSDictionary(contentsOfFile: path!)
         
-        return dic![key] as! NSDictionary
+        return dic![key] as? NSDictionary
     }
     
     override func didReceiveMemoryWarning() {

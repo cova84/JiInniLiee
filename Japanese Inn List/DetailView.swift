@@ -11,30 +11,45 @@ import CoreData
 
 
 class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
-    
 
+    //画面全体のScrollView
     @IBOutlet weak var ditailScrollView: UIScrollView!
 
-    //plistの読み込み01--------------------------------------------------------
     //toDitailセグエ用　plistの配列を保存するメンバ変数
     var getKeyDic = NSDictionary()
-    
     //Favorite（内容を）格納する配列TabelViewを準備
     var contentHotel:[NSDictionary] = []
     var contentCountry:[NSDictionary] = []
     var contentID:[NSDictionary] = []
 
-//宿情報タイトル〜住所-----------------------------------------------------------------------
+    
+    
+    //宿情報タイトル〜住所-----------------------------------------------------------------------
     @IBOutlet weak var hotelName: UILabel!
     @IBOutlet weak var hotelComment: UITextView!
-    @IBOutlet weak var hotelImageView: UIImageView!
     @IBOutlet weak var hotelMap: MKMapView!
     @IBOutlet weak var hotelAddress: UITextView!
+    ////詳細情報-----------------------------------------------------------------------
+    @IBOutlet weak var detailedInfoTableView: UITableView!
+    ////予約方法-----------------------------------------------------------------------
+    @IBOutlet weak var reservationTabelView: UITableView!
+    
+    
+    
+    //UIScrollView 3~5枚で横スクロール
+    @IBOutlet weak var hotelImageScrollView: UIScrollView!
+    // Screenの高さ
+    var screenHeight:CGFloat!
+    // Screenの幅
+    var screenWidth:CGFloat!
+    // Totalのページ数
+    let pageNum:Int  = 5
+    
+    
     
     //TODO:追加ボタンを押された時発動　確認用^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     @IBAction func saveFavorites(_ sender: UIButton) {
-
-        print("お気に入りに保存されました")
+        print("お気に入りに保存されました") //TODO:テスト用
 
         //AppDelegateを使う用意をしておく（インスタンス化）
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -49,7 +64,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         //値のセット
         let hotel = getKeyDic["hotelName"] as! String
         let country = getKeyDic["country"] as! String
-        let id = getKeyDic["key"] as! String
+        let id = getKeyDic["id"] as! String
         newRecord.setValue(hotel, forKey: "hotel")  //hotel列に文字列をセット
         newRecord.setValue(country, forKey: "country")  //country列に文字列をセット
         newRecord.setValue(id, forKey: "id")  //country列に文字列をセット
@@ -69,40 +84,157 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         print("5お気に入りに保存されました")
 
     }
+
     
-    ////詳細情報-----------------------------------------------------------------------
-    @IBAction func test(_ sender: UIButton) {
-        print("テストボタンが押されました")
-
-    }
-    @IBOutlet weak var detailedInfoTableView: UITableView!
-////予約方法-----------------------------------------------------------------------
-    @IBOutlet weak var reservationTabelView: UITableView!
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        //plistの読み込み--------------------------------------------------------
-        //ファイルパスを取得（エリア名が格納されているプロパティリスト）
-        let path = Bundle.main.path(forResource: "hotel_list_Detail", ofType: "plist")
         
 //TODO:オートレイアウト　使うか不明？
 //        //TableView Cellの高さ可変設定/
 //        detailedInfoTableView.estimatedRowHeight = 26
 //        detailedInfoTableView.rowHeight = UITableViewAutomaticDimension
         
+        
+        
+        //plistの読み込み--------------------------------------------------------
+        //ファイルパスを取得（エリア名が格納されているプロパティリスト）
+        let path = Bundle.main.path(forResource: "hotel_list_Detail", ofType: "plist")
         //ホテル名
         hotelName.text = getKeyDic["hotelName"] as! String
         //紹介コメント
         hotelComment.text = getKeyDic["comment"] as! String
         hotelComment.sizeToFit()          // 文字数に合わせて縦に伸びます。
+        
 
-        //TODO:01 画像を５枚入れてスワイプで切り替えたい(ライブラリ探し中)
-        //        hotelImageView.image = UIImage(named:getKeyDic["image"] as! String)
-
-        //地図
+        //////////////////////////////////////////////////////////////////////
+        let screenSize: CGRect = UIScreen.main.bounds
+        
+        screenWidth = screenSize.width
+        
+        let imageTop:UIImage = UIImage(named:"1")!
+        
+        let imageWidth = imageTop.size.width
+        let imageHeight = imageTop.size.height
+        screenHeight = screenWidth * imageHeight/imageWidth
+        
+        
+        print("pWidth: \(screenWidth)")
+        
+        for i in 0 ..< pageNum {
+            let n:Int = i+1
+            
+            // UIImageViewのインスタンス
+            let image:UIImage = UIImage(named:"\(n)")!
+            let imageView = UIImageView(image:image)
+            
+            var rect:CGRect = imageView.frame
+            rect.size.height = screenHeight
+            rect.size.width = screenWidth
+            imageView.frame = rect
+            imageView.tag = n
+            
+            // UIScrollViewのインスタンスに画像を貼付ける
+            self.hotelImageScrollView.addSubview(imageView)
+            
+        }
+        
+        setupScrollImages()
+        
+    }
+    
+    func setupScrollImages(){
+        
+        // ダミー画像
+        let imageDummy:UIImage = UIImage(named:"1")!
+        var imgView = UIImageView(image:imageDummy)
+        var subviews:Array = hotelImageScrollView.subviews
+        
+        // 描画開始の x,y 位置
+        var px:CGFloat = 0.0
+        let py:CGFloat = 0.0
+        
+        for i in 0 ..< subviews.count {
+            imgView = subviews[i] as! UIImageView
+            if (imgView.isKind(of: UIImageView.self) && imgView.tag > 0){
+                
+                var viewFrame:CGRect = imgView.frame
+                viewFrame.origin = CGPoint(x: px, y: py)
+                imgView.frame = viewFrame
+                
+                px += (screenWidth)
+                
+            }
+        }
+        // UIScrollViewのコンテンツサイズを画像のtotalサイズに合わせる
+        let nWidth:CGFloat = screenWidth * CGFloat(pageNum)
+        hotelImageScrollView.contentSize = CGSize(width: nWidth, height: screenHeight)
+        
+//        //画像を５枚入れてスワイプ-----------------------------------------------------
+//        hotelImageView.image = UIImage(named:getKeyDic["image"] as! String)
+//        let screenSize: CGRect = UIScreen.main.bounds
+//
+//        screenWidth = screenSize.width
+//
+//        let id = getKeyDic["id"] as! String
+//        let imageTop:UIImage = UIImage(named:"\(id)_1")!
+//
+//        let imageWidth = imageTop.size.width
+//        let imageHeight = imageTop.size.height
+//        screenHeight = screenWidth * imageHeight/imageWidth
+//
+//        print("pWidth: \(screenWidth)")
+//
+//        for i in 0 ..< pageNum {
+//            let n:Int = i+1
+//
+//            // UIImageViewのインスタンス
+//            let image:UIImage = UIImage(named:"\(id)_\(n)")!
+//            let imageView = UIImageView(image:image)
+//
+//            var rect:CGRect = imageView.frame
+//            rect.size.height = screenHeight
+//            rect.size.width = screenWidth
+//            imageView.frame = rect
+//            imageView.tag = n
+//
+//            // UIScrollViewのインスタンスに画像を貼付ける
+//            self.hotelImageScrollView.addSubview(imageView)
+//        }
+//        setupScrollImages()
+//    }
+//    func setupScrollImages(){
+//
+//        // ダミー画像
+//        let imageDummy:UIImage = UIImage(named:"1")!
+//        var imgView = UIImageView(image:imageDummy)
+//        var subviews:Array = hotelImageScrollView.subviews
+//
+//        // 描画開始の x,y 位置
+//        var px:CGFloat = 0.0
+//        let py:CGFloat = 100.0
+//
+//        for i in 0 ..< subviews.count {
+//            imgView = subviews[i] as! UIImageView
+//            if (imgView.isKind(of: UIImageView.self) && imgView.tag > 0){
+//
+//                var viewFrame:CGRect = imgView.frame
+//                viewFrame.origin = CGPoint(x: px, y: py)
+//                imgView.frame = viewFrame
+//
+//                px += (screenWidth)
+//
+//            }
+//        }
+//        // UIScrollViewのコンテンツサイズを画像のtotalサイズに合わせる
+//        let nWidth:CGFloat = screenWidth * CGFloat(pageNum)
+//        hotelImageScrollView.contentSize = CGSize(width: nWidth, height: screenHeight)
+    
+        
+        
+        //地図---------------------------------------------------------------------
         let latitude = getKeyDic["latitude"] as! String
         let longitude = getKeyDic["longitude"] as! String
         //座標オブジェクト
@@ -123,15 +255,15 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         // 4.mapViewにPinを追加
         hotelMap.addAnnotation(myPin)
 
-        //住所
+        
+        
+        //住所--------------------------------------------------------------------
         hotelAddress.text = getKeyDic["address"] as! String
         hotelAddress.sizeToFit() // 文字数に合わせて縦に伸びます。
     }
 
     
 
-
-    
     //TableView行数の設定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch tableView.tag {
@@ -142,6 +274,8 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         }
     }
     
+    
+    
     //TableView表示する文字列を決定（テーブルビュー２つ）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch tableView.tag {
@@ -150,6 +284,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
             case 0:
                 let detailedCell_G = tableView.dequeueReusableCell(withIdentifier: "detailedCell_G", for: indexPath)
                 detailedCell_G.textLabel?.text = "宿泊費（詳細情報はHPからご確認ください。）"
+                detailedCell_G.selectedBackgroundView?.backgroundColor = UIColor.blue
                 return detailedCell_G
             case 1:
                 let detailedCell_W = tableView.dequeueReusableCell(withIdentifier: "detailedCell_W", for: indexPath)
@@ -200,7 +335,6 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
                 let reservationCell_W = tableView.dequeueReusableCell(withIdentifier: "reservationCell_W", for: indexPath)
                 reservationCell_W.textLabel?.text = "\(getKeyDic["reservation"] as! String)（\(getKeyDic["reservation_URL"] as! String)）"
                 reservationCell_W.textLabel?.textColor = UIColor.blue
-
                 return reservationCell_W
             case 2:
                 let reservation_G = tableView.dequeueReusableCell(withIdentifier: "reservationCell_G", for: indexPath)
@@ -230,29 +364,35 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
             }
         }
     }
-
-    //TODO:飛ばない・・・セルがタップされたらURLに飛ぶ（セル内にURL情報）ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
-//    //セルがタップされたら発動
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        switch tableView.tag {
-        case 1:
-            return
-        default:
-            //タップ時に色が変わらない
-            tableView.deselectRow(at: indexPath, animated: true)
-            print("\(indexPath.row)行目をタップしました。")
-            //指定のリンク先へ飛ぶ
-            let resUrl = getKeyDic["reservation_URL"] as! String
-            let url = URL(string: "resUrl")!
-            if UIApplication.shared.canOpenURL(url) {
-                UIApplication.shared.open(url)
-            }
-            return
-        }
+    
+    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath? {
+        tableView.deselectRow(at: indexPath, animated: true)
+        return indexPath
     }
 
-    //TODO:セルがタップされたらURLに飛ぶーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+    
+    
+    //TODO:色が変わらない。セルがタップされたらURLに飛ぶ（セル内にURL情報）ーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーーー
+//    //セルがタップされたら発動
+//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//        switch tableView.tag {
+//        case 1:
+//            return
+//        default:
+//            //タップ時に色が変わらない
+//           // tableView.deselectRow(at: indexPath, animated: true)
+//            print("\(indexPath.row)行目をタップしました。")
+//            //指定のリンク先へ飛ぶ
+//            let resUrl = getKeyDic["reservation_URL"] as! String
+//            let url = URL(string: "resUrl")!
+//            if UIApplication.shared.canOpenURL(url) {
+//                UIApplication.shared.open(url)
+//            }
+//            return
+//        }
+//    }
 
+    
     
     
     //TODO:オートレイアウト　謎のエラー？？？

@@ -62,12 +62,12 @@
 	</dict>
 	<key>002</key>
 	<dict>
+		<key>id</key>
+		<string>002</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
 		<string>北アメリカ</string>
-		<key>id</key>
-		<string>002</string>
 		<key>country</key>
 		<string>アメリカ</string>
 		<key>hotelName</key>
@@ -123,10 +123,10 @@ http://www.theonehundred.com/request.htm</string>
 	</dict>
 	<key>003</key>
 	<dict>
+		<key>id</key>
+		<string>003</string>
 		<key>kind</key>
 		<string>コテージ</string>
-		<key>key</key>
-		<string>003</string>
 		<key>continent</key>
 		<string>北アメリカ</string>
 		<key>country</key>
@@ -462,10 +462,10 @@ V1W 2Z6 Canada </string>
 	</dict>
 	<key>106</key>
 	<dict>
-		<key>kind</key>
-		<string>コテージ</string>
 		<key>id</key>
 		<string>106</string>
+		<key>kind</key>
+		<string>コテージ</string>
 		<key>continent</key>
 		<string>北アメリカ</string>
 		<key>country</key>
