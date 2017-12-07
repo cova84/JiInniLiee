@@ -36,20 +36,20 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     
     
-    //UIScrollView 3~5枚で横スクロール
+    //UIScrollView 横スクロールで表示
     @IBOutlet weak var hotelImageScrollView: UIScrollView!
     // Screenの高さ
     var screenHeight:CGFloat!
     // Screenの幅
     var screenWidth:CGFloat!
     // Totalのページ数
-    let pageNum:Int  = 5
+   // let pageNum:Int  = 4
     
     
     
     //TODO:追加ボタンを押された時発動　確認用^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
     @IBAction func saveFavorites(_ sender: UIButton) {
-        print("お気に入りに保存されました") //TODO:テスト用
+        print("お気に入りに保存されました")
 
         //AppDelegateを使う用意をしておく（インスタンス化）
         let appDelegate:AppDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -109,17 +109,21 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         hotelComment.sizeToFit()          // 文字数に合わせて縦に伸びます。
         
 
-        //////////////////////////////////////////////////////////////////////
+        
+        //画像スライドショー-----------------------------------------------------
+        // Totalのページ数
+        let imageNum = getKeyDic["image"] as! Int
+        let pageNum:Int  = imageNum
+        
         let screenSize: CGRect = UIScreen.main.bounds
         
         screenWidth = screenSize.width
-        
-        let imageTop:UIImage = UIImage(named:"1")!
+        let id = getKeyDic["id"] as! String
+        let imageTop:UIImage = UIImage(named: "\(id)_1")!
         
         let imageWidth = imageTop.size.width
         let imageHeight = imageTop.size.height
         screenHeight = screenWidth * imageHeight/imageWidth
-        
         
         print("pWidth: \(screenWidth)")
         
@@ -127,7 +131,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
             let n:Int = i+1
             
             // UIImageViewのインスタンス
-            let image:UIImage = UIImage(named:"\(n)")!
+            let image:UIImage = UIImage(named: "\(id)_\(n)")!
             let imageView = UIImageView(image:image)
             
             var rect:CGRect = imageView.frame
@@ -146,9 +150,13 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     }
     
     func setupScrollImages(){
+        // Totalのページ数
+        let imageNum = getKeyDic["image"] as! Int
+        let pageNum:Int  = imageNum
         
         // ダミー画像
-        let imageDummy:UIImage = UIImage(named:"1")!
+        let id = getKeyDic["id"] as! String
+        let imageDummy:UIImage = UIImage(named:"\(id)_1")!
         var imgView = UIImageView(image:imageDummy)
         var subviews:Array = hotelImageScrollView.subviews
         
@@ -172,66 +180,6 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         let nWidth:CGFloat = screenWidth * CGFloat(pageNum)
         hotelImageScrollView.contentSize = CGSize(width: nWidth, height: screenHeight)
         
-//        //画像を５枚入れてスワイプ-----------------------------------------------------
-//        hotelImageView.image = UIImage(named:getKeyDic["image"] as! String)
-//        let screenSize: CGRect = UIScreen.main.bounds
-//
-//        screenWidth = screenSize.width
-//
-//        let id = getKeyDic["id"] as! String
-//        let imageTop:UIImage = UIImage(named:"\(id)_1")!
-//
-//        let imageWidth = imageTop.size.width
-//        let imageHeight = imageTop.size.height
-//        screenHeight = screenWidth * imageHeight/imageWidth
-//
-//        print("pWidth: \(screenWidth)")
-//
-//        for i in 0 ..< pageNum {
-//            let n:Int = i+1
-//
-//            // UIImageViewのインスタンス
-//            let image:UIImage = UIImage(named:"\(id)_\(n)")!
-//            let imageView = UIImageView(image:image)
-//
-//            var rect:CGRect = imageView.frame
-//            rect.size.height = screenHeight
-//            rect.size.width = screenWidth
-//            imageView.frame = rect
-//            imageView.tag = n
-//
-//            // UIScrollViewのインスタンスに画像を貼付ける
-//            self.hotelImageScrollView.addSubview(imageView)
-//        }
-//        setupScrollImages()
-//    }
-//    func setupScrollImages(){
-//
-//        // ダミー画像
-//        let imageDummy:UIImage = UIImage(named:"1")!
-//        var imgView = UIImageView(image:imageDummy)
-//        var subviews:Array = hotelImageScrollView.subviews
-//
-//        // 描画開始の x,y 位置
-//        var px:CGFloat = 0.0
-//        let py:CGFloat = 100.0
-//
-//        for i in 0 ..< subviews.count {
-//            imgView = subviews[i] as! UIImageView
-//            if (imgView.isKind(of: UIImageView.self) && imgView.tag > 0){
-//
-//                var viewFrame:CGRect = imgView.frame
-//                viewFrame.origin = CGPoint(x: px, y: py)
-//                imgView.frame = viewFrame
-//
-//                px += (screenWidth)
-//
-//            }
-//        }
-//        // UIScrollViewのコンテンツサイズを画像のtotalサイズに合わせる
-//        let nWidth:CGFloat = screenWidth * CGFloat(pageNum)
-//        hotelImageScrollView.contentSize = CGSize(width: nWidth, height: screenHeight)
-    
         
         
         //地図---------------------------------------------------------------------

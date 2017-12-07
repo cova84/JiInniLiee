@@ -17,7 +17,6 @@
 		D184AF491FD2E6690089DB39 /* infoLink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D184AF451FD2E6690089DB39 /* infoLink.jpg */; };
 		D184AF4A1FD2E6690089DB39 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = D184AF461FD2E6690089DB39 /* minus.png */; };
 		D184AF4B1FD2E6690089DB39 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D184AF471FD2E6690089DB39 /* plus.png */; };
-		D184AF4C1FD2E6690089DB39 /* sampleHotelImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D184AF481FD2E6690089DB39 /* sampleHotelImage.jpg */; };
 		D18D90CC1FD28E37005AF348 /* DetailedCell_W.xib in Resources */ = {isa = PBXBuildFile; fileRef = D18D90CB1FD28E37005AF348 /* DetailedCell_W.xib */; };
 		D18F48551FC4722200535881 /* favoriteCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D18F48531FC4722200535881 /* favoriteCoreData.xcdatamodeld */; };
 		D19AEF881FC731840080ACC0 /* hotel_list_Detail.plist in Resources */ = {isa = PBXBuildFile; fileRef = D19AEF871FC731840080ACC0 /* hotel_list_Detail.plist */; };
@@ -77,7 +76,6 @@
 		D184AF451FD2E6690089DB39 /* infoLink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = infoLink.jpg; sourceTree = SOURCE_ROOT; };
 		D184AF461FD2E6690089DB39 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
 		D184AF471FD2E6690089DB39 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = SOURCE_ROOT; };
-		D184AF481FD2E6690089DB39 /* sampleHotelImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sampleHotelImage.jpg; sourceTree = SOURCE_ROOT; };
 		D18D90CB1FD28E37005AF348 /* DetailedCell_W.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailedCell_W.xib; sourceTree = "<group>"; };
 		D18F48541FC4722200535881 /* favoriteCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = favoriteCoreData.xcdatamodel; sourceTree = "<group>"; };
 		D19AEF871FC731840080ACC0 /* hotel_list_Detail.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = hotel_list_Detail.plist; sourceTree = SOURCE_ROOT; };
@@ -133,7 +131,6 @@
 				D184AF451FD2E6690089DB39 /* infoLink.jpg */,
 				D184AF461FD2E6690089DB39 /* minus.png */,
 				D184AF471FD2E6690089DB39 /* plus.png */,
-				D184AF481FD2E6690089DB39 /* sampleHotelImage.jpg */,
 			);
 			path = image;
 			sourceTree = "<group>";
@@ -173,10 +170,10 @@
 				D117090E1FBE997500F4B3E4 /* Main.storyboard */,
 				D1FE761B1FC7C471000786C3 /* LaunchScreen.storyboard */,
 				D184AF3B1FD2E5F60089DB39 /* image */,
-				D1FEAD311FCA978600E25738 /* hotel_list_Top.plist */,
 				D1D23C391FBCB426009D3895 /* Info.plist */,
-				D18F48531FC4722200535881 /* favoriteCoreData.xcdatamodeld */,
+				D1FEAD311FCA978600E25738 /* hotel_list_Top.plist */,
 				D19AEF871FC731840080ACC0 /* hotel_list_Detail.plist */,
+				D18F48531FC4722200535881 /* favoriteCoreData.xcdatamodeld */,
 			);
 			path = "Japanese Inn List";
 			sourceTree = "<group>";
@@ -344,7 +341,6 @@
 				D184AF4B1FD2E6690089DB39 /* plus.png in Resources */,
 				D18D90CC1FD28E37005AF348 /* DetailedCell_W.xib in Resources */,
 				D184AF4A1FD2E6690089DB39 /* minus.png in Resources */,
-				D184AF4C1FD2E6690089DB39 /* sampleHotelImage.jpg in Resources */,
 				D184AF491FD2E6690089DB39 /* infoLink.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
