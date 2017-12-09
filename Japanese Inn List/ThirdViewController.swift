@@ -62,9 +62,8 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             }
         }catch{
         }
-        //TODO:おかゆままテスト
+        //登録型一つも無かったら表示するようのダミー定義
         if contentHotel.count == 0 {
-            //登録型一つも無かったら表示するようのダミー定義
             let dummy = ["id":"000","hotel":"お気に入りの登録がありません","country":""]
             contentHotel.append(dummy as NSDictionary)
         }

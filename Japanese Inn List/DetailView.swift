@@ -24,14 +24,14 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
 
     
     
-    //宿情報タイトル〜住所-----------------------------------------------------------------------
+    //宿情報タイトル〜住所-----------------------------------------------------------------------------------------
     @IBOutlet weak var hotelName: UILabel!
     @IBOutlet weak var hotelComment: UITextView!
     @IBOutlet weak var hotelMap: MKMapView!
     @IBOutlet weak var hotelAddress: UITextView!
-    ////詳細情報-----------------------------------------------------------------------
+    ////詳細情報-------------------------------------------------------------------------------------------------
     @IBOutlet weak var detailedInfoTableView: UITableView!
-    ////予約方法-----------------------------------------------------------------------
+    ////予約方法--------------------------------------------------------------------------------------------------
     @IBOutlet weak var reservationTabelView: UITableView!
     
     
@@ -47,7 +47,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     
     
     
-    //TODO:追加ボタンを押された時発動　確認用^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    //お気に入り追加ボタンを押された時発動　-----------------------------------------------------------------------------
     @IBAction func saveFavorites(_ sender: UIButton) {
         print("お気に入りに保存されました")
 
@@ -99,7 +99,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         
         
         
-        //plistの読み込み--------------------------------------------------------
+        //plistの読み込み--------------------------------------------------------------------------------------------------
         //ファイルパスを取得（エリア名が格納されているプロパティリスト）
         let path = Bundle.main.path(forResource: "hotel_list_Detail", ofType: "plist")
         //ホテル名
@@ -109,34 +109,48 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         hotelComment.sizeToFit()          // 文字数に合わせて縦に伸びます。
         
 
-        
-        //画像スライドショー-----------------------------------------------------
+
+        //画像スライドショー-----------------------------------------------------------------------------------------------
         // Totalのページ数
         let imageNum = getKeyDic["image"] as! Int
         let pageNum:Int  = imageNum
-        
+
+        //スクリーンサイズはmainのサイズを参照
         let screenSize: CGRect = UIScreen.main.bounds
-        
-        screenWidth = screenSize.width
+
+        //imageViewスクリーンの幅を指定
         let id = getKeyDic["id"] as! String
         let imageTop:UIImage = UIImage(named: "\(id)_1")!
         
-        let imageWidth = imageTop.size.width
-        let imageHeight = imageTop.size.height
-        screenHeight = screenWidth * imageHeight/imageWidth
+        //画面サイズから、スクリーンサイズ算出
+        let gamenWidth = self.view.frame.size.width
+        //let gamenHeight = self.view.frame.size.height
+        
+        //TODO:オートレイアウトをかけるまでSE以外のサイズはずれる。画面の幅からの逆算の為。
+        //imageViewのスクリーンサイズ高さ指定
+        screenWidth = gamenWidth - 32
+        screenHeight = screenWidth * 204/288
+
         
         print("pWidth: \(screenWidth)")
         
         for i in 0 ..< pageNum {
             let n:Int = i+1
             
-            // UIImageViewのインスタンス
+            // 1.UIImageViewのインスタンス
             let image:UIImage = UIImage(named: "\(id)_\(n)")!
             let imageView = UIImageView(image:image)
             
+            // 2.画像ごとにそのframeサイズを設定
+            //rectにimaeViewの寸法、位置情報を代入
             var rect:CGRect = imageView.frame
-            rect.size.height = screenHeight
+            
+            //幅はTPOと同じ
+            //高さは参照データに合わせ変更
+            screenWidth = gamenWidth - 32
+            screenHeight = screenWidth * 204/288
             rect.size.width = screenWidth
+            rect.size.height = screenHeight
             imageView.frame = rect
             imageView.tag = n
             
@@ -144,12 +158,12 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
             self.hotelImageScrollView.addSubview(imageView)
             
         }
-        
         setupScrollImages()
-        
     }
-    
+
+    // 3.addSubview でUIScrollViewに加える
     func setupScrollImages(){
+        
         // Totalのページ数
         let imageNum = getKeyDic["image"] as! Int
         let pageNum:Int  = imageNum
@@ -160,7 +174,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         var imgView = UIImageView(image:imageDummy)
         var subviews:Array = hotelImageScrollView.subviews
         
-        // 描画開始の x,y 位置
+        // 4.描画開始のカーソルポイントを決める x,y 位置
         var px:CGFloat = 0.0
         let py:CGFloat = 0.0
         
@@ -176,7 +190,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
                 
             }
         }
-        // UIScrollViewのコンテンツサイズを画像のtotalサイズに合わせる
+        // 5.UIScrollViewのコンテンツサイズを画像のtotalサイズに合わせる
         let nWidth:CGFloat = screenWidth * CGFloat(pageNum)
         hotelImageScrollView.contentSize = CGSize(width: nWidth, height: screenHeight)
         
