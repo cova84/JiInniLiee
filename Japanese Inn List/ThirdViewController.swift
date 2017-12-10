@@ -14,10 +14,10 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
     @IBOutlet weak var favoriteTableView: UITableView!
 
+    //plistの配列を一時保存するメンバ変数
+    var selectHototelDetailDic = NSDictionary()
     //toDitailセグエ用　plistの配列を保存するメンバ変数
     var getKeyDic = NSDictionary()
-    //セル内の情報を保存するメンバ変数
-    var selectPinKeyDic = NSDictionary()
     
     //Favorite（内容を）格納する配列TabelViewを準備
     var contentHotel:[NSDictionary] = []
@@ -146,7 +146,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             //Key(ディクショナリー型で)Plistから取り出し
             let dic = readPlist(key:key)
             print(dic)
-            selectPinKeyDic = dic as! NSDictionary
+            selectHototelDetailDic = dic as! NSDictionary
 
             //セグエのidentifierを指定して、画面移動
             performSegue(withIdentifier: "toDetail", sender: self)
@@ -158,7 +158,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         //次の画面のインスタンスを取得
         var dvc = segue.destination as! DetailView
         //次の画面のプロパティにタップされたセルのkeyを渡す
-        dvc.getKeyDic = selectPinKeyDic
+        dvc.getKeyDic = selectHototelDetailDic
     }
     
     func readPlist(key: String) -> NSDictionary? {

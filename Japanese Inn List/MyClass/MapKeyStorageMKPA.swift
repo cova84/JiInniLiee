@@ -6,12 +6,13 @@
 //  Copyright © 2017年 Yoshitomo Kobatashi. All rights reserved.
 //
 
-import Foundation
-import MapKit
+//import Foundation
+//import MapKit
+//
+//class mapKeyStorageMKPA: MKPointAnnotation {
+//    
+//    //受け取る箱を準備
+//    var pinKeyDic:NSDictionary = NSDictionary()
+//
+//}
 
-class mapKeyStorageMKPA: MKPointAnnotation {
-    
-    //受け取る箱を準備
-    var pinKeyDic:NSDictionary = NSDictionary()
-
-}

@@ -6,14 +6,13 @@
 //  Copyright © 2017年 Yoshitomo Kobatashi. All rights reserved.
 //
 
+
 import Foundation
 import MapKit
 
 class getDicMap: MKPointAnnotation {
     
     //受け取る箱を準備
-    var getDic:NSDictionary = NSDictionary()
-
+    var pinKeyDic:NSDictionary = NSDictionary()
+    
 }
-
-

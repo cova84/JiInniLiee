@@ -12,11 +12,11 @@ import MapKit
 class SecondViewController: UIViewController,MKMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
-    
+
+    //plistの配列を一時保存するメンバ変数
+    var selectPinKeyDic = NSDictionary()
     //toDitailセグエ用　plistの配列を保存するメンバ変数
     var getKeyDic = NSDictionary()
-    //セル内の情報を保存するメンバ変数
-    var selectPinKeyDic = NSDictionary()
     
     
     override func viewDidLoad() {
@@ -62,7 +62,7 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
             mapView.setRegion(region,animated: true)
             //1.pinオブシェクトを生成（）内は不要
             //mapKeyStorageで値を保存
-            let myPin = mapKeyStorageMKPA()
+            let myPin = getDicMap()
             myPin.pinKeyDic = dic
             //2.pinの座標を設定
             myPin.coordinate = coodineate
@@ -125,7 +125,7 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
         
         if control == view.rightCalloutAccessoryView {
             //Key(ディクショナリー型で)値の保存
-            var pin:mapKeyStorageMKPA = view.annotation as! mapKeyStorageMKPA
+            var pin:getDicMap = view.annotation as! getDicMap
             selectPinKeyDic = pin.pinKeyDic
 //            print("view.annotation : \(view.annotation!)")
 //            print("pin.pinKeyDic : \(pin.pinKeyDic)")

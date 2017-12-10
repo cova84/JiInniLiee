@@ -6,6 +6,8 @@
 	<dict>
 		<key>kind</key>
 		<string>ホームステイ</string>
+		<key>id</key>
+		<string>001</string>
 		<key>continent</key>
 		<string>北アメリカ</string>
 		<key>country</key>
@@ -13,7 +15,7 @@
 		<key>hotelName</key>
 		<string>LAオレンジグローブ</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -73,7 +75,7 @@
 		<key>hotelName</key>
 		<string>The One Hundred</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>100 Fort Greene Pl, Brooklyn, NY 11217-1419</string>
 		<key>map</key>
@@ -134,7 +136,7 @@ http://www.theonehundred.com/request.htm</string>
 		<key>hotelName</key>
 		<string>ハワイノースショアの宿</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -182,6 +184,8 @@ http://www.theonehundred.com/request.htm</string>
 	</dict>
 	<key>101</key>
 	<dict>
+		<key>id</key>
+		<string>101</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -191,7 +195,7 @@ http://www.theonehundred.com/request.htm</string>
 		<key>hotelName</key>
 		<string>Sweetheart B &amp; B 1号館</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>72 Henry St., Toronto, Ontario, Canada M5T 1X2</string>
 		<key>map</key>
@@ -248,6 +252,8 @@ http://www.sweetheartbb.com/toronto/contact/index.html</string>
 	<dict>
 		<key>kind</key>
 		<string>ホームステイ</string>
+		<key>id</key>
+		<string>102</string>
 		<key>continent</key>
 		<string>北アメリカ</string>
 		<key>country</key>
@@ -255,7 +261,7 @@ http://www.sweetheartbb.com/toronto/contact/index.html</string>
 		<key>hotelName</key>
 		<string>B&amp;B AOGAKI</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>6991 Frederick Avenue Burnaby B.C. Canada</string>
 		<key>map</key>
@@ -300,6 +306,8 @@ Highシーズン (5月～10月)</string>
 	</dict>
 	<key>103</key>
 	<dict>
+		<key>id</key>
+		<string>103</string>
 		<key>kind</key>
 		<string>ホームステイ</string>
 		<key>continent</key>
@@ -309,7 +317,7 @@ Highシーズン (5月～10月)</string>
 		<key>hotelName</key>
 		<string>メリーフィールドハウスB&amp;B</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>235 Government St., Victoria, B.C., Canada, V8V 2K8</string>
 		<key>map</key>
@@ -360,6 +368,8 @@ C $155.00〜
 	</dict>
 	<key>104</key>
 	<dict>
+		<key>id</key>
+		<string>104</string>
 		<key>kind</key>
 		<string>ハウス</string>
 		<key>continent</key>
@@ -369,7 +379,7 @@ C $155.00〜
 		<key>hotelName</key>
 		<string>Manor Guest House</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>1909 West 4th Ave
 Vancouver, BC V6J 1M7</string>
@@ -411,6 +421,8 @@ Vancouver, BC V6J 1M7</string>
 	</dict>
 	<key>105</key>
 	<dict>
+		<key>id</key>
+		<string>105</string>
 		<key>kind</key>
 		<string>ホームステイ</string>
 		<key>continent</key>
@@ -420,7 +432,7 @@ Vancouver, BC V6J 1M7</string>
 		<key>hotelName</key>
 		<string>ホリディホームステイ　B&amp;B</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>4018 Santa Anita Place, Kelowna, BC 
 V1W 2Z6 Canada </string>
@@ -473,7 +485,7 @@ V1W 2Z6 Canada </string>
 		<key>hotelName</key>
 		<string>堀江サンロッジイン</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>2232 Sunburst Drive
 Sun Peaks, B.C.
@@ -532,6 +544,8 @@ $ 165.00</string>
 	</dict>
 	<key>107</key>
 	<dict>
+		<key>id</key>
+		<string>107</string>
 		<key>kind</key>
 		<string>コテージ</string>
 		<key>continent</key>
@@ -541,7 +555,7 @@ $ 165.00</string>
 		<key>hotelName</key>
 		<string>バンフィー</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string> 
 213 Glen Crescent, Banff, Alberta, Canada T1L-1C1　</string>
@@ -586,6 +600,8 @@ $ 165.00</string>
 	</dict>
 	<key>108</key>
 	<dict>
+		<key>id</key>
+		<string>108</string>
 		<key>kind</key>
 		<string>ハウス</string>
 		<key>continent</key>
@@ -595,7 +611,7 @@ $ 165.00</string>
 		<key>hotelName</key>
 		<string>モナークB&amp;B</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>317 Canyon Close
 Canmore, Alberta Canada
@@ -641,6 +657,8 @@ $320.00（家族割引　大人4名／子供2名：$320.00〜）</string>
 	</dict>
 	<key>201</key>
 	<dict>
+		<key>id</key>
+		<string>201</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -650,7 +668,7 @@ $320.00（家族割引　大人4名／子供2名：$320.00〜）</string>
 		<key>hotelName</key>
 		<string>民宿ラブリシュ</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>10 Hillview Ave,Kingston 10,Jamaica W.I
 </string>
@@ -719,7 +737,7 @@ $320.00（家族割引　大人4名／子供2名：$320.00〜）</string>
 		<key>hotelName</key>
 		<string>アイシャ★ハウス</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>8 Goodwood Terrace,Kingston10 Jamaica W.I.</string>
 		<key>map</key>
@@ -762,6 +780,8 @@ aishahouse@hotmail.com</string>
 	</dict>
 	<key>211</key>
 	<dict>
+		<key>id</key>
+		<string>211</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -771,7 +791,7 @@ aishahouse@hotmail.com</string>
 		<key>hotelName</key>
 		<string>ホテル・エル・ソル</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>Salida a Santa Catarina,
 Barrio Jucanya, Panajachel
@@ -818,6 +838,8 @@ www.booking.com/</string>
 	</dict>
 	<key>212</key>
 	<dict>
+		<key>id</key>
+		<string>212</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -827,7 +849,7 @@ www.booking.com/</string>
 		<key>hotelName</key>
 		<string>Taka House</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>15 Avenida, 1-22, zona 1, Quezaltenago, Guatemala</string>
 		<key>map</key>
@@ -867,6 +889,8 @@ www.booking.com/</string>
 	</dict>
 	<key>213</key>
 	<dict>
+		<key>id</key>
+		<string>213</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -876,7 +900,7 @@ www.booking.com/</string>
 		<key>hotelName</key>
 		<string>ハポンテナンゴ</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string> 19 Avenida 16-36 Zona 10 
 Ciudad de Guatemala </string>
@@ -919,6 +943,8 @@ Ciudad de Guatemala </string>
 	</dict>
 	<key>214</key>
 	<dict>
+		<key>id</key>
+		<string>214</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -928,7 +954,7 @@ Ciudad de Guatemala </string>
 		<key>hotelName</key>
 		<string>EL PARAISO DE OMOA</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>Bo La Playa Atras de Pulp. Daniela,
 Omoa, Cortés Honduras C.A.</string>
@@ -971,6 +997,8 @@ Omoa, Cortés Honduras C.A.</string>
 	</dict>
 	<key>221</key>
 	<dict>
+		<key>id</key>
+		<string>221</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -980,7 +1008,7 @@ Omoa, Cortés Honduras C.A.</string>
 		<key>hotelName</key>
 		<string>ホテル内山田</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>Constitucion 763, Asuncion, Paraguay</string>
 		<key>map</key>
@@ -1034,7 +1062,7 @@ Omoa, Cortés Honduras C.A.</string>
 		<key>hotelName</key>
 		<string>Hare Kapone</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>Tuki Haka Hevari, Hanga Roa, Easter Island, Chile</string>
 		<key>map</key>
@@ -1077,6 +1105,8 @@ http://www.harekapone.cl/sfm_form_2.html</string>
 	</dict>
 	<key>301</key>
 	<dict>
+		<key>id</key>
+		<string>301</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -1086,7 +1116,7 @@ http://www.harekapone.cl/sfm_form_2.html</string>
 		<key>hotelName</key>
 		<string>Maison Orange</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>31 Rue Guilleminot 75014 Paris France</string>
 		<key>map</key>
@@ -1138,6 +1168,8 @@ http://www.harekapone.cl/sfm_form_2.html</string>
 	</dict>
 	<key>302</key>
 	<dict>
+		<key>id</key>
+		<string>302</string>
 		<key>kind</key>
 		<string>ホームステイ</string>
 		<key>continent</key>
@@ -1147,7 +1179,7 @@ http://www.harekapone.cl/sfm_form_2.html</string>
 		<key>hotelName</key>
 		<string>VILLA MISTRAL</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1193,6 +1225,8 @@ http://www.harekapone.cl/sfm_form_2.html</string>
 	</dict>
 	<key>303</key>
 	<dict>
+		<key>id</key>
+		<string>303</string>
 		<key>kind</key>
 		<string>ホームステイ</string>
 		<key>continent</key>
@@ -1202,7 +1236,7 @@ http://www.harekapone.cl/sfm_form_2.html</string>
 		<key>hotelName</key>
 		<string>VILLA MISTRAL</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1248,6 +1282,8 @@ http://www.harekapone.cl/sfm_form_2.html</string>
 	</dict>
 	<key>311</key>
 	<dict>
+		<key>id</key>
+		<string>311</string>
 		<key>kind</key>
 		<string>シェアハウス</string>
 		<key>continent</key>
@@ -1257,7 +1293,7 @@ http://www.harekapone.cl/sfm_form_2.html</string>
 		<key>hotelName</key>
 		<string>アップルハウス</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1300,6 +1336,8 @@ Room4-Single bed- ￡28/泊~</string>
 	</dict>
 	<key>312</key>
 	<dict>
+		<key>id</key>
+		<string>312</string>
 		<key>kind</key>
 		<string>シェアハウス</string>
 		<key>continent</key>
@@ -1309,7 +1347,7 @@ Room4-Single bed- ￡28/泊~</string>
 		<key>hotelName</key>
 		<string>ウエストアクトンハウス</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1354,6 +1392,8 @@ Room5-Single bed- ￡28/泊 ~</string>
 	</dict>
 	<key>313</key>
 	<dict>
+		<key>id</key>
+		<string>313</string>
 		<key>kind</key>
 		<string>シェアハウス</string>
 		<key>continent</key>
@@ -1363,7 +1403,7 @@ Room5-Single bed- ￡28/泊 ~</string>
 		<key>hotelName</key>
 		<string>アクトンタウンハウス</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1411,6 +1451,8 @@ Room5-Single bed- ￡28/泊~</string>
 	<dict>
 		<key>kind</key>
 		<string>シェアハウス</string>
+		<key>id</key>
+		<string>314</string>
 		<key>continent</key>
 		<string>ヨーロッパ</string>
 		<key>country</key>
@@ -1418,7 +1460,7 @@ Room5-Single bed- ￡28/泊~</string>
 		<key>hotelName</key>
 		<string>カムデンハウス</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1459,6 +1501,8 @@ Room5-Single bed- ￡28/泊~</string>
 	</dict>
 	<key>315</key>
 	<dict>
+		<key>id</key>
+		<string>315</string>
 		<key>kind</key>
 		<string>シェアハウス</string>
 		<key>continent</key>
@@ -1468,7 +1512,7 @@ Room5-Single bed- ￡28/泊~</string>
 		<key>hotelName</key>
 		<string>スイスコテージハウス</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1512,6 +1556,8 @@ Room3-Single bed- ￡37/泊~</string>
 	</dict>
 	<key>316</key>
 	<dict>
+		<key>id</key>
+		<string>316</string>
 		<key>kind</key>
 		<string>シェアハウス</string>
 		<key>continent</key>
@@ -1521,7 +1567,7 @@ Room3-Single bed- ￡37/泊~</string>
 		<key>hotelName</key>
 		<string>ハイドパークハウス</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1566,6 +1612,8 @@ Room5-Single bed×3- ￡49/泊~</string>
 	</dict>
 	<key>317</key>
 	<dict>
+		<key>id</key>
+		<string>317</string>
 		<key>kind</key>
 		<string>ワンルームマンション</string>
 		<key>continent</key>
@@ -1575,7 +1623,7 @@ Room5-Single bed×3- ￡49/泊~</string>
 		<key>hotelName</key>
 		<string>ウエストアクトンSTUDIO</string>
 		<key>image</key>
-		<integer>1</integer>
+		<string>1</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1618,6 +1666,8 @@ Room5-Single bed×3- ￡49/泊~</string>
 	</dict>
 	<key>318</key>
 	<dict>
+		<key>id</key>
+		<string>318</string>
 		<key>kind</key>
 		<string>ワンルームマンション</string>
 		<key>continent</key>
@@ -1627,7 +1677,7 @@ Room5-Single bed×3- ￡49/泊~</string>
 		<key>hotelName</key>
 		<string>ノースアクトンフィールズSTUDIOⅠ </string>
 		<key>image</key>
-		<integer>3</integer>
+		<string>3</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1670,6 +1720,8 @@ Room5-Single bed×3- ￡49/泊~</string>
 	</dict>
 	<key>319</key>
 	<dict>
+		<key>id</key>
+		<string>319</string>
 		<key>kind</key>
 		<string>ワンルームマンション</string>
 		<key>continent</key>
@@ -1679,7 +1731,7 @@ Room5-Single bed×3- ￡49/泊~</string>
 		<key>hotelName</key>
 		<string>ノースアクトンフィールズSTUDIO Ⅱ</string>
 		<key>image</key>
-		<integer>3</integer>
+		<string>3</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1721,6 +1773,8 @@ Room5-Single bed×3- ￡49/泊~</string>
 	</dict>
 	<key>320</key>
 	<dict>
+		<key>id</key>
+		<string>320</string>
 		<key>kind</key>
 		<string>ワンルームマンション</string>
 		<key>continent</key>
@@ -1730,7 +1784,7 @@ Room5-Single bed×3- ￡49/泊~</string>
 		<key>hotelName</key>
 		<string>カムデンSTUDIO</string>
 		<key>image</key>
-		<integer>3</integer>
+		<string>3</string>
 		<key>address</key>
 		<string>住所などは、ご予約時お知らせ。
 （※地図は参考程度にお使いください。）</string>
@@ -1773,6 +1827,8 @@ Room5-Single bed×3- ￡49/泊~</string>
 	</dict>
 	<key>321</key>
 	<dict>
+		<key>id</key>
+		<string>321</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -1782,7 +1838,7 @@ Room5-Single bed×3- ￡49/泊~</string>
 		<key>hotelName</key>
 		<string>The Gendai Guest House</string>
 		<key>image</key>
-		<integer>5</integer>
+		<string>5</string>
 		<key>address</key>
 		<string>38 Albany Street LONDON NW1 4EA United Kingdom</string>
 		<key>map</key>
@@ -1832,6 +1888,8 @@ Room5-Single bed×3- ￡49/泊~</string>
 	</dict>
 	<key>322</key>
 	<dict>
+		<key>id</key>
+		<string>322</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -1841,7 +1899,7 @@ Room5-Single bed×3- ￡49/泊~</string>
 		<key>hotelName</key>
 		<string>ハムステッドグリーン・ゲストハウス</string>
 		<key>image</key>
-		<integer>4</integer>
+		<string>4</string>
 		<key>address</key>
 		<string>122C Finchley Road, London, NW3 5HT
 </string>
@@ -1897,6 +1955,8 @@ Room11 £115＋VAT
 	</dict>
 	<key>323</key>
 	<dict>
+		<key>id</key>
+		<string>323</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -1906,7 +1966,7 @@ Room11 £115＋VAT
 		<key>hotelName</key>
 		<string>ハイドパークグリーン・ゲストハウス</string>
 		<key>image</key>
-		<integer>4</integer>
+		<string>4</string>
 		<key>address</key>
 		<string>53 Inverness Terrace, London W2 3JN</string>
 		<key>map</key>
@@ -1967,6 +2027,8 @@ Room9 £100+VAT
 	</dict>
 	<key>324</key>
 	<dict>
+		<key>id</key>
+		<string>324</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -1976,7 +2038,7 @@ Room9 £100+VAT
 		<key>hotelName</key>
 		<string>ウィークリーフラット・ゴルダーズグリーン</string>
 		<key>image</key>
-		<integer>4</integer>
+		<string>4</string>
 		<key>address</key>
 		<string>8 North End Road, London NW11 7PH</string>
 		<key>map</key>
@@ -2023,6 +2085,8 @@ Flat 3 3階フロントサイド（キッチン共同）</string>
 	</dict>
 	<key>330</key>
 	<dict>
+		<key>id</key>
+		<string>330</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -2032,7 +2096,7 @@ Flat 3 3階フロントサイド（キッチン共同）</string>
 		<key>hotelName</key>
 		<string>Puchi Chiquito</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Gran Via 576 ,
 3 Barcelona 
@@ -2111,6 +2175,8 @@ Flat 3 3階フロントサイド（キッチン共同）</string>
 	</dict>
 	<key>331</key>
 	<dict>
+		<key>id</key>
+		<string>331</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -2120,7 +2186,7 @@ Flat 3 3階フロントサイド（キッチン共同）</string>
 		<key>hotelName</key>
 		<string>FINCA LAS ENCINAS</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Casa Rural Finca Las Encinas,, Calle Partido de Los Juncares, 31, Los Juncares, 14979 Iznajar, Córdoba</string>
 		<key>map</key>
@@ -2162,6 +2228,8 @@ Flat 3 3階フロントサイド（キッチン共同）</string>
 	</dict>
 	<key>332</key>
 	<dict>
+		<key>id</key>
+		<string>332</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -2171,7 +2239,7 @@ Flat 3 3階フロントサイド（キッチン共同）</string>
 		<key>hotelName</key>
 		<string>Hotel La Luna Blanca</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Pje. del Cerrillo, 2, 29620 Torremolinos, Málaga</string>
 		<key>map</key>
@@ -2220,6 +2288,8 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 	</dict>
 	<key>333</key>
 	<dict>
+		<key>id</key>
+		<string>333</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -2229,7 +2299,7 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 		<key>hotelName</key>
 		<string>Patio granada</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Calle Ánimas, 1, 18009 Granada, スペイン</string>
 		<key>map</key>
@@ -2275,6 +2345,8 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 	</dict>
 	<key>334</key>
 	<dict>
+		<key>id</key>
+		<string>334</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -2284,7 +2356,7 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 		<key>hotelName</key>
 		<string>Castella　Do　Paulo</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Rua da Alfândega 120, 1100-016 Lisboa, ポルトガル</string>
 		<key>map</key>
@@ -2325,6 +2397,8 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 	</dict>
 	<key>335</key>
 	<dict>
+		<key>id</key>
+		<string>335</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -2334,7 +2408,7 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 		<key>hotelName</key>
 		<string>GAUTINGER HOF</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Pippinstraße 1, 82131 Gauting, ドイツ
 </string>
@@ -2388,6 +2462,8 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 	</dict>
 	<key>336</key>
 	<dict>
+		<key>id</key>
+		<string>336</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -2397,7 +2473,7 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 		<key>hotelName</key>
 		<string>Ork Inn DusselDorf</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Friedrich-Ebert-Straße 30, 40210 Düsseldorf, ドイツ</string>
 		<key>map</key>
@@ -2442,6 +2518,8 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 	</dict>
 	<key>337</key>
 	<dict>
+		<key>id</key>
+		<string>337</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -2451,7 +2529,7 @@ https://www.hotellalunablanca.com/localizacion-hotel-torremolinos/</string>
 		<key>hotelName</key>
 		<string>Hotel Bellary</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>CH.3818 Grindelwald,Berner Oberland</string>
 		<key>map</key>
@@ -2498,6 +2576,8 @@ Extra bed children 9-12 years 40</string>
 	</dict>
 	<key>338</key>
 	<dict>
+		<key>id</key>
+		<string>338</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -2507,7 +2587,7 @@ Extra bed children 9-12 years 40</string>
 		<key>hotelName</key>
 		<string>Ryokan USAGIYAMA</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Hasenbergstr. 74
 8967 Widen
@@ -2565,6 +2645,8 @@ start_jp.html</string>
 	</dict>
 	<key>339</key>
 	<dict>
+		<key>id</key>
+		<string>339</string>
 		<key>kind</key>
 		<string></string>
 		<key>continent</key>
@@ -2574,7 +2656,7 @@ start_jp.html</string>
 		<key>hotelName</key>
 		<string>Villa Pipeline</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Niesenstrasse 9, 3600 Thun, Switzerland</string>
 		<key>map</key>
@@ -2619,6 +2701,8 @@ start_jp.html</string>
 	</dict>
 	<key>340</key>
 	<dict>
+		<key>id</key>
+		<string>340</string>
 		<key>kind</key>
 		<string>ペンション</string>
 		<key>continent</key>
@@ -2628,7 +2712,7 @@ start_jp.html</string>
 		<key>hotelName</key>
 		<string>Villa AKIKO</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>os. Ariake 1, 34-434 Debno Harklowa, ポーランド
 </string>
@@ -2674,6 +2758,8 @@ start_jp.html</string>
 	</dict>
 	<key>341</key>
 	<dict>
+		<key>id</key>
+		<string>341</string>
 		<key>kind</key>
 		<string>ゲストハウス</string>
 		<key>continent</key>
@@ -2683,7 +2769,7 @@ start_jp.html</string>
 		<key>hotelName</key>
 		<string>さくらんぼ</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>H-1068 Budapest Benczúr u. 7</string>
 		<key>map</key>
@@ -2733,6 +2819,8 @@ start_jp.html</string>
 	</dict>
 	<key>342</key>
 	<dict>
+		<key>id</key>
+		<string>342</string>
 		<key>kind</key>
 		<string></string>
 		<key>continent</key>
@@ -2742,7 +2830,7 @@ start_jp.html</string>
 		<key>hotelName</key>
 		<string>Andante hostel Budapest</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Budapest, Kertész u. 35, 1073 ハンガリー
 </string>
@@ -2789,6 +2877,8 @@ start_jp.html</string>
 	</dict>
 	<key>343</key>
 	<dict>
+		<key>id</key>
+		<string>343</string>
 		<key>kind</key>
 		<string>ペンション</string>
 		<key>continent</key>
@@ -2798,7 +2888,7 @@ start_jp.html</string>
 		<key>hotelName</key>
 		<string>ペンションセンテンドレ</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Vadrozsa u. 9, Szentendre, Hungary</string>
 		<key>map</key>
@@ -2841,6 +2931,8 @@ start_jp.html</string>
 	</dict>
 	<key>344</key>
 	<dict>
+		<key>id</key>
+		<string>344</string>
 		<key>kind</key>
 		<string>ホテル</string>
 		<key>continent</key>
@@ -2850,7 +2942,7 @@ start_jp.html</string>
 		<key>hotelName</key>
 		<string>HOTEL MY HOME</string>
 		<key>image</key>
-		<integer>0</integer>
+		<string>0</string>
 		<key>address</key>
 		<string>Haarlemmerstraat 82
 1013 EV AMSTERDAM
