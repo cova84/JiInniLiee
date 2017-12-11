@@ -160,6 +160,10 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             //セグエのidentifierを指定して、画面移動
             performSegue(withIdentifier: "toDetail", sender: self)
         }
+        
+        print("①セルがタップされた時のイベント")
+
+        
     }
     
     
@@ -170,6 +174,10 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         var dvc = segue.destination as! DetailView
         //次の画面のプロパティにタップされたセルのkeyを渡す
         dvc.getKeyDic = selectHototelDetailDic
+        
+        print("②セグエを使って画面移動する時発動")
+
+        
     }
     
     func readPlist(key: String) -> NSDictionary? {
@@ -178,6 +186,9 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let path = Bundle.main.path(forResource: "hotel_list_Detail", ofType: "plist")
         //ファイルの内容を読み込んでディクショナリー型に格納
         let dic = NSDictionary(contentsOfFile: path!)
+        
+        print("③plistの読み込み")
+
         
         return dic![key] as? NSDictionary
     }

@@ -65,11 +65,13 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     
     /// MARK: UITableViewDelegate
+    //セルがタップされた時のイベント
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if viewData[indexPath.row].category == 3{
             //宿の場合、別画面に遷移するなどの処理を記載する
             print(viewData[indexPath.row].title)
+            
         }else{
             //開閉処理
             if viewData[indexPath.row].extended {
@@ -88,7 +90,19 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             }
             
         }
+        
+            //TODO:データの受け渡し方法不明
+//        //okayumemo Favoriteデータから読出ししたデータを取り出し
+//        let hotelDic = contentHotel[indexPath.row]
+//        let key = hotelDic["id"] as! Int
+//
+//        //セグエのtoDetailを指定して、画面移動
+//        performSegue(withIdentifier: "toDetail", sender: self)
+//
+//        print("①セルがタップされた時のイベント")
     }
+    
+
     
     /// close details.
     ///
@@ -282,17 +296,20 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
             let dic = hotelDetailDic![key]! as! NSDictionary
             let hotelNameDic = dic["hotelName"]! as! String
-            let idDic = dic["id"]! as! String
-            let idNum = Int(atof(idDic))
+            let idDic = dic["id"]! as! Int
+            //let idNum = Int(atof(idDic))
 
             inn.append((
                 title: "\(hotelNameDic)"
-                , no: idNum
+                , no: idDic
                 , details: []
                 , extended: false
                 , category: 3
             ))
-
+            
+            //ディクショナリー読み込み確認
+            //print("\(dic) ")
+            
             contentHotel.append(dic as NSDictionary)
         
         }
@@ -304,36 +321,15 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 
     
     
-    //セルがタップされた時のイベント
-    func topTableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //okayumemo Favoriteデータから読出ししたデータを取り出し
-        let hotelDic = contentHotel[indexPath.row]
-        let key = hotelDic["id"] as! String
-        
-        print(hotelDic)
-
-        
-        // 000の時はセグエ発動しなくて良い
-        if key != "000" {
-            //Key(ディクショナリー型で)Plistから取り出し
-            let dic = readPlist(key:key)
-            print(dic)
-            selectHototelDetailDic = dic as! NSDictionary
-            
-            //セグエのidentifierを指定して、画面移動
-            performSegue(withIdentifier: "toDetail", sender: self)
-
-        }
-    }
-
-    
-    
     //セグエを使って画面移動する時発動
     override func prepare(for segue:UIStoryboardSegue, sender:Any?){
         //次の画面のインスタンスを取得
         var dvc:DetailView = segue.destination as! DetailView
         //次の画面のプロパティにタップされたセルのkeyを渡す
         dvc.getKeyDic = selectHototelDetailDic
+        
+        print("②セグエを使って画面移動する時発動")
+
     }
     
     
@@ -345,7 +341,8 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         //ファイルの内容を読み込んでディクショナリー型に格納
         let dic = NSDictionary(contentsOfFile: path!)
         
-        print("\(dic)")
+        print("③plistの読み込み")
+
         
         return dic![key] as? NSDictionary
     }
@@ -354,7 +351,4 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 }
-
-

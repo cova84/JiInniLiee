@@ -64,7 +64,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         //値のセット
         let hotel = getKeyDic["hotelName"] as! String
         let country = getKeyDic["country"] as! String
-        let id = getKeyDic["id"] as! String
+        let id = getKeyDic["id"] as! Int
         newRecord.setValue(hotel, forKey: "hotel")  //hotel列に文字列をセット
         newRecord.setValue(country, forKey: "country")  //country列に文字列をセット
         newRecord.setValue(id, forKey: "id")  //country列に文字列をセット
@@ -119,7 +119,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         let screenSize: CGRect = UIScreen.main.bounds
 
         //imageViewスクリーンの幅を指定
-        let id = getKeyDic["id"] as! String
+        let id = getKeyDic["id"] as! Int
         let imageTop:UIImage = UIImage(named: "\(id)_1")!
         
         //画面サイズから、スクリーンサイズ算出
@@ -169,7 +169,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         let pageNum:Int  = imageNum
         
         // ダミー画像
-        let id = getKeyDic["id"] as! String
+        let id = getKeyDic["id"] as! Int
         let imageDummy:UIImage = UIImage(named:"\(id)_1")!
         var imgView = UIImageView(image:imageDummy)
         var subviews:Array = hotelImageScrollView.subviews
