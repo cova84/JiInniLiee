@@ -71,7 +71,6 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     }
     
     
-    //TODO:スクロール改善後、動作確認。-----------------------------------------------------------------
     //TODO:本当は、削除設定カスタムセルにボタンをつけたい---------------------------------------------------
     
     @IBAction func tapAllDelete(_ sender: UIButton) {
@@ -80,10 +79,14 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let alert = UIAlertController(
             title: "All Delete", message: "全ての登録が削除されます。よろしいですか？", preferredStyle: .alert)
         
+        
+        
         //アラートの表示
         //completion: 動作が完了した後に発動される処理を指示
         //present(alert, animated: true, completion: nil)
         present(alert, animated: true, completion: {() -> Void in print("選択画面が表示されました。")})
+        
+        
         
         //アラートにOKボタンを追加
         //handler : OKボタンが押された時に、行いたい処理に指定する場所
@@ -117,11 +120,15 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         }))
     }
 
+    
+    
     //TabelView用処理
     //行数の決定
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contentHotel.count
     }
+    
+    
     
     //リストに表示する文字列を決定し、表示（cellForRowAtを検索）
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -134,6 +141,8 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         //文字を設定したセルを返す
         return cell
     }
+    
+    
     
     //セルがタップされた時のイベント
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -152,6 +161,8 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             performSegue(withIdentifier: "toDetail", sender: self)
         }
     }
+    
+    
 
     //セグエを使って画面移動する時発動
     override func prepare(for segue:UIStoryboardSegue, sender:Any?){

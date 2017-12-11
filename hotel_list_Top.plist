@@ -468,7 +468,7 @@
 <key>country</key>
 <string>ネパール</string>
 <key>continentTop</key>
-<string>アジア（中央〜西〜南アジア）</string>
+<string>アジア（中央〜南〜西アジア）</string>
 <key>continentSub</key>
 <string>南アジア</string>
 <key>red</key>
@@ -485,7 +485,7 @@
 <key>country</key>
 <string>キルギス</string>
 <key>continentTop</key>
-<string>アジア（中央〜西〜南アジア）</string>
+<string>アジア（中央〜南〜西アジア）</string>
 <key>continentSub</key>
 <string>中央アジア</string>
 <key>red</key>
@@ -502,7 +502,7 @@
 <key>country</key>
 <string>トルコ</string>
 <key>continentTop</key>
-<string>アジア（中央〜西〜南アジア）</string>
+<string>アジア（中央〜南〜西アジア）</string>
 <key>continentSub</key>
 <string>西アジア</string>
 <key>red</key>
