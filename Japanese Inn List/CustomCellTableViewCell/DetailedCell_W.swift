@@ -9,23 +9,16 @@
 import UIKit
 //import CoreGraphics
 
-class DetailedCell_W: UIViewController {
+class DetailedCell_W: UITableViewCell {
 
-    @IBOutlet weak var textLabel: UILabel!
+    @IBOutlet weak var textLabeDetCell_W: UILabel!
     @IBOutlet weak var background: UIView!
     
-//オートレイアウト
-//    static func instantiateFromNib() -> DetailedCell_W {
-//        let nib = UINib(nibName: String(describing: self), bundle: nil)
-//        guard let cell = nib.instantiate(withOwner: nil, options: nil).first as? DetailedCell_W else {
-//            fatalError()
-//        }
-//        return cell
-//    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+//    override func viewDidLoad() {
+//        super.viewDidLoad()
+        override func awakeFromNib() {
+        super.awakeFromNib()
+            
         //textLabelデザイン-----------------------------------------
         textLabel?.font = UIFont(name: "Futura", size: 12)
         textLabel?.textColor = UIColor.black
@@ -38,11 +31,20 @@ class DetailedCell_W: UIViewController {
             , alpha: 1.0
             )
         background.layer.borderWidth = 2.0
-        background.layer.borderColor = UIColor(
-              red: 255/255.0
+        background.layer.borderColor = (UIColor(
+            red: 255/255.0
             , green: 255/255.0
             , blue: 255/255.0
             , alpha: 1.0
-            ) as! CGColor
+            ) as! CGColor)
     }
+    
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+        
+        // Configure the view for the selected state
+    }
+    
 }
+

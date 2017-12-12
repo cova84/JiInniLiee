@@ -142,7 +142,6 @@ class SecondViewController: UIViewController,MKMapViewDelegate {
         var dvc = segue.destination as! DetailView
         
         //次の画面のプロパティにタップされたピンのIDを渡す
-        
         dvc.getKeyDic = selectPinKeyDic
 
     }

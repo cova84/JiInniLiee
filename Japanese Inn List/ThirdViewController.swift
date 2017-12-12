@@ -53,7 +53,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             for result: AnyObject in fetchResults{
                 let hotel :String? = result.value(forKey:"hotel") as? String
                 let country :String? = result.value(forKey:"country") as? String
-                let id :String? = result.value(forKey:"id") as? String
+                let id :Int16? = result.value(forKey:"id") as? Int16
                 
                 let dic = ["id":id!,"hotel":hotel!,"country":country!] as [String : Any]
                 print("hotel:\(hotel) hotel:\(hotel!) country:\(country!) ")
@@ -64,7 +64,7 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         }
         //登録型一つも無かったら表示するようのダミー定義
         if contentHotel.count == 0 {
-            let dummy = ["id":"000","hotel":"お気に入りの登録がありません","country":""]
+            let dummy = ["id":0,"hotel":"お気に入りの登録がありません","country":""] as [String : Any]
             contentHotel.append(dummy as NSDictionary)
         }
         favoriteTableView.reloadData()
@@ -148,10 +148,11 @@ class ThirdViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //okayumemo Favoriteデータから読出ししたデータを取り出し
         let hotelDic = contentHotel[indexPath.row]
-        let key = hotelDic["id"] as! String
-
-        // 000の時はセグエ発動しなくて良い
-        if key != "000" {
+        let id = hotelDic["id"] as! Int16
+        let key:String = "\(id)"
+        
+        // 0の時はダミーなのでセグエ発動しなくて良い
+        if id != 0 {
             //Key(ディクショナリー型で)Plistから取り出し
             let dic = readPlist(key:key)
             print(dic)

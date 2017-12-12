@@ -27,14 +27,14 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     @IBOutlet weak var topTableView: UITableView!
     
-    var area:[(title: String, details: [Int], extended: Bool,category:Int)] = []
+    var area:[(title: String, no:Int, details: [Int], extended: Bool,category:Int)] = []
     
     var country:[(title: String, no:Int, details: [Int], extended: Bool,category:Int)] = []
     
     var inn:[(title: String, no:Int, details: [Int], extended: Bool,category:Int)] = []
     
     //表示専用の配列
-    var viewData:[(title: String, details: [Int], extended: Bool,category:Int)] = []
+    var viewData:[(title: String, no:Int, details: [Int], extended: Bool,category:Int)] = []
     
     
     @IBOutlet weak var myTableView: UITableView!
@@ -71,6 +71,29 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         if viewData[indexPath.row].category == 3{
             //宿の場合、別画面に遷移するなどの処理を記載する
             print(viewData[indexPath.row].title)
+            print(viewData[indexPath.row].no)
+            
+            //indexPathから読出ししたデータを取り出し
+            let hotelDic = contentHotel[indexPath.row]
+//            let id = hotelDic["id"] as! Int16
+            let id = viewData[indexPath.row].no
+            
+            let key:String = "\(id)"
+            
+            // 0の時はダミーなのでセグエ発動しなくて良い
+            if id != 0 {
+                //Key(ディクショナリー型で)Plistから取り出し
+                let dic = readPlist(key:key)
+                print(dic)
+                selectHototelDetailDic = dic as! NSDictionary
+                
+                //セグエのidentifierを指定して、画面移動
+                performSegue(withIdentifier: "toDetail", sender: self)
+            }
+            
+            print("①セルがタップされた時のイベント")
+            
+            
             
         }else{
             //開閉処理
@@ -91,15 +114,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             
         }
         
-            //TODO:データの受け渡し方法不明
-//        //okayumemo Favoriteデータから読出ししたデータを取り出し
-//        let hotelDic = contentHotel[indexPath.row]
-//        let key = hotelDic["id"] as! Int
-//
-//        //セグエのtoDetailを指定して、画面移動
-//        performSegue(withIdentifier: "toDetail", sender: self)
-//
-//        print("①セルがタップされた時のイベント")
+
     }
     
 
@@ -169,7 +184,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                         for deach in ids{
                             for ceach in country{
                                 if ceach.no == deach{
-                                    viewData.append((title: ceach.title,details:ceach.details,extended:false,category:2))
+                                    viewData.append((title: ceach.title,no: ceach.no,details:ceach.details,extended:false,category:2))
                                     changeNum += 1
                                 }
                             }
@@ -184,7 +199,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                         for deach in ids{
                             for ieach in inn{
                                 if ieach.no == deach{
-                                    viewData.append((title: ieach.title,details:ieach.details,extended:false,category:3))
+                                    viewData.append((title: ieach.title,no: ieach.no,details:ieach.details,extended:false,category:3))
                                     changeNum += 1
                                 }
                             }
@@ -238,18 +253,18 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func createData(){
         
         //TODO;リスト完成後再入力
-        area.append((title: "北アメリカ"    , details: [    000,    100], extended: false,category:1))
-        area.append((title: "中南米"    , details: [    200,    210,    220,    230], extended: false,category:1))
-        area.append((title: "アジア（北〜東〜東南アジア）"    , details: [    700,    710,    800,    810,    820,    830], extended: false,category:1))
-        area.append((title: "アジア（中央〜南〜西アジア）"    , details: [    900,    1100,    1200], extended: false,category:1))
-        //area.append((title: "アジア（予備）"    , details: [], extended: false,category:1))
-        area.append((title: "アフリカ"    , details: [    500,    510], extended: false,category:1))
-        area.append((title: "ヨーロッパ"    , details: [    300,    310,    330,    340,    350,    360,    370,    380,    390,    400,    410,    420,    430], extended: false,category:1))
-        area.append((title: "オーストラリア・オセアニア"    , details: [    1300,    1310], extended: false,category:1))
+        area.append((title: "北アメリカ",no:1    , details: [    110,    100], extended: false,category:1))
+        area.append((title: "中南米",no:2    , details: [    200,    210,    220,    230], extended: false,category:1))
+        area.append((title: "アジア（北〜東〜東南アジア）",no:3    , details: [    700,    710,    800,    810,    820,    830], extended: false,category:1))
+        area.append((title: "アジア（中央〜南〜西アジア）",no:4    , details: [    900,    1100,    1200], extended: false,category:1))
+        //area.append((title: "アジア（予備）",no:5    , details: [], extended: false,category:1))
+        area.append((title: "アフリカ",no:6    , details: [    500,    510], extended: false,category:1))
+        area.append((title: "ヨーロッパ",no:7    , details: [    300,    310,    330,    340,    350,    360,    370,    380,    390,    400,    410,    420,    430], extended: false,category:1))
+        area.append((title: "オーストラリア・オセアニア",no:8    , details: [    1300,    1310], extended: false,category:1))
         
         
         
-        country.append((title: "アメリカ",no:    000    , details: [    001,    002,    003,                                        ], extended: false,category:2))
+        country.append((title: "アメリカ",no:    110    , details: [    111,    112,    113,                                        ], extended: false,category:2))
         country.append((title: "カナダ",no:    100     , details: [    101,    102,    103,    104,    105,    106,    107,    108 ], extended: false,category:2))
         country.append((title: "ジャマイカ",no:    200     , details: [    201,    202,                                              ], extended: false,category:2))
         country.append((title: "グアテマラ",no:    210     , details: [    211,    212,    213,    214,                              ], extended: false,category:2))
@@ -307,9 +322,6 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                 , category: 3
             ))
             
-            //ディクショナリー読み込み確認
-            //print("\(dic) ")
-            
             contentHotel.append(dic as NSDictionary)
         
         }
@@ -324,7 +336,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     //セグエを使って画面移動する時発動
     override func prepare(for segue:UIStoryboardSegue, sender:Any?){
         //次の画面のインスタンスを取得
-        var dvc:DetailView = segue.destination as! DetailView
+        var dvc = segue.destination as! DetailView
         //次の画面のプロパティにタップされたセルのkeyを渡す
         dvc.getKeyDic = selectHototelDetailDic
         

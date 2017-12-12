@@ -12,6 +12,7 @@ import CoreData
 
 class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
 
+    
     //画面全体のScrollView
     @IBOutlet weak var ditailScrollView: UIScrollView!
 
@@ -42,8 +43,6 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     var screenHeight:CGFloat!
     // Screenの幅
     var screenWidth:CGFloat!
-    // Totalのページ数
-   // let pageNum:Int  = 4
     
     
     
@@ -65,14 +64,10 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         let hotel = getKeyDic["hotelName"] as! String
         let country = getKeyDic["country"] as! String
         let id = getKeyDic["id"] as! Int
+        
         newRecord.setValue(hotel, forKey: "hotel")  //hotel列に文字列をセット
         newRecord.setValue(country, forKey: "country")  //country列に文字列をセット
         newRecord.setValue(id, forKey: "id")  //country列に文字列をセット
-
-        //TODO:値の送信直後にエラーで落ちる？原因不明。
-//        newRecord.setValue(getKeyDic["hotelName"], forKey: "hotel")  //hotel列に文字列をセット
-//        newRecord.setValue(getKeyDic["country"], forKey: "country")  //country列に文字列をセット
-//        newRecord.setValue(getKeyDic["key"], forKey: "id")  //country列に文字列をセット
         print("\(hotel)","\(id)","\(country)")
 
         //レコード（行）の即時保存
@@ -90,18 +85,25 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        var cellHeight:CGFloat = 30.0
+        self.detailedInfoTableView.register(UINib(nibName: "DetailedCell_G", bundle: nil), forCellReuseIdentifier: "detailedCell_G")
+        self.detailedInfoTableView.estimatedRowHeight = cellHeight
+        self.detailedInfoTableView.rowHeight = UITableViewAutomaticDimension
         
+        self.detailedInfoTableView.register(UINib(nibName: "DetailedCell_W", bundle: nil), forCellReuseIdentifier: "detailedCell_W")
+        self.detailedInfoTableView.estimatedRowHeight = cellHeight
+        self.detailedInfoTableView.rowHeight = UITableViewAutomaticDimension
         
-//TODO:オートレイアウト　使うか不明？
-//        //TableView Cellの高さ可変設定/
-//        detailedInfoTableView.estimatedRowHeight = 26
-//        detailedInfoTableView.rowHeight = UITableViewAutomaticDimension
+        self.reservationTabelView.register(UINib(nibName: "ReservationCell_G", bundle: nil), forCellReuseIdentifier: "ReservationCell_G")
+        self.reservationTabelView.estimatedRowHeight = cellHeight
+        self.reservationTabelView.rowHeight = UITableViewAutomaticDimension
         
+        self.reservationTabelView.register(UINib(nibName: "ReservationCell_W", bundle: nil), forCellReuseIdentifier: "ReservationCell_W")
+        self.reservationTabelView.estimatedRowHeight = cellHeight
+        self.reservationTabelView.rowHeight = UITableViewAutomaticDimension
         
+        print(getKeyDic["hotelName"])
         
-        //plistの読み込み--------------------------------------------------------------------------------------------------
-        //ファイルパスを取得（エリア名が格納されているプロパティリスト）
-        let path = Bundle.main.path(forResource: "hotel_list_Detail", ofType: "plist")
         //ホテル名
         hotelName.text = getKeyDic["hotelName"] as! String
         //紹介コメント
@@ -117,9 +119,11 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
 
         //スクリーンサイズはmainのサイズを参照
         let screenSize: CGRect = UIScreen.main.bounds
-
+        
         //imageViewスクリーンの幅を指定
         let id = getKeyDic["id"] as! Int
+        print("id:\(id)")
+
         let imageTop:UIImage = UIImage(named: "\(id)_1")!
         
         //画面サイズから、スクリーンサイズ算出
@@ -159,6 +163,7 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
             
         }
         setupScrollImages()
+        
     }
 
     // 3.addSubview でUIScrollViewに加える
@@ -244,10 +249,11 @@ class DetailView:UIViewController, UITableViewDataSource, UITableViewDelegate{
         case 1:
             switch indexPath.row {
             case 0:
-                let detailedCell_G = tableView.dequeueReusableCell(withIdentifier: "detailedCell_G", for: indexPath)
-                detailedCell_G.textLabel?.text = "宿泊費（詳細情報はHPからご確認ください。）"
-                detailedCell_G.selectedBackgroundView?.backgroundColor = UIColor.blue
-                return detailedCell_G
+                //ダウンキャスト変換
+                let DetailedCell_W = tableView.dequeueReusableCell(withIdentifier: "DetailedCell_W", for: indexPath) as! DetailedCell_W
+                DetailedCell_W.textLabel?.text = "宿泊費（詳細情報はHPからご確認ください。）"
+                DetailedCell_W.selectedBackgroundView?.backgroundColor = UIColor.blue
+                return DetailedCell_W
             case 1:
                 let detailedCell_W = tableView.dequeueReusableCell(withIdentifier: "detailedCell_W", for: indexPath)
                 detailedCell_W.textLabel?.text = getKeyDic["accommodation"] as! String
